@@ -1,0 +1,1583 @@
+[
+    {
+        "hash": "5640d641d6066a85439d7027b960ebc2cebd37de",
+        "message": "skip Worker test unless the browser supports them",
+        "author_name": "Thomas Aylott",
+        "author_email": "aylott@fb.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "ReactWebWorker-test.js": "@@ -22,7 +22,7 @@\n \"use strict\";\n \n describe('ReactWebWorker', function() {\n-  it('can run React in a web worker', function() {\n+  ;(typeof Worker == 'undefined' ? xit : it)('can run React in a web worker', function() {\n     var done = false;\n     var error;\n \n"
+        },
+        "file_name": "facebook_react.json",
+        "type": "BUG_FIX",
+        "comment": "3, most likely as we are skipping some tests which were enabled before"
+    },
+    {
+        "hash": "5640d641d6066a85439d7027b960ebc2cebd37de",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "5,Skipping the test if the browser doesn't support Web Workers makes the code more robust and improves maintainability."
+    },
+    {
+        "hash": "3ac05d38eb9e67d4c1923f05a2c22139782289fe",
+        "message": "bug\u4fee\u590d\n\n\u6587\u672c\u592a\u957f\uff0c\u906e\u6321\u63d0\u793a\u6846",
+        "author_name": "batvbs",
+        "author_email": "batvbs@qq.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "zh_CN.json": "@@ -142,7 +142,7 @@\n     \"latent noise\": \"\u6f5c\u7a7a\u95f4\u566a\u58f0\",\n     \"latent nothing\": \"\u6f5c\u7a7a\u95f4\u6570\u503c\u96f6\",\n     \"Inpaint at full resolution\": \"\u4ee5\u5b8c\u6574\u5206\u8fa8\u7387\u8fdb\u884c\u5c40\u90e8\u91cd\u7ed8\",\n-    \"Inpaint at full resolution padding, pixels\": \"\u4ee5\u5b8c\u6574\u5206\u8fa8\u7387\u8fdb\u884c\u5c40\u90e8\u91cd\u7ed8 - \u586b\u8865\u50cf\u7d20\",\n+    \"Inpaint at full resolution padding, pixels\": \"\u586b\u8865\u50cf\u7d20\",\n     \"Process images in a directory on the same machine where the server is running.\": \"\u5728\u670d\u52a1\u5668\u4e3b\u673a\u4e0a\u7684\u76ee\u5f55\u4e2d\u5904\u7406\u56fe\u50cf\",\n     \"Use an empty output directory to save pictures normally instead of writing to the output directory.\": \"\u6307\u5b9a\u4e00\u4e2a\u7a7a\u7684\u6587\u4ef6\u5939\u4e3a\u8f93\u51fa\u76ee\u5f55\u800c\u975e\u9ed8\u8ba4\u7684 output \u6587\u4ef6\u5939\u4e3a\u8f93\u51fa\u76ee\u5f55\",\n     \"Input directory\": \"\u8f93\u5165\u76ee\u5f55\",\n"
+        },
+        "file_name": "AUTOMATIC1111_stable-diffusion-webui.json",
+        "type": "BUG_FIX",
+        "comment": "5, obvious"
+    },
+    {
+        "hash": "3ac05d38eb9e67d4c1923f05a2c22139782289fe",
+        "type": "CONFIG_CHANGE",
+        "comment": "2,The change involves modifying the UI text, which is a configuration change, not a bug fix."
+    },
+    {
+        "hash": "1088b4b00fe52309a75aa8508d425010fa6cd475",
+        "message": "Ignoring the \".DS_Store\" files on OS X",
+        "author_name": "Artem",
+        "author_email": "artemjo@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 2,
+        "net_lines": 2,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            ".gitignore": "@@ -6,3 +6,5 @@ alias\n # For testing\n bak\n .urchin.log\n+\n+.DS_Store\n"
+        },
+        "file_name": "nvm-sh_nvm.json",
+        "type": "BUG_FIX",
+        "comment": "4, probably there was some error due to .DS_Store files on OS X"
+    },
+    {
+        "hash": "1088b4b00fe52309a75aa8508d425010fa6cd475",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Ignoring specific files in a .gitignore file is a configuration change."
+    },
+    {
+        "hash": "f5db38452477cc697a86cf0d3e7ecba4fa9cfe78",
+        "message": "dev-java/xpp2: stable for all wrt bug #558016\n\nPackage-Manager: portage-2.2.20.1",
+        "author_name": "Mikle Kolyada",
+        "author_email": "zlogene@gentoo.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "xpp2-2.1.10-r2.ebuild": "@@ -16,7 +16,7 @@ SRC_URI=\"http://www.extreme.indiana.edu/xgws/xsoap/xpp/download/${MY_PN}2/${MY_P\n \n LICENSE=\"Apache-1.1 IBM\"\n SLOT=\"0\"\n-KEYWORDS=\"~amd64 ~arm ~ppc ~ppc64 ~x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris\"\n+KEYWORDS=\"amd64 ~arm ppc ppc64 x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris\"\n IUSE=\"test\"\n \n # Some failures, partly because we haven't patched Xerces but probably\n"
+        },
+        "file_name": "gentoo_gentoo.json",
+        "type": "BUG_FIX",
+        "comment": "5, obvious"
+    },
+    {
+        "hash": "f5db38452477cc697a86cf0d3e7ecba4fa9cfe78",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3,The commit message indicates a stabilization of the code for a bug fix, implying code improvement."
+    },
+    {
+        "hash": "58c56ce7aea12980f4be7e62840f461bb6f0cbc4",
+        "message": "specify mode for windows",
+        "author_name": "Robo",
+        "author_email": "hop2deep@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "util.py": "@@ -30,7 +30,7 @@ def scoped_cwd(path):\n \n \n def download(text, url, path):\n-  with open(path, 'w') as local_file:\n+  with open(path, 'wb') as local_file:\n     web_file = urllib2.urlopen(url)\n     file_size = int(web_file.info().getheaders(\"Content-Length\")[0])\n     downloaded_size = 0\n"
+        },
+        "file_name": "electron_electron.json",
+        "type": "NEW_FEAT",
+        "comment": "4, kinda add mode in windows"
+    },
+    {
+        "hash": "58c56ce7aea12980f4be7e62840f461bb6f0cbc4",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Specifying the mode for Windows is a configuration change."
+    },
+    {
+        "hash": "303f6514bd229c80f58abc87448836ede877c0e5",
+        "message": "+ int SortTuplesInTree = 2560;\n\t(default value for max number of tuples in leftist tree)",
+        "author_name": "Vadim B. Mikheev",
+        "author_email": "vadim4o@yahoo.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 2,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "globals.c": "@@ -7,7 +7,7 @@\n  *\n  *\n  * IDENTIFICATION\n- *\t  $Header: /cvsroot/pgsql/src/backend/utils/init/globals.c,v 1.12 1997/09/08 02:31:56 momjian Exp $\n+ *\t  $Header: /cvsroot/pgsql/src/backend/utils/init/globals.c,v 1.13 1997/09/18 05:23:58 vadim Exp $\n  *\n  * NOTES\n  *\t  Globals used all over the place should be declared here and not\n@@ -80,6 +80,7 @@ char\t\tFloatFormat[20] = \"%f\";\n \n int\t\t\tfsyncOff = 0;\n int\t\t\tSortMem = 512;\n+int\t\t\tSortTuplesInTree = 2560;\n \n char\t   *IndexedCatalogNames[] = {\n \tAttributeRelationName,\n"
+        },
+        "file_name": "postgres_postgres.json",
+        "type": "NEW_FEAT",
+        "comment": "3, Vague commit description but from code change, it seems like a new feature as a new variable sortTupleInTree is added"
+    },
+    {
+        "hash": "303f6514bd229c80f58abc87448836ede877c0e5",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Adding a constant for a default value is a configuration change."
+    },
+    {
+        "hash": "99bf7c5da5f80beed10fc27414518601a50d5103",
+        "message": "Update touch to the latest version \ud83d\ude80 (#2411)",
+        "author_name": "greenkeeper[bot]",
+        "author_email": "greenkeeper[bot]@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "canary",
+        "changes": {
+            "package.json": "@@ -90,7 +90,7 @@\n     \"source-map-support\": \"0.4.15\",\n     \"strip-ansi\": \"4.0.0\",\n     \"styled-jsx\": \"1.0.6\",\n-    \"touch\": \"2.0.2\",\n+    \"touch\": \"3.0.0\",\n     \"uglifyjs-webpack-plugin\": \"0.4.6\",\n     \"unfetch\": \"3.0.0\",\n     \"url\": \"0.11.0\",\n"
+        },
+        "file_name": "vercel_next.js.json",
+        "type": "CONFIG_CHANGE",
+        "comment": "just dependency version update"
+    },
+    {
+        "hash": "99bf7c5da5f80beed10fc27414518601a50d5103",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4,Updating a dependency to the latest version can be considered a code improvement, especially if it fixes bugs or adds features."
+    },
+    {
+        "hash": "b2c4552416c394ee562fa8fe05e9b5aa485440cb",
+        "message": "feat: re-order zoom buttons (#3837)\n\n* feat: re-order zoom buttons\r\n\r\n* undo last commit & change zoomOut/zoomIn order",
+        "author_name": "David Luzar",
+        "author_email": "luzar.david@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "Actions.tsx": "@@ -204,8 +204,8 @@ export const ZoomActions = ({\n }) => (\n   <Stack.Col gap={1}>\n     <Stack.Row gap={1} align=\"center\">\n-      {renderAction(\"zoomIn\")}\n       {renderAction(\"zoomOut\")}\n+      {renderAction(\"zoomIn\")}\n       {renderAction(\"resetZoom\")}\n     </Stack.Row>\n   </Stack.Col>\n"
+        },
+        "file_name": "excalidraw_excalidraw.json",
+        "type": "NEW_FEAT",
+        "comment": "5, reorder buttons which is a new feature"
+    },
+    {
+        "hash": "b2c4552416c394ee562fa8fe05e9b5aa485440cb",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Re-ordering zoom buttons is a visual change and can be classified as a configuration change."
+    },
+    {
+        "hash": "27b1a0719a8147a19aa365c3a6009d04ecbdc8fa",
+        "message": "chore(deps) Update Rust crate cargo_toml to 0.11 (#3365)\n\nCo-authored-by: Renovate Bot <bot@renovateapp.com>",
+        "author_name": "renovate[bot]",
+        "author_email": "29139614+renovate[bot]@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "dev",
+        "changes": {
+            "Cargo.toml": "@@ -21,7 +21,7 @@ anyhow = \"1\"\n quote = { version = \"1\", optional = true }\n tauri-codegen = { version = \"1.0.0-beta.4\", path = \"../tauri-codegen\", optional = true }\n tauri-utils = { version = \"1.0.0-beta.0\", path = \"../tauri-utils\", features = [ \"build\", \"resources\" ] }\n-cargo_toml = \"0.10\"\n+cargo_toml = \"0.11\"\n serde_json = \"1\"\n \n [target.\"cfg(windows)\".dependencies]\n"
+        },
+        "file_name": "tauri-apps_tauri.json",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, just dependency version update"
+    },
+    {
+        "hash": "27b1a0719a8147a19aa365c3a6009d04ecbdc8fa",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3,Updating a dependency to the latest version is a code improvement, especially if it addresses vulnerabilities or improves performance."
+    },
+    {
+        "hash": "9918e49bb12d9787340b895624b45082b8c19d4c",
+        "message": "Only deploy to NuGet when API changed (interface or implementation), see #360",
+        "author_name": "bao-qian",
+        "author_email": "bao.github@outlook.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "appveyor.yml": "@@ -29,4 +29,4 @@ deploy:\n     secure: yybUOFgBuGVpbmOVZxsurC8OpkClzt9dR+/54WpMWcq6b6oyMatciaelRPnXsjRn\n   artifact: nugetpackage\n   on:\n-    branch: master\n+    branch: api\n"
+        },
+        "file_name": "microsoft_PowerToys.json",
+        "type": "NEW_FEAT",
+        "comment": "4, Part of pull request adding a new feature"
+    },
+    {
+        "hash": "9918e49bb12d9787340b895624b45082b8c19d4c",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,The commit message indicates a change in deployment criteria, which falls under configuration changes."
+    },
+    {
+        "hash": "5b2ffeb63d1b763a9ea9de2cc4bf7c3c1c7f3e0e",
+        "message": "update React to React/addons",
+        "author_name": "Matt",
+        "author_email": "duereg@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "classable.js": "@@ -1,4 +1,4 @@\n-var React = require('react'),\n+var React = require('react/addons'),\n   classSet = React.addons.classSet;\n \n module.exports = {\n"
+        },
+        "file_name": "mui_material-ui.json",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, obvious"
+    },
+    {
+        "hash": "5b2ffeb63d1b763a9ea9de2cc4bf7c3c1c7f3e0e",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3,Updating to a different version of React is a code improvement, possibly due to new features or bug fixes."
+    },
+    {
+        "hash": "bcf36ade9f763b875bd781ad26cdb0549349c5f8",
+        "message": "Remove sudo setting from travis.yml (#1816)",
+        "author_name": "sekky0905",
+        "author_email": "20237968+sekky0905@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 0,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            ".travis.yml": "@@ -1,5 +1,4 @@\n language: go\n-sudo: false\n \n matrix:\n   fast_finish: true\n"
+        },
+        "file_name": "gin-gonic_gin.json",
+        "type": "BUG_FIX",
+        "comment": "3, most probably sudo setting was causing some issues"
+    },
+    {
+        "hash": "bcf36ade9f763b875bd781ad26cdb0549349c5f8",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Removing a setting from a CI configuration file is a configuration change."
+    },
+    {
+        "hash": "89bc5030a2c7c18f2d838a3aba7dfa3dbdc778a6",
+        "message": "Add new item to extension list\n\nAdd mthuret/storybook-addon-specifications to extension list in docs/extensions.md",
+        "author_name": "Kanitkorn Sujautra",
+        "author_email": "lukyth@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "next",
+        "changes": {
+            "extensions.md": "@@ -93,6 +93,7 @@ Rather than creating extensions yourself, you can use extensions available below\n * [Create Groups of stories, display all of them together](https://github.com/jurgob/react-storybook-addon-add-stories-group)\n * [Display internationalized components in different locales](https://github.com/Tarabyte/react-storybook-addon-intl)\n * [Handling stubbed relay data](https://github.com/orta/react-storybooks-relay-container)\n+* [Write tests directly inside stories](https://github.com/mthuret/storybook-addon-specifications)\n \n > Feel free to include your extension to the above list and share it with other. <br/>\n > Just make it available on NPM (and GitHub) and send a PR to this page.\n"
+        },
+        "file_name": "storybookjs_storybook.json",
+        "type": "NEW_FEAT",
+        "comment": "5, added a new feature"
+    },
+    {
+        "hash": "89bc5030a2c7c18f2d838a3aba7dfa3dbdc778a6",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Adding a new item to a documentation list is a configuration change."
+    },
+    {
+        "hash": "4ac4ce3e4001114ee35d9e762f3fbdf94ba0ea7b",
+        "message": "replaced 8x6 pattern with 9x6, which orientation can be determined without any ambiguity",
+        "author_name": "Vadim Pisarevsky",
+        "author_email": "no@email",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 0,
+        "net_lines": 0,
+        "num_files": 2,
+        "branches": "4.x",
+        "changes": {
+            "pattern.pdf": "Binary files a/doc/pattern.pdf and /dev/null differ\n",
+            "pattern.png": "Binary files /dev/null and b/doc/pattern.png differ\n"
+        },
+        "file_name": "opencv_opencv.json",
+        "type": "BUG_FIX",
+        "comment": "3, previous pattern was ambiguous"
+    },
+    {
+        "hash": "4ac4ce3e4001114ee35d9e762f3fbdf94ba0ea7b",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,The commit message describes changing a pattern, which is a configuration change."
+    },
+    {
+        "hash": "319aae27567f3ddc40e9083c425f7eaf567006a0",
+        "message": "Increase the number of possible heads requested from git-upload-pack\n\nNow that git-clone-pack exists, we actually have somebody requesting\nmore than just a single head in a pack.  So allow the Jeff's of this\nworld to clone things with tens of heads.",
+        "author_name": "Linus Torvalds",
+        "author_email": "torvalds@g5.osdl.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "upload-pack.c": "@@ -5,7 +5,7 @@\n static const char upload_pack_usage[] = \"git-upload-pack <dir>\";\n \n #define MAX_HAS (16)\n-#define MAX_NEEDS (16)\n+#define MAX_NEEDS (256)\n static int nr_has = 0, nr_needs = 0;\n static unsigned char has_sha1[MAX_HAS][20];\n static unsigned char needs_sha1[MAX_NEEDS][20];\n"
+        },
+        "file_name": "git_git.json",
+        "type": "NEW_FEAT",
+        "comment": "4, increased heads is probably a new feature"
+    },
+    {
+        "hash": "319aae27567f3ddc40e9083c425f7eaf567006a0",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3,The commit message describes an increase in the number of possible heads requested, potentially related to performance optimization."
+    },
+    {
+        "hash": "c16d0df7b2ac87007f789346c32f7e47e4ad1bfe",
+        "message": "Disable test as it needs resolution which the test harness does not support yet",
+        "author_name": "Mohamed Hegazy",
+        "author_email": "mhegazy@microsoft.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 0,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": { "selfReferencedExternalModule2.ts": "" },
+        "file_name": "microsoft_TypeScript.json",
+        "type": "BUG_FIX",
+        "comment": "4, test was disabled"
+    },
+    {
+        "hash": "c16d0df7b2ac87007f789346c32f7e47e4ad1bfe",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Disabling a test is generally a configuration change, as it affects how the code is tested, not its core functionality."
+    },
+    {
+        "hash": "179213f61c704d2c3a5eec7d3c1ffd6d3b1f0154",
+        "message": "local-up-cluster: terminate all processes on SIGINT",
+        "author_name": "Clayton Coleman",
+        "author_email": "ccoleman@redhat.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "local-up-cluster.sh": "@@ -147,6 +147,6 @@ cleanup()\n     exit 0\n }\n \n-trap cleanup EXIT\n+trap cleanup EXIT SIGINT\n \n while true; do read x; done\n"
+        },
+        "file_name": "kubernetes_kubernetes.json",
+        "type": "NEW_FEAT",
+        "comment": "5, obvious"
+    },
+    {
+        "hash": "179213f61c704d2c3a5eec7d3c1ffd6d3b1f0154",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3,Adding a trap to terminate processes on SIGINT improves the robustness and stability of the application."
+    },
+    {
+        "hash": "ae1995f849aac92ec768361e73ad0ae56ee2bdbb",
+        "message": "Update libchromiumcontent for better Chrome 35 support\n\n* vendor/libchromiumcontent ded3c0a...331dbed (2):\n  > Merge pull request #48 from brightray/chrome35-brightray\n  > Merge pull request #49 from brightray/linux-fix",
+        "author_name": "Adam Roben",
+        "author_email": "adam@roben.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "libchromiumcontent": "@@ -1 +1 @@\n-Subproject commit ded3c0ad1d36cc900d94c7587a88d1b959ebc1c7\n+Subproject commit 331dbed44676c534faf21f7db1985e796260649a\n"
+        },
+        "file_name": "electron_electron.json",
+        "type": "NEW_FEAT",
+        "comment": "5, obvious"
+    },
+    {
+        "hash": "ae1995f849aac92ec768361e73ad0ae56ee2bdbb",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3,Updating a dependency to a newer version is a code improvement, especially if it addresses compatibility issues."
+    },
+    {
+        "hash": "fe4920f138897138cc6eb76306677c4a5bc7980a",
+        "message": "Remove unnecessary assert() in os_dirname().\n\nCompiler warns about buf always being nonnull.\n\nbuf is per function attribute always nonnull, so buf can be removed from\nthe assert(). But a buffer length of zero is also no problem, because it\nmakes uv_cwd() return a failure without writing into buf. So the\nremaining length check can also be removed.",
+        "author_name": "oni-link",
+        "author_email": "knil.ino@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 2,
+        "num_inserts": 0,
+        "net_lines": -2,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "fs.c": "@@ -42,8 +42,6 @@ int os_chdir(const char *path)\n int os_dirname(char_u *buf, size_t len)\n   FUNC_ATTR_NONNULL_ALL\n {\n-  assert(buf && len);\n-\n   int error_number;\n   if ((error_number = uv_cwd((char *)buf, &len)) != kLibuvSuccess) {\n     STRLCPY(buf, uv_strerror(error_number), len);\n"
+        },
+        "file_name": "neovim_neovim.json",
+        "type": "PERF_IMPROVEMENT",
+        "comment": "4, removed unnecessary assert, it wasn't breaking anything but just nice to have"
+    },
+    {
+        "hash": "fe4920f138897138cc6eb76306677c4a5bc7980a",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4,Removing an unnecessary assertion is a code improvement related to performance or readability."
+    },
+    {
+        "hash": "996d1c3242be5569bb4b579b2e3ad25a6d928dfb",
+        "message": "Don't include the test/testdata directory in the youtube-dl.tar.gz\n\nThe last releases included big files that increased the size of the compressed file.",
+        "author_name": "Jaime Marqui\u0301nez Ferra\u0301ndiz",
+        "author_email": "jaime.marquinez.ferrandiz@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "Makefile": "@@ -71,6 +71,7 @@ youtube-dl.tar.gz: youtube-dl README.md README.txt youtube-dl.1 youtube-dl.bash-\n \t\t--exclude '*~' \\\n \t\t--exclude '__pycache' \\\n \t\t--exclude '.git' \\\n+        --exclude 'testdata' \\\n \t\t-- \\\n \t\tbin devscripts test youtube_dl \\\n \t\tCHANGELOG LICENSE README.md README.txt \\\n"
+        },
+        "file_name": "ytdl-org_youtube-dl.json",
+        "type": "PERF_IMPROVEMENT",
+        "comment": "5, obvious"
+    },
+    {
+        "hash": "996d1c3242be5569bb4b579b2e3ad25a6d928dfb",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Excluding a directory from a compressed file is a change in how the code is packaged, hence a configuration change."
+    },
+    {
+        "hash": "9bab8ccb89466be8bc8c579264f51b194aa89612",
+        "message": "add current bookmark to rkj-repos theme",
+        "author_name": "Anatoly Bubenkov",
+        "author_email": "bubenkoff@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "rkj-repos.zsh-theme": "@@ -4,7 +4,7 @@\n \n function hg_prompt_info {\n     hg prompt --angle-brackets \"\\\n-<hg:%{$fg[magenta]%}<branch>%{$reset_color%}>\\\n+<hg:%{$fg[magenta]%}<branch>%{$reset_color%}><:%{$fg[magenta]%}<bookmark>%{$reset_color%}>\\\n </%{$fg[yellow]%}<tags|%{$reset_color%}, %{$fg[yellow]%}>%{$reset_color%}>\\\n %{$fg[red]%}<status|modified|unknown><update>%{$reset_color%}<\n patches: <patches|join( \u2192 )|pre_applied(%{$fg[yellow]%})|post_applied(%{$reset_color%})|pre_unapplied(%{$fg_bold[black]%})|post_unapplied(%{$reset_color%})>>\" 2>/dev/null\n"
+        },
+        "file_name": "ohmyzsh_ohmyzsh.json",
+        "type": "NEW_FEAT",
+        "comment": "5, obvious"
+    },
+    {
+        "hash": "9bab8ccb89466be8bc8c579264f51b194aa89612",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,The commit message describes adding a new item to a theme, which is a configuration change."
+    },
+    {
+        "hash": "822bc2fd52103a62761c4065350b78b21fbf120c",
+        "message": "Only call getDevTools for windows that have devtools.",
+        "author_name": "Cheng Zhao",
+        "author_email": "zcbenz@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "browser-window.coffee": "@@ -57,7 +57,7 @@ BrowserWindow.fromProcessIdAndRoutingId = (processId, routingId) ->\n \n BrowserWindow.fromDevTools = (processId, routingId) ->\n   windows = BrowserWindow.getAllWindows()\n-  for window in windows\n+  for window in windows when window.isDevToolsOpened()\n     devtools = window.getDevTools()\n     return window if devtools.processId == processId and\n                      devtools.routingId == routingId\n"
+        },
+        "file_name": "electron_electron.json",
+        "type": "BUG_FIX",
+        "comment": "4, getdevtools was being called for all windows which might have caused some issue, now it is only called for windows that have devtools"
+    },
+    {
+        "hash": "822bc2fd52103a62761c4065350b78b21fbf120c",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, improve code quality by only calling function if needed"
+    },
+    {
+        "hash": "fdb77da8d92e8be5ee5859da352f4d776093ec4c",
+        "message": "Update prettyBytes.md",
+        "author_name": "Angelos Chalaris",
+        "author_email": "chalarangelo@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 2,
+        "num_inserts": 1,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "prettyBytes.md": "@@ -8,8 +8,7 @@ Return the prettified string by building it up, taking into account the supplied\n negative or not.\n \n ```js\n-const prettyBytes = (num, options) => {\n-  options = { precision: 3, addSpace: true, ...options };\n+const prettyBytes = (num,  precision = 3, addSpace = true) {\n   const UNITS = ['B','KB','MB','GB','TB','PB','EB','ZB','YB'];\n   if (num < 1) return (num < 0 ? '-' : '') + num + ' B';\n   const exponent = Math.min(Math.floor(Math.log10(num < 0 ? -num : num) / 3), UNITS.length - 1);\n"
+        },
+        "file_name": "Chalarangelo_30-seconds-of-code.json",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, obvious"
+    },
+    {
+        "hash": "fdb77da8d92e8be5ee5859da352f4d776093ec4c",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, improve code by refactoring arguments"
+    },
+    {
+        "hash": "2f7a40204088b5c5c9e9eee5e0e7b4445105c28d",
+        "message": "Use yellow instead of red for termination message",
+        "author_name": "Joseph C. Miller, II",
+        "author_email": "josephcmiller2@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "main.py": "@@ -186,7 +186,7 @@ def construct_prompt():\n     if config.ai_name:\n         logger.typewriter_log(\n             f\"Welcome back! \",\n-            Fore.GREEN,\n+            Fore.YELLOW,\n             f\"Would you like me to return to being {config.ai_name}?\",\n             speak_text=True)\n         should_continue = utils.clean_input(f\"\"\"Continue with the last settings?\n"
+        },
+        "file_name": "Significant-Gravitas_AutoGPT.json",
+        "type": "NEW_FEAT",
+        "comment": "5, obvious"
+    },
+    {
+        "hash": "2f7a40204088b5c5c9e9eee5e0e7b4445105c28d",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, change in log message color"
+    },
+    {
+        "hash": "a971e4a767118ec41ec0f129770122babfb16a16",
+        "message": "update k-diff once again",
+        "author_name": "C43H66N12O12S2",
+        "author_email": "36072735+C43H66N12O12S2@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "launch.py": "@@ -19,7 +19,7 @@ clip_package = os.environ.get('CLIP_PACKAGE', \"git+https://github.com/openai/CLI\n \r\n stable_diffusion_commit_hash = os.environ.get('STABLE_DIFFUSION_COMMIT_HASH', \"69ae4b35e0a0f6ee1af8bb9a5d0016ccb27e36dc\")\r\n taming_transformers_commit_hash = os.environ.get('TAMING_TRANSFORMERS_COMMIT_HASH', \"24268930bf1dce879235a7fddd0b2355b84d7ea6\")\r\n-k_diffusion_commit_hash = os.environ.get('K_DIFFUSION_COMMIT_HASH', \"567e11f7062ba20ae32b5a8cd07fb0fc4b9410cf\")\r\n+k_diffusion_commit_hash = os.environ.get('K_DIFFUSION_COMMIT_HASH', \"f4e99857772fc3a126ba886aadf795a332774878\")\r\n codeformer_commit_hash = os.environ.get('CODEFORMER_COMMIT_HASH', \"c5b4593074ba6214284d6acd5f1719b6c5d739af\")\r\n blip_commit_hash = os.environ.get('BLIP_COMMIT_HASH', \"48211a1594f1321b00f14c9f7a5b4813144b2fb9\")\r\n \r\n"
+        },
+        "file_name": "AUTOMATIC1111_stable-diffusion-webui.json",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, updated k-diffusion commit hash"
+    },
+    {
+        "hash": "a971e4a767118ec41ec0f129770122babfb16a16",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, updating hash"
+    },
+    {
+        "hash": "44730f93242fa6860b6eda091c54992ddaf2ec91",
+        "message": "Adding \"Lights\" to featured projects list.",
+        "author_name": "Mr.doob",
+        "author_email": "info@mrdoob.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "dev",
+        "changes": {
+            "README.md": "@@ -63,6 +63,7 @@ More? [#three.js on irc.freenode.net](http://webchat.freenode.net/?channels=thre\n \n ### Featured projects ###\n \n+<a href=\"http://lights.elliegoulding.com/\"><img src=\"http://mrdoob.github.com/three.js/assets/projects/20_lights.png\" width=\"109\" height=\"82\" alt=\"Lights\"></a>\n <a href=\"http://inear.se/beanstalk/\"><img src=\"http://mrdoob.github.com/three.js/assets/projects/19_beanstalk.png\" width=\"109\" height=\"82\" alt=\"Infinite beanstalk\"></a>\n <a href=\"http://superfad.com/missioncontrol/\"><img src=\"http://mrdoob.github.com/three.js/assets/projects/18_missioncontrol.png\" width=\"109\" height=\"82\" alt=\"Mission Control\"></a>\n <a href=\"http://ro.me/\"><img src=\"http://mrdoob.github.com/three.js/assets/projects/17_rome.png\" width=\"109\" height=\"82\" alt=\"ROME\"></a>\n"
+        },
+        "file_name": "mrdoob_three.js.json",
+        "type": "NEW_FEAT",
+        "comment": "5, obvious"
+    },
+    {
+        "hash": "44730f93242fa6860b6eda091c54992ddaf2ec91",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, update README.md"
+    },
+    {
+        "hash": "65cbcb2f73d89459a9cae5dc9b083be8f07eabae",
+        "message": "chore(doc-gen): ensure `log` is injected into `getExportDocType`\n\nSee #2446",
+        "author_name": "Peter Bacon Darwin",
+        "author_email": "pete@bacondarwin.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "getExportDocType.js": "@@ -1,6 +1,6 @@\n var ts = require('typescript');\n \n-module.exports = function getExportDocType() {\n+module.exports = function getExportDocType(log) {\n \n   return function(symbol) {\n     if(symbol.flags & ts.SymbolFlags.FunctionScopedVariable) {\n"
+        },
+        "file_name": "angular_angular.json",
+        "type": "BUG_FIX",
+        "comment": "5, There is a number in commit message, and when you go to that link in angular repo, you can see that it is a bug fix"
+    },
+    {
+        "hash": "65cbcb2f73d89459a9cae5dc9b083be8f07eabae",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, inject log into getExportDocType"
+    },
+    {
+        "hash": "79fc659f1cf9d24388aba810c400624dcb2fcb94",
+        "message": "\ud83d\udc4c IMPROVE: update fork-corner (#1248)",
+        "author_name": "Waren Gonzaga",
+        "author_email": "github@warengonzaga.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "template.html": "@@ -48,7 +48,7 @@\n   <body>\n \n     <!-- Fork Corner -->\n-    <a href=\"https://github.com/animate-css/animate.css\" target=\"_blank\" id=\"fork-corner\" class=\"fork-corner fc-size-small fc-pos-tl fc-animate-default fc-theme-github\"></a>\n+    <a href=\"https://github.com/animate-css/animate.css\" target=\"_blank\" id=\"fork-corner\" class=\"fork-corner fc-size-small fc-pos-tl fc-animate-grow fc-theme-github\"></a>\n \n     <article class=\"intro\">\n       <section class=\"callout\">\n"
+        },
+        "file_name": "animate-css_animate.css.json",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, update fork-corner"
+    },
+    {
+        "hash": "79fc659f1cf9d24388aba810c400624dcb2fcb94",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, update fork-corner"
+    },
+    {
+        "hash": "1cadc9221a90e8b0f195912e87c8278c76e31994",
+        "message": "win: Download ATL binaries.",
+        "author_name": "Cheng Zhao",
+        "author_email": "zcbenz@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 2,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "update-external-binaries.py": "@@ -7,7 +7,7 @@ import os\n from lib.util import safe_mkdir, rm_rf, extract_zip, tempdir, download\n \n \n-VERSION = 'v0.1.0'\n+VERSION = 'v0.2.0'\n SOURCE_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))\n FRAMEWORKS_URL = 'https://github.com/atom/atom-shell-frameworks/releases' \\\n                  '/download/' + VERSION\n@@ -28,6 +28,7 @@ def main():\n     download_and_unzip('ReactiveCocoa')\n     download_and_unzip('Squirrel')\n   elif sys.platform in ['cygwin', 'win32']:\n+    download_and_unzip('atl')\n     download_and_unzip('directxsdk')\n     download_and_unzip('vs2012_crt')\n \n"
+        },
+        "file_name": "electron_electron.json",
+        "type": "NEW_FEAT",
+        "comment": "3, vague"
+    },
+    {
+        "hash": "1cadc9221a90e8b0f195912e87c8278c76e31994",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, download ATL binaries"
+    },
+    {
+        "hash": "8c9a24983e8b9dd452f5e378e845104e81333b74",
+        "message": "Remove calls to `Range.detach`\n\nThis method is a no-op, as demonstrated by console warnings in Chrome and https://developer.mozilla.org/en-US/docs/Web/API/range.detach.\n\nRemove callsites.\n\nFixes #2142",
+        "author_name": "Isaac Salier-Hellendag",
+        "author_email": "isaac@fb.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 3,
+        "num_inserts": 0,
+        "net_lines": -3,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "ReactDOMSelection.js": "@@ -114,7 +114,6 @@ function getModernOffsets(node) {\n   detectionRange.setStart(anchorNode, anchorOffset);\n   detectionRange.setEnd(focusNode, focusOffset);\n   var isBackward = detectionRange.collapsed;\n-  detectionRange.detach();\n \n   return {\n     start: isBackward ? end : start,\n@@ -194,8 +193,6 @@ function setModernOffsets(node, offsets) {\n       range.setEnd(endMarker.node, endMarker.offset);\n       selection.addRange(range);\n     }\n-\n-    range.detach();\n   }\n }\n \n"
+        },
+        "file_name": "facebook_react.json",
+        "type": "BUG_FIX",
+        "comment": "4, fix."
+    },
+    {
+        "hash": "8c9a24983e8b9dd452f5e378e845104e81333b74",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, remove calls to Range.detach"
+    },
+    {
+        "hash": "100ffb4ffe7e140894761b1b7b98a7dc6cd0e9ba",
+        "message": "remove some comment bloat.",
+        "author_name": "Taylor Otwell",
+        "author_email": "taylorotwell@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 2,
+        "num_inserts": 1,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "11.x",
+        "changes": {
+            "url.php": "@@ -27,8 +27,7 @@ public static function to($url = '', $https = false)\n \n \t\t// Since SSL is often not used while developing the application, we allow the\n \t\t// developer to disable SSL on all framework generated links to make it more\n-\t\t// convenient to work with the site while developing. When the \"ssl\" option\n-\t\t// is disabled, all links will use the HTTP protocol instead of HTTPS.\n+\t\t// convenient to work with the site while developing.\n \t\tif ($https and Config::$items['application']['ssl'])\n \t\t{\n \t\t\t$root = preg_replace('~http://~', 'https://', $root, 1);\n"
+        },
+        "file_name": "laravel_laravel.json",
+        "type": "CONFIG_CHANGE",
+        "comment": "removed comments only"
+    },
+    {
+        "hash": "100ffb4ffe7e140894761b1b7b98a7dc6cd0e9ba",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, remove bloat comment"
+    },
+    {
+        "hash": "5da6daa4023f74a0753206e7990492fab13c9c35",
+        "message": "Rename the file to add CRC32 hash",
+        "author_name": "WindowsAddict",
+        "author_email": "windowsaddict@protonmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 0,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": { "MAS_AIO-CRC32_63055B8E.cmd": "" },
+        "file_name": "massgravel_Microsoft-Activation-Scripts.json",
+        "type": "NEW_FEAT",
+        "comment": "4, Adds a new hash which probably translates to new feature"
+    },
+    {
+        "hash": "5da6daa4023f74a0753206e7990492fab13c9c35",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, rename file to include hash"
+    },
+    {
+        "hash": "193e2df8ba95efd6e3326cb0907576a0c74f1d74",
+        "message": "Remove rogue comment",
+        "author_name": "Jade Abbott",
+        "author_email": "jabbott@retrorabbit.co.za",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 0,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "run_classifier.py": "@@ -566,7 +566,6 @@ def main():\n \n     if args.do_eval and (args.local_rank == -1 or torch.distributed.get_rank() == 0):\n         eval_examples = processor.get_dev_examples(args.data_dir)\n-        # should tokenize this too. \n         eval_features = convert_examples_to_features(\n             eval_examples, label_list, args.max_seq_length, tokenizer)\n         logger.info(\"***** Running evaluation *****\")\n"
+        },
+        "file_name": "huggingface_transformers.json",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, comment change"
+    },
+    {
+        "hash": "193e2df8ba95efd6e3326cb0907576a0c74f1d74",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, remove rogue comment"
+    },
+    {
+        "hash": "e79cda6dade8bde4f3e67e55f3a4eab6405cb781",
+        "message": "Add pyopencl to dependency installs (#174)\n\n* Add pyopencl to dependency installs\r\n\r\nOpenCL was not actually being tested as pyopencl was not installed.\r\n\r\n* Reduce installation to 1 liner",
+        "author_name": "Liam",
+        "author_email": "3579535@myuwc.ac.za",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "test.yml": "@@ -29,6 +29,6 @@ jobs:\n       with:\n         python-version: 3.8\n     - name: Install Dependencies\n-      run: pip install -r requirements.txt\n+      run: pip install -e '.[gpu,testing]'\n     - name: Run Pytest\n       run: python -m pytest -s -v\n"
+        },
+        "file_name": "tinygrad_tinygrad.json",
+        "type": "NEW_FEAT",
+        "comment": "4, Adds a new dependency"
+    },
+    {
+        "hash": "e79cda6dade8bde4f3e67e55f3a4eab6405cb781",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, add pyopencl to dependency"
+    },
+    {
+        "hash": "71c4d116fa8a7edd4b5ae1970763fd0e86ff36c9",
+        "message": "Minor performance improvements (#7587)\n\n- use ESLint cache\r\n- remove useless `watch` option in fork-ts-checker",
+        "author_name": "Tom\u00e1\u0161 Szabo",
+        "author_email": "tomas.szabo@deftomat.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "webpack.config.js": "@@ -334,6 +334,7 @@ module.exports = function(webpackEnv) {\n           use: [\n             {\n               options: {\n+                cache: true,\n                 formatter: require.resolve('react-dev-utils/eslintFormatter'),\n                 eslintPath: require.resolve('eslint'),\n                 resolvePluginsRelativeTo: __dirname,\n@@ -690,7 +691,6 @@ module.exports = function(webpackEnv) {\n             '!**/src/setupProxy.*',\n             '!**/src/setupTests.*',\n           ],\n-          watch: paths.appSrc,\n           silent: true,\n           // The formatter is invoked directly in WebpackDevServerUtils during development\n           formatter: isEnvProduction ? typescriptFormatter : undefined,\n"
+        },
+        "file_name": "facebook_create-react-app.json",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, performance improvements"
+    },
+    {
+        "hash": "71c4d116fa8a7edd4b5ae1970763fd0e86ff36c9",
+        "type": "PERF_IMPROVEMENT",
+        "comment": "4, improve performance"
+    },
+    {
+        "hash": "c3c2ad1454a5df39b10596692934081797da206b",
+        "message": "fix: improve type of TreeNode.children.",
+        "author_name": "Martin Probst",
+        "author_email": "martin@probst.io",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "element_injector.ts": "@@ -150,7 +150,7 @@ export class TreeNode<T extends TreeNode<any>> {\n   get parent() { return this._parent; }\n \n   // TODO(rado): replace with a function call, does too much work for a getter.\n-  get children(): TreeNode<any>[] {\n+  get children(): T[] {\n     var res = [];\n     var child = this._head;\n     while (child != null) {\n"
+        },
+        "file_name": "angular_angular.json",
+        "type": "BUG_FIX",
+        "comment": "5, fix written in commit msg"
+    },
+    {
+        "hash": "c3c2ad1454a5df39b10596692934081797da206b",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, improve type of TreeNode.children"
+    },
+    {
+        "hash": "7766ce66dd788a780a54f890711ad58cb3d96f5f",
+        "message": "update bertology",
+        "author_name": "thomwolf",
+        "author_email": "thomwolf@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 3,
+        "net_lines": 3,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "bertology.py": "@@ -281,9 +281,11 @@ def run_model():\n         score_masking = compute_metrics(task_name, preds, labels)[args.metric_name]\n         original_time = datetime.now() - before_time\n \n+        original_num_params = sum(p.numel() for p in model.parameters())\n         heads_to_prune = dict((layer, (1 - head_mask[layer].long()).nonzero().tolist()) for layer in range(len(head_mask)))\n         assert sum(len(h) for h in heads_to_prune.values()) == (1 - head_mask.long()).sum().item()\n         model.bert.prune_heads(heads_to_prune)\n+        pruned_num_params = sum(p.numel() for p in model.parameters())\n \n         before_time = datetime.now()\n         _, _, preds, labels = compute_heads_importance(args, model, eval_dataloader,\n@@ -292,6 +294,7 @@ def run_model():\n         score_pruning = compute_metrics(task_name, preds, labels)[args.metric_name]\n         new_time = datetime.now() - before_time\n \n+        logger.info(\"Pruning: original num of params: %.2e, after pruning %.2e (%.1f percents)\", original_num_params, pruned_num_params, pruned_num_params/original_num_params * 100)\n         logger.info(\"Pruning: score with masking: %f score with pruning: %f\", score_masking, score_pruning)\n         logger.info(\"Pruning: speed ratio (new timing / original timing): %f percents\", original_time/new_time * 100)\n \n"
+        },
+        "file_name": "huggingface_transformers.json",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, some update to the code"
+    },
+    {
+        "hash": "7766ce66dd788a780a54f890711ad58cb3d96f5f",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, update bertology"
+    },
+    {
+        "hash": "43e8ecb118d7ef62caf39309c63f3fbdd2ac8cb8",
+        "message": "win: screen module is now browser only.",
+        "author_name": "Cheng Zhao",
+        "author_email": "zcbenz@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "screen.coffee": "@@ -1,5 +1,5 @@\n module.exports =\n-  if process.platform is 'linux' and process.type is 'renderer'\n+  if process.platform in ['linux', 'win32'] and process.type is 'renderer'\n     # On Linux we could not access screen in renderer process.\n     require('remote').require 'screen'\n   else\n"
+        },
+        "file_name": "electron_electron.json",
+        "type": "NEW_FEAT",
+        "comment": "4, new feature that now screen module is browser only"
+    },
+    {
+        "hash": "43e8ecb118d7ef62caf39309c63f3fbdd2ac8cb8",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, screen module browser only"
+    },
+    {
+        "hash": "fe68f708ce723cef640c1cf784cb29da513bca22",
+        "message": "Removed funky characters.",
+        "author_name": "Martin Bean",
+        "author_email": "martin@mcbwebdesign.co.uk",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "javascript.html": "@@ -76,7 +76,7 @@\n     <div class=\"container\">\n \n     <!-- Modal\n-    =================================================\uf701\uf700= -->\n+    ================================================== -->\n \n     <section id=\"modal\">\n       <div class=\"page-header\">\n"
+        },
+        "file_name": "twbs_bootstrap.json",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "5, obvious"
+    },
+    {
+        "hash": "fe68f708ce723cef640c1cf784cb29da513bca22",
+        "type": "CONFIG_CHANGE",
+        "comment": "3, removed funky characters"
+    },
+    {
+        "hash": "110fdedef0c28bd5b26e5611e4510163d0a6242c",
+        "message": "Update detect-port-alt (#4250)",
+        "author_name": "Joe Haddad",
+        "author_email": "timer150@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "package.json": "@@ -40,7 +40,7 @@\n     \"babel-code-frame\": \"6.26.0\",\n     \"chalk\": \"1.1.3\",\n     \"cross-spawn\": \"5.1.0\",\n-    \"detect-port-alt\": \"1.1.5\",\n+    \"detect-port-alt\": \"1.1.6\",\n     \"escape-string-regexp\": \"1.0.5\",\n     \"filesize\": \"3.5.11\",\n     \"global-modules\": \"1.0.0\",\n"
+        },
+        "file_name": "facebook_create-react-app.json",
+        "type": "BUG_FIX",
+        "comment": "5, the number in description is pull request and it is tagged with bug fix"
+    },
+    {
+        "hash": "110fdedef0c28bd5b26e5611e4510163d0a6242c",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, updated detect-port-alt"
+    },
+    {
+        "hash": "352b4ea5b924412f3485290123fdf538cfdd8aa8",
+        "message": "Reduce minimum TX fee for new transactions, to 0.0005.",
+        "author_name": "Jeff Garzik",
+        "author_email": "jeff@garzik.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "main.h": "@@ -29,7 +29,7 @@ static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;\n static const int MAX_BLOCK_SIGOPS = MAX_BLOCK_SIZE/50;\n static const int64 COIN = 100000000;\n static const int64 CENT = 1000000;\n-static const int64 MIN_TX_FEE = CENT;\n+static const int64 MIN_TX_FEE = 50000;\n static const int64 MIN_RELAY_TX_FEE = 50000;\n static const int64 MAX_MONEY = 21000000 * COIN;\n inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }\n"
+        },
+        "file_name": "bitcoin_bitcoin.json",
+        "type": "NEW_FEAT",
+        "comment": "4, kind of new feature as minm fee is reduced now"
+    },
+    {
+        "hash": "352b4ea5b924412f3485290123fdf538cfdd8aa8",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, reduced minimum TX fee"
+    },
+    {
+        "hash": "9c5c70dc0a2531b621ba825c2599189717694d56",
+        "message": "order aliases alphabetically",
+        "author_name": "Hakan Ensari",
+        "author_email": "hakan.ensari@papercavalier.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "bundler.plugin.zsh": "@@ -1,8 +1,8 @@\n alias be=\"bundle exec\"\n alias bi=\"bundle install\"\n alias bl=\"bundle list\"\n-alias bu=\"bundle update\"\n alias bp=\"bundle package\"\n+alias bu=\"bundle update\"\n \n # The following is based on https://github.com/gma/bundler-exec\n \n"
+        },
+        "file_name": "ohmyzsh_ohmyzsh.json",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "5, just the change in order of aliases"
+    },
+    {
+        "hash": "9c5c70dc0a2531b621ba825c2599189717694d56",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, ordered aliases alphabetically"
+    },
+    {
+        "hash": "78e7a18fd60a64fe82718070c2e8e615deba92c5",
+        "message": "disable travis at tip",
+        "author_name": "Daniel Smith",
+        "author_email": "dbsmith@google.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 0,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            ".travis.yml": "@@ -1,7 +1,6 @@\n language: go\n \n go:\n-  - tip\n   - 1.3\n   - 1.2\n \n"
+        },
+        "file_name": "kubernetes_kubernetes.json",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, Disabled travis at tip"
+    },
+    {
+        "hash": "78e7a18fd60a64fe82718070c2e8e615deba92c5",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, disabled travis at tip"
+    },
+    {
+        "hash": "e704f4d3785b318d7f4d3a034424b54ce50beb88",
+        "message": "YoutubeIE: If not subtitles language is given default to English for automatic captions (related #901)",
+        "author_name": "Jaime Marqui\u0301nez Ferra\u0301ndiz",
+        "author_email": "jaime.marquinez.ferrandiz@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "InfoExtractors.py": "@@ -420,7 +420,7 @@ class YoutubeIE(InfoExtractor):\n     def _request_automatic_caption(self, video_id, webpage):\n         \"\"\"We need the webpage for getting the captions url, pass it as an\n            argument to speed up the process.\"\"\"\n-        sub_lang = self._downloader.params.get('subtitleslang')\n+        sub_lang = self._downloader.params.get('subtitleslang') or 'en'\n         sub_format = self._downloader.params.get('subtitlesformat')\n         self.to_screen(u'%s: Looking for automatic captions' % video_id)\n         mobj = re.search(r';ytplayer.config = ({.*?});', webpage)\n"
+        },
+        "file_name": "ytdl-org_youtube-dl.json",
+        "type": "BUG_FIX",
+        "comment": "4, There is a #number in commit msg, which probably is bug num and commit msg is worded like it solve bug"
+    },
+    {
+        "hash": "e704f4d3785b318d7f4d3a034424b54ce50beb88",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, default to English for automatic captions"
+    },
+    {
+        "hash": "372cc4a0100efd3dbd80193b74ee65752d139ea8",
+        "message": "Fix typo (#2772)",
+        "author_name": "Lanco",
+        "author_email": "35420416+lancoLiu@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "context.go": "@@ -732,7 +732,7 @@ func (c *Context) ShouldBindBodyWith(obj interface{}, bb binding.BindingBody) (e\n // If the headers are nots syntactically valid OR the remote IP does not correspong to a trusted proxy,\n // the remote IP (coming form Request.RemoteAddr) is returned.\n func (c *Context) ClientIP() string {\n-\t// Check if we're running on a tursted platform\n+\t// Check if we're running on a trusted platform\n \tswitch c.engine.TrustedPlatform {\n \tcase PlatformGoogleAppEngine:\n \t\tif addr := c.requestHeader(\"X-Appengine-Remote-Addr\"); addr != \"\" {\n"
+        },
+        "file_name": "gin-gonic_gin.json",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, fix written but only typo fix not code fix."
+    },
+    {
+        "hash": "372cc4a0100efd3dbd80193b74ee65752d139ea8",
+        "type": "BUG_FIX",
+        "comment": "5, fixed typo"
+    },
+    {
+        "hash": "b7dc04c086c1c17195c86d57d47e8b522e810259",
+        "message": "fix links",
+        "author_name": "Harrison Chase",
+        "author_email": "hw.chase.17@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "autonomous_agents.md": "@@ -16,5 +16,5 @@ usage of LangChain's collection of tools.\n - [Baby AGI with Tools](autonomous_agents/baby_agi_with_agent.ipynb): building off the above notebook, this example substitutes in an agent with tools as the execution tools, allowing it to actually take actions.\n \n \n-## AutoGPT ([Original Repo] (https://github.com/Significant-Gravitas/Auto-GPT))\n+## AutoGPT ([Original Repo](https://github.com/Significant-Gravitas/Auto-GPT))\n - [AutoGPT](autonomous_agents/autogpt.ipynb): a notebook implementing AutoGPT in LangChain primitives\n"
+        },
+        "file_name": "langchain-ai_langchain.json",
+        "type": "BUG_FIX",
+        "comment": "5, fix written in commit msg."
+    },
+    {
+        "hash": "b7dc04c086c1c17195c86d57d47e8b522e810259",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, fixed links"
+    },
+    {
+        "hash": "b9a836515fad5df57a86412b2cd41c49869ec0d6",
+        "message": "Update the Vimeo test vector md5\n\nconfirmed that this is indeed the first 10241 (we went off by one with\nbyte range 0-10240) of the full, playing mp4, so they probably\nreencoded or something",
+        "author_name": "Filippo Valsorda",
+        "author_email": "filippo.valsorda@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "vimeo.py": "@@ -27,7 +27,7 @@ class VimeoIE(InfoExtractor):\n         {\n             u'url': u'http://vimeo.com/56015672#at=0',\n             u'file': u'56015672.mp4',\n-            u'md5': u'ae7a1d8b183758a0506b0622f37dfa14',\n+            u'md5': u'8879b6cc097e987f02484baf890129e5',\n             u'info_dict': {\n                 u\"upload_date\": u\"20121220\", \n                 u\"description\": u\"This is a test case for youtube-dl.\\nFor more information, see github.com/rg3/youtube-dl\\nTest chars: \\u2605 \\\" ' \\u5e78 / \\\\ \\u00e4 \\u21ad \\U0001d550\", \n"
+        },
+        "file_name": "yt-dlp_yt-dlp.json",
+        "type": "BUG_FIX",
+        "comment": "4, Previous test vector caused some issue, so updated"
+    },
+    {
+        "hash": "b9a836515fad5df57a86412b2cd41c49869ec0d6",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, updated Vimeo test vector md5"
+    },
+    {
+        "hash": "4dadadd0015b6efb31869cca52d6bae36762c36e",
+        "message": "build: Compile static luajit lib with -fPIC #996\n\nShould fix the following travis error:\n\n    /usr/bin/ld: /opt/neovim-deps/lib/libluajit-5.1.a(lj_err.o): relocation R_X86_64_32S against `.rodata' can not be used when making a shared object; recompile with -fPIC\n    /opt/neovim-deps/lib/libluajit-5.1.a: could not read symbols: Bad value",
+        "author_name": "ZyX",
+        "author_email": "kp-pav@yandex.ru",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "CMakeLists.txt": "@@ -115,6 +115,7 @@ if(USE_BUNDLED_LUAJIT)\n     BUILD_COMMAND \"\"\n     INSTALL_COMMAND ${MAKE_PRG} CC=${CMAKE_C_COMPILER}\n                                 PREFIX=${DEPS_INSTALL_DIR}\n+                                CFLAGS=-fPIC\n                                 BUILDMODE=static\n                                 install)\n   list(APPEND THIRD_PARTY_DEPS luajit)\n"
+        },
+        "file_name": "neovim_neovim.json",
+        "type": "BUG_FIX",
+        "comment": "5, fixed travis error"
+    },
+    {
+        "hash": "4dadadd0015b6efb31869cca52d6bae36762c36e",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, compiled static luajit lib with -fPIC"
+    },
+    {
+        "hash": "510a21946f9b30d766bea9175436b26c3deda6bd",
+        "message": "Add mh-aix",
+        "author_name": "Stu Grossman",
+        "author_email": "grossman@cygnus",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            ".Sanitize": "@@ -21,6 +21,7 @@ Do-first:\n \n Things-to-keep:\n \n+mh-aix\n mh-apollo68\n mh-decstation\n mh-delta88\n"
+        },
+        "file_name": "bminor_binutils-gdb.json",
+        "type": "CONFIG_CHANGE",
+        "comment": "Changes under commit directory"
+    },
+    {
+        "hash": "510a21946f9b30d766bea9175436b26c3deda6bd",
+        "type": "NEW_FEAT",
+        "comment": "5, added mh-aix"
+    },
+    {
+        "hash": "564b01cf73c4209e769f65752e2b20279647d7b3",
+        "message": "fix: use babel-core/register rather than babel-register",
+        "author_name": "Benjamin Coe",
+        "author_email": "ben@npmjs.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "canary",
+        "changes": {
+            "package.json": "@@ -26,7 +26,7 @@\n   },\n   \"nyc\": {\n     \"require\": [\n-      \"babel-register\"\n+      \"babel-core/register\"\n     ],\n     \"exclude\": [\n       \"gulpfile.js\",\n"
+        },
+        "file_name": "vercel_next.js.json",
+        "type": "BUG_FIX",
+        "comment": "5, fix written in commits msg"
+    },
+    {
+        "hash": "564b01cf73c4209e769f65752e2b20279647d7b3",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "5, used babel-core/register rather than babel-register"
+    },
+    {
+        "hash": "9257682b01d71bf9cb554c1e7ba6b48e9b6c5dc1",
+        "message": "Remove stray period added from web editor.",
+        "author_name": "Eric Seidel",
+        "author_email": "eseidel@google.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "analyze.dart": "@@ -12,7 +12,7 @@ import 'package:path/path.dart' as path;\n import '../artifacts.dart';\n import '../base/logging.dart';\n import '../base/process.dart';\n-import '../build_configuration.dart';.\n+import '../build_configuration.dart';\n import '../runner/flutter_command.dart';\n \n class AnalyzeCommand extends FlutterCommand {\n"
+        },
+        "file_name": "flutter_flutter.json",
+        "type": "BUG_FIX",
+        "comment": "5, removed a stray period which might have been added by mistake"
+    },
+    {
+        "hash": "9257682b01d71bf9cb554c1e7ba6b48e9b6c5dc1",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, removed stray period"
+    },
+    {
+        "hash": "4967dd09b9ee511a6f83b9045e18c1ba85f2b27a",
+        "message": "Update the test that was actually failing",
+        "author_name": "Adam Wathan",
+        "author_email": "adam.wathan@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "next",
+        "changes": {
+            "cli.compile.test.js": "@@ -13,7 +13,7 @@ describe('cli compile', () => {\n   it('compiles CSS file', () => {\n     return compile({ inputFile, outputFile, plugins }).then((result) => {\n       expect(result.css).toContain('.example')\n-      expect(result.css).toContain('-ms-input-placeholder')\n+      expect(result.css).toContain('-webkit-max-content')\n     })\n   })\n })\n"
+        },
+        "file_name": "tailwindlabs_tailwindcss.json",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, update the failing test"
+    },
+    {
+        "hash": "4967dd09b9ee511a6f83b9045e18c1ba85f2b27a",
+        "type": "BUG_FIX",
+        "comment": "5, update the test that was actually failing"
+    },
+    {
+        "hash": "2975939cfb3fa4948d6a6b4a67e1ae874081c6e5",
+        "message": "Do not check for interactive session to shut down dev server (#8845)",
+        "author_name": "Jeremy Wadsack",
+        "author_email": "jeremy.wadsack@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "start.js": "@@ -165,7 +165,7 @@ checkBrowsers(paths.appPath, isInteractive)\n       });\n     });\n \n-    if (isInteractive || process.env.CI !== 'true') {\n+    if (process.env.CI !== 'true') {\n       // Gracefully exit when stdin ends\n       process.stdin.on('end', function() {\n         devServer.close();\n"
+        },
+        "file_name": "facebook_create-react-app.json",
+        "type": "BUG_FIX",
+        "comment": "4, probably some issue with shutting down dev server earlier"
+    },
+    {
+        "hash": "2975939cfb3fa4948d6a6b4a67e1ae874081c6e5",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, remove unnecessary check"
+    },
+    {
+        "hash": "7d3aac2d7111138b288a83005171b7900b8bcddd",
+        "message": "Fix warnings: spell.c: find_word(): Dead assignment: HI.\n\nProblem    : Dead assignment @ 1602.\nDiagnostic : Harmless issue.\nRationale  : Code using this assignment (line 1666) was disabled. Vim's\n             tip at Wed Nov 12 13:07:54 2014 +0100 (changeset\n             6352:2f7bf5f90f57) hasn't changed this yet.\nResolution : Disable assignment. Directive processors are used for that\n             in order to match the way the other code was disabled.",
+        "author_name": "Eliseo Marti\u0301nez",
+        "author_email": "eliseomarmol@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 2,
+        "net_lines": 2,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "spell.c": "@@ -1599,7 +1599,9 @@ static void find_word(matchinf_T *mip, int mode)\n             mip->mi_compoff = (int)(p - mip->mi_fword);\n           }\n         }\n+#if 0\n         c = mip->mi_compoff;\n+#endif\n         ++mip->mi_complen;\n         if (flags & WF_COMPROOT)\n           ++mip->mi_compextra;\n"
+        },
+        "file_name": "neovim_neovim.json",
+        "type": "BUG_FIX",
+        "comment": "5, fixed warnings."
+    },
+    {
+        "hash": "7d3aac2d7111138b288a83005171b7900b8bcddd",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, disable assignment, minor code clean up"
+    },
+    {
+        "hash": "84d654ef1f08541a7982b700ea42170b2edb3421",
+        "message": "Use default cursor for .git-statusbar-item\n\nPrevent the text selection cursor from showing on .git-statusbar-item. This is\nhappening because there is an &nbsp; being used currently to position the\nelement.\n\nFixes #307",
+        "author_name": "Daniel Imms",
+        "author_email": "tyriar@tyriar.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 2,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "git.contribution.css": "@@ -226,6 +226,7 @@\n \tbackground-repeat: no-repeat;\n \tbackground-position: 4px 50%;\n \tbackground-size: 17px;\n+\tcursor: default;\n \tpadding: 0 5px 0 22px;\n }\n \n@@ -248,4 +249,4 @@\n \n .monaco-shell .git-statusbar-item.headless {\n \tfont-style: italic;\n-}\n\\ No newline at end of file\n+}\n"
+        },
+        "file_name": "microsoft_vscode.json",
+        "type": "BUG_FIX",
+        "comment": "5, fixed a bug"
+    },
+    {
+        "hash": "84d654ef1f08541a7982b700ea42170b2edb3421",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, use default cursor, minor code clean up"
+    },
+    {
+        "hash": "8ec78688b80e8d1c92cc71a61a442e5c5c17c974",
+        "message": "Add empty actionParameters check (#148)",
+        "author_name": "Jeremy Wu",
+        "author_email": "jeremy24wu@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "QueryBuilder.cs": "@@ -24,7 +24,7 @@ namespace Wox.Core.Plugin\n             { // use non global plugin for query\n                 actionKeyword = possibleActionKeyword;\n                 actionParameters = terms.Skip(1).ToList();\n-                search = rawQuery.Substring(actionKeyword.Length + 1);\n+                search = actionParameters.Count > 0 ? rawQuery.Substring(actionKeyword.Length + 1) : string.Empty;\n             }\n             else\n             { // non action keyword\n"
+        },
+        "file_name": "microsoft_PowerToys.json",
+        "type": "NEW_FEAT",
+        "comment": "4, add a new empty actionParameters check which is a new feature"
+    },
+    {
+        "hash": "8ec78688b80e8d1c92cc71a61a442e5c5c17c974",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, add empty actionParameters check, minor code clean up"
+    },
+    {
+        "hash": "b52a089f46c10c8184ccf9e276c6cbf3ec1977b2",
+        "message": "Update us.m3u",
+        "author_name": "boomski",
+        "author_email": "vandevelde.t@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 2,
+        "net_lines": 2,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "us.m3u": "@@ -111,6 +111,8 @@ http://170.178.189.66:1935/live/Stream1/.m3u8\n http://170.178.189.66:1935/live/Stream1/playlist.m3u8\n #EXTINF:-1 tvg-id=\"\" tvg-name=\"\" tvg-logo=\"https://i.imgur.com/BgwAqlG.png\" group-title=\"\",AMGTV\n https://api.locastnet.org/api/watch/stream/1094/34/-118/?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkdWRlc2VrLnBldGVyQGdtYWlsLmNvbSIsInJvbGUiOjEsImV4cCI6MTU4OTEyNjI3OH0.UmdOQBwiO5JjceZ-WpWKYXZy2v6aooUi1808NTolbIo&fbclid=IwAR3EW3T_ZSm_BwKxzpTSlethc322oxJ_Z5JYgPOkD4SSB08yvxqmsbM_zTU\n+#EXTINF:-1 tvg-id=\"\" tvg-name=\"\" tvg-logo=\"https://i.imgur.com/DQSHHTS.png\" group-title=\"\",America Teve\n+http://api.new.livestream.com/accounts/5730046/events/2966225/live.m3u8\n #EXTINF:-1 tvg-id=\"\" tvg-name=\"\" tvg-logo=\"https://i.imgur.com/HidIMbv.png\" group-title=\"\",AntennaTV\n https://api.locastnet.org/api/watch/stream/1080/34/-118/?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkdWRlc2VrLnBldGVyQGdtYWlsLmNvbSIsInJvbGUiOjEsImV4cCI6MTU4OTEyNjI3OH0.UmdOQBwiO5JjceZ-WpWKYXZy2v6aooUi1808NTolbIo&fbclid=IwAR3EW3T_ZSm_BwKxzpTSlethc322oxJ_Z5JYgPOkD4SSB08yvxqmsbM_zTU\n #EXTINF:-1 tvg-id=\"\" tvg-name=\"\" tvg-logo=\"https://i.imgur.com/hSYez3V.png\" group-title=\"\",Atlanta Channel\n"
+        },
+        "file_name": "iptv-org_iptv.json",
+        "type": "NEW_FEAT",
+        "comment": "4, Added new channels"
+    },
+    {
+        "hash": "b52a089f46c10c8184ccf9e276c6cbf3ec1977b2",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, update us.m3u, minor config update"
+    },
+    {
+        "hash": "10f1aeb144b253d5a5436b3235defb1d68b19fdc",
+        "message": "fixed broken link (#1097)",
+        "author_name": "Eli Frigo",
+        "author_email": "4386738+EliTheCoder@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "transformer.py": "@@ -6,7 +6,7 @@ from tinygrad.nn.optim import Adam, get_parameters\n from extra.training import train, evaluate\n from models.transformer import Transformer\n \n-# dataset idea from https://github.com/karpathy/minGPT/blob/master/play_math.ipynb\n+# dataset idea from https://github.com/karpathy/minGPT/blob/master/projects/adder/adder.py\n def make_dataset():\n   ds = []\n   for i in range(100):\n"
+        },
+        "file_name": "tinygrad_tinygrad.json",
+        "type": "BUG_FIX",
+        "comment": "5, fixed a broken link"
+    },
+    {
+        "hash": "10f1aeb144b253d5a5436b3235defb1d68b19fdc",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, fixed broken link, bug fix"
+    },
+    {
+        "hash": "a2986acc1aca28e1a0260d6add6657898d19538c",
+        "message": "correct order of argument for tf.image.resize_image_with_crop_or_pad",
+        "author_name": "piper",
+        "author_email": "jihobak0@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "cifar10_input.py": "@@ -237,7 +237,7 @@ def inputs(eval_data, data_dir, batch_size):\n   # Image processing for evaluation.\n   # Crop the central [height, width] of the image.\n   resized_image = tf.image.resize_image_with_crop_or_pad(reshaped_image,\n-                                                         width, height)\n+                                                         height, width)\n \n   # Subtract off the mean and divide by the variance of the pixels.\n   float_image = tf.image.per_image_standardization(resized_image)\n"
+        },
+        "file_name": "tensorflow_models.json",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, improvement in code"
+    },
+    {
+        "hash": "a2986acc1aca28e1a0260d6add6657898d19538c",
+        "type": "BUG_FIX",
+        "comment": "5, correct order of argument for tf.image.resize_image_with_crop_or_pad, bug fix"
+    },
+    {
+        "hash": "147e4aece0cfa6ca5d584b57785dc99f31d1e4eb",
+        "message": "[vbox7] New video checksum",
+        "author_name": "Philipp Hagemeister",
+        "author_email": "phihag@phihag.de",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "vbox7.py": "@@ -15,7 +15,7 @@ class Vbox7IE(InfoExtractor):\n     _TEST = {\n         u'url': u'http://vbox7.com/play:249bb972c2',\n         u'file': u'249bb972c2.flv',\n-        u'md5': u'9c70d6d956f888bdc08c124acc120cfe',\n+        u'md5': u'99f65c0c9ef9b682b97313e052734c3f',\n         u'info_dict': {\n             u\"title\": u\"\\u0421\\u043c\\u044f\\u0445! \\u0427\\u0443\\u0434\\u043e - \\u0447\\u0438\\u0441\\u0442 \\u0437\\u0430 \\u0441\\u0435\\u043a\\u0443\\u043d\\u0434\\u0438 - \\u0421\\u043a\\u0440\\u0438\\u0442\\u0430 \\u043a\\u0430\\u043c\\u0435\\u0440\\u0430\"\n         }\n"
+        },
+        "file_name": "ytdl-org_youtube-dl.json",
+        "type": "NEW_FEAT",
+        "comment": "5, obvious"
+    },
+    {
+        "hash": "147e4aece0cfa6ca5d584b57785dc99f31d1e4eb",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, new video checksum, minor config update"
+    },
+    {
+        "hash": "57b5f42847c70347afe43d04f007f937c46b2699",
+        "message": "Remove unintended double negation in docstring (#6541)\n\nSmall typo fix.\r\n\r\n`ImportError: If importing vertexai SDK didn't not succeed.` ->\r\n`ImportError: If importing vertexai SDK did not succeed.`.",
+        "author_name": "Jeroen Van Goey",
+        "author_email": "jeroen.vangoey@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "vertexai.py": "@@ -32,7 +32,7 @@ def init_vertexai(\n                 will be ascertained from the environment.\n \n     Raises:\n-        ImportError: If importing vertexai SDK didn't not succeed.\n+        ImportError: If importing vertexai SDK did not succeed.\n     \"\"\"\n     try:\n         import vertexai\n"
+        },
+        "file_name": "langchain-ai_langchain.json",
+        "type": "BUG_FIX",
+        "comment": "5, obvious"
+    },
+    {
+        "hash": "57b5f42847c70347afe43d04f007f937c46b2699",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, remove unintended double negation, minor update"
+    },
+    {
+        "hash": "73160869417275200be19bd37372b6218dbc5f63",
+        "message": "feat: extend husky checks (#7574)",
+        "author_name": "Jan Scheffler",
+        "author_email": "janscheffler@chromium.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 2,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "package.json": "@@ -116,8 +116,9 @@\n   },\n   \"husky\": {\n     \"hooks\": {\n+      \"pre-commit\": \"npm run eslint\",\n       \"commit-msg\": \"commitlint --env HUSKY_GIT_PARAMS\",\n-      \"pre-push\": \"npm run ensure-pinned-deps\"\n+      \"pre-push\": \"npm run tsc && npm run eslint && npm run doc && npm run ensure-pinned-deps\"\n     }\n   }\n }\n"
+        },
+        "file_name": "puppeteer_puppeteer.json",
+        "type": "NEW_FEAT",
+        "comment": "4, feat in commit message"
+    },
+    {
+        "hash": "73160869417275200be19bd37372b6218dbc5f63",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, extend husky checks, minor code clean up"
+    },
+    {
+        "hash": "74efa54f7f69be8394f52f9fbe3f7d9254b928fe",
+        "message": "app-admin/apache-tools: ia64 stable wrt bug #557198\n\nPackage-Manager: portage-2.2.20.1",
+        "author_name": "Mikle Kolyada",
+        "author_email": "zlogene@gentoo.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "apache-tools-2.2.31.ebuild": "@@ -11,7 +11,7 @@ SRC_URI=\"mirror://apache/httpd/httpd-${PV}.tar.bz2\"\n \n LICENSE=\"Apache-2.0\"\n SLOT=\"0\"\n-KEYWORDS=\"alpha amd64 ~arm ~arm64 hppa ~ia64 ~mips ~ppc ppc64 ~s390 ~sh ~sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd\"\n+KEYWORDS=\"alpha amd64 ~arm ~arm64 hppa ia64 ~mips ~ppc ppc64 ~s390 ~sh ~sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd\"\n IUSE=\"ssl\"\n RESTRICT=\"test\"\n \n"
+        },
+        "file_name": "gentoo_gentoo.json",
+        "type": "BUG_FIX",
+        "comment": "5, obvious"
+    },
+    {
+        "hash": "74efa54f7f69be8394f52f9fbe3f7d9254b928fe",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, ia64 stable, minor config update"
+    },
+    {
+        "hash": "4d186aa1b0d6279bf8c146d294d9f28c1468745c",
+        "message": "dont use options.filename for original code when generating magicstring bundle (#43)",
+        "author_name": "Rich-Harris",
+        "author_email": "richard.a.harris@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 0,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "index.js": "@@ -508,7 +508,6 @@ export default function generate ( parsed, source, options ) {\n \n \tfunction addString ( str ) {\n \t\tcompiled.addSource({\n-\t\t\tfilename: options.filename,\n \t\t\tcontent: new MagicString( str )\n \t\t});\n \t}\n"
+        },
+        "file_name": "sveltejs_svelte.json",
+        "type": "BUG_FIX",
+        "comment": "3, #43 probably a bug number"
+    },
+    {
+        "hash": "4d186aa1b0d6279bf8c146d294d9f28c1468745c",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, dont use options.filename for original code, minor code clean up"
+    },
+    {
+        "hash": "b5a86f6a597f72ae8e6228b140eae3a4400d9a32",
+        "message": "kde-plasma/powerdevil: Block kde-base/systemsettings[handbook]\n\nReported in #gentoo-kde by diddly\n\nPackage-Manager: portage-2.2.20.1",
+        "author_name": "Andreas Sturmlechner",
+        "author_email": "andreas.sturmlechner@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "powerdevil-5.4.0.ebuild": "@@ -46,6 +46,7 @@ RDEPEND=\"${DEPEND}\n \t|| ( sys-power/upower-pm-utils >=sys-power/upower-0.9.23 )\n \t!systemd? ( sys-auth/polkit-pkla-compat )\n \t!kde-base/powerdevil\n+\t!kde-base/systemsettings[handbook]\n \"\n \n src_install() {\n"
+        },
+        "file_name": "gentoo_gentoo.json",
+        "type": "BUG_FIX",
+        "comment": "4, Reported i.e. high probability of being a bug"
+    },
+    {
+        "hash": "b5a86f6a597f72ae8e6228b140eae3a4400d9a32",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, block kde-base/systemsettings[handbook], minor config update"
+    },
+    {
+        "hash": "530dc5395da7d81f1edb4a416a674ba842990638",
+        "message": "Delete equivalence between step and learning rate; the two are different concepts.",
+        "author_name": "Akshay Agrawal",
+        "author_email": "akshayka@google.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "eager.ipynb": "@@ -534,7 +534,7 @@\n       \"source\": [\n         \"### Create an optimizer\\n\",\n         \"\\n\",\n-        \"An *[optimizer](https://developers.google.com/machine-learning/crash-course/glossary#optimizer)* applies the computed gradients to the model's variables to minimize the `loss` function. You can think of a curved surface (see Figure 3) and we want to find its lowest point by walking around. The gradients point in the direction of steepest ascent\u2014so we'll travel the opposite way and move down the hill. By iteratively calculating the loss and gradients for each *step* (or *[learning rate](https://developers.google.com/machine-learning/crash-course/glossary#learning_rate)*), we'll adjust the model during training. Gradually, the model will find the best combination of weights and bias to minimize loss. And the lower the loss, the better the model's predictions.\\n\",\n+        \"An *[optimizer](https://developers.google.com/machine-learning/crash-course/glossary#optimizer)* applies the computed gradients to the model's variables to minimize the `loss` function. You can think of a curved surface (see Figure 3) and we want to find its lowest point by walking around. The gradients point in the direction of steepest ascent\u2014so we'll travel the opposite way and move down the hill. By iteratively calculating the loss and gradient for each example, we'll adjust the model during training. Gradually, the model will find the best combination of weights and bias to minimize loss. And the lower the loss, the better the model's predictions.\\n\",\n         \"\\n\",\n         \"<table>\\n\",\n         \"  <tr><td>\\n\",\n"
+        },
+        "file_name": "tensorflow_models.json",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, readme or comment change"
+    },
+    {
+        "hash": "530dc5395da7d81f1edb4a416a674ba842990638",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, delete equivalence between step and learning rate, minor code clean up"
+    }
+]

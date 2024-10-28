@@ -1,0 +1,3167 @@
+[
+    {
+        "hash": "5640d641d6066a85439d7027b960ebc2cebd37de",
+        "message": "skip Worker test unless the browser supports them",
+        "author_name": "Thomas Aylott",
+        "author_email": "aylott@fb.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "ReactWebWorker-test.js": "@@ -22,7 +22,7 @@\n \"use strict\";\n \n describe('ReactWebWorker', function() {\n-  it('can run React in a web worker', function() {\n+  ;(typeof Worker == 'undefined' ? xit : it)('can run React in a web worker', function() {\n     var done = false;\n     var error;\n \n"
+        },
+        "file_name": "facebook_react.json"
+    },
+    {
+        "hash": "d6cc887627de8868d88fe93968978a90f243c8e1",
+        "message": "fix gradle build on windows",
+        "author_name": "volzhs",
+        "author_email": "volzhs@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "SCsub": "@@ -59,7 +59,7 @@ for x in env.android_dependencies:\n gradle_java_dirs_text=\"\"\n \n for x in env.android_java_dirs:\n-\tgradle_java_dirs_text+=\",'\"+x+\"'\"\n+\tgradle_java_dirs_text+=\",'\"+x.replace(\"\\\\\",\"/\")+\"'\"\n \n \n gradle_res_dirs_text=\"\"\n"
+        },
+        "file_name": "godotengine_godot.json"
+    },
+    {
+        "hash": "730111b9cf99d5b27adfa6c688d7666df8146d60",
+        "message": "app-crypt/simple-tpm-pk11: RESTRICT test since it requires the TPM configured and doesnt build\n\nPackage-Manager: portage-2.2.20.1",
+        "author_name": "Jason Zaman",
+        "author_email": "perfinion@gentoo.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "simple-tpm-pk11-0.03.ebuild": "@@ -21,6 +21,7 @@ else\n fi\n \n IUSE=\"\"\n+RESTRICT=\"test\" # needs to communicate with the TPM and gtest is all broken\n \n DEPEND=\"app-crypt/tpm-tools[pkcs11]\n \tdev-libs/opencryptoki[tpm]\n"
+        },
+        "file_name": "gentoo_gentoo.json"
+    },
+    {
+        "hash": "3ac05d38eb9e67d4c1923f05a2c22139782289fe",
+        "message": "bug\u4fee\u590d\n\n\u6587\u672c\u592a\u957f\uff0c\u906e\u6321\u63d0\u793a\u6846",
+        "author_name": "batvbs",
+        "author_email": "batvbs@qq.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "zh_CN.json": "@@ -142,7 +142,7 @@\n     \"latent noise\": \"\u6f5c\u7a7a\u95f4\u566a\u58f0\",\n     \"latent nothing\": \"\u6f5c\u7a7a\u95f4\u6570\u503c\u96f6\",\n     \"Inpaint at full resolution\": \"\u4ee5\u5b8c\u6574\u5206\u8fa8\u7387\u8fdb\u884c\u5c40\u90e8\u91cd\u7ed8\",\n-    \"Inpaint at full resolution padding, pixels\": \"\u4ee5\u5b8c\u6574\u5206\u8fa8\u7387\u8fdb\u884c\u5c40\u90e8\u91cd\u7ed8 - \u586b\u8865\u50cf\u7d20\",\n+    \"Inpaint at full resolution padding, pixels\": \"\u586b\u8865\u50cf\u7d20\",\n     \"Process images in a directory on the same machine where the server is running.\": \"\u5728\u670d\u52a1\u5668\u4e3b\u673a\u4e0a\u7684\u76ee\u5f55\u4e2d\u5904\u7406\u56fe\u50cf\",\n     \"Use an empty output directory to save pictures normally instead of writing to the output directory.\": \"\u6307\u5b9a\u4e00\u4e2a\u7a7a\u7684\u6587\u4ef6\u5939\u4e3a\u8f93\u51fa\u76ee\u5f55\u800c\u975e\u9ed8\u8ba4\u7684 output \u6587\u4ef6\u5939\u4e3a\u8f93\u51fa\u76ee\u5f55\",\n     \"Input directory\": \"\u8f93\u5165\u76ee\u5f55\",\n"
+        },
+        "file_name": "AUTOMATIC1111_stable-diffusion-webui.json"
+    },
+    {
+        "hash": "24b7f4312f408eeef234f2e41f9141610ee1acd6",
+        "message": "added title to license.",
+        "author_name": "Taylor Otwell",
+        "author_email": "taylorotwell@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 2,
+        "net_lines": 2,
+        "num_files": 1,
+        "branches": "11.x",
+        "changes": {
+            "license.txt": "@@ -1,3 +1,5 @@\n+MIT License\n+\n Copyright (c) <2011> <Taylor Otwell> <taylorotwell@gmail.com>\n \n Permission is hereby granted, free of charge, to any person obtaining a copy of\n"
+        },
+        "file_name": "laravel_laravel.json"
+    },
+    {
+        "hash": "1088b4b00fe52309a75aa8508d425010fa6cd475",
+        "message": "Ignoring the \".DS_Store\" files on OS X",
+        "author_name": "Artem",
+        "author_email": "artemjo@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 2,
+        "net_lines": 2,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            ".gitignore": "@@ -6,3 +6,5 @@ alias\n # For testing\n bak\n .urchin.log\n+\n+.DS_Store\n"
+        },
+        "file_name": "nvm-sh_nvm.json"
+    },
+    {
+        "hash": "f5db38452477cc697a86cf0d3e7ecba4fa9cfe78",
+        "message": "dev-java/xpp2: stable for all wrt bug #558016\n\nPackage-Manager: portage-2.2.20.1",
+        "author_name": "Mikle Kolyada",
+        "author_email": "zlogene@gentoo.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "xpp2-2.1.10-r2.ebuild": "@@ -16,7 +16,7 @@ SRC_URI=\"http://www.extreme.indiana.edu/xgws/xsoap/xpp/download/${MY_PN}2/${MY_P\n \n LICENSE=\"Apache-1.1 IBM\"\n SLOT=\"0\"\n-KEYWORDS=\"~amd64 ~arm ~ppc ~ppc64 ~x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris\"\n+KEYWORDS=\"amd64 ~arm ppc ppc64 x86 ~amd64-fbsd ~x86-fbsd ~x86-freebsd ~amd64-linux ~x86-linux ~ppc-macos ~x64-macos ~x86-macos ~sparc-solaris ~x64-solaris ~x86-solaris\"\n IUSE=\"test\"\n \n # Some failures, partly because we haven't patched Xerces but probably\n"
+        },
+        "file_name": "gentoo_gentoo.json"
+    },
+    {
+        "hash": "18a25be11a146450f2d3c2b8035dcb726acf2ade",
+        "message": "use node 0.10 for travis",
+        "author_name": "Chia-liang Kao",
+        "author_email": "clkao@clkao.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            ".travis.yml": "@@ -1,3 +1,3 @@\n language: node_js\n node_js:\n-  - 0.8\n+  - 0.10\n"
+        },
+        "file_name": "d3_d3.json"
+    },
+    {
+        "hash": "5857eb884c6ffc74fa3fa7e6dd11fad0fdf845b1",
+        "message": "\"checkbox\" not \"checked\"\n\nI can only assume this was a typo.",
+        "author_name": "Ben Alpert",
+        "author_email": "spicyjalapeno@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "LinkedValueMixin.js": "@@ -22,7 +22,7 @@\n var invariant = require('invariant');\n \n var hasReadOnlyValue = {\n-  'checked': true,\n+  'checkbox': true,\n   'hidden': true,\n   'radio': true\n };\n"
+        },
+        "file_name": "facebook_react.json"
+    },
+    {
+        "hash": "e6ffd3a86fcc3585cf2291b151fb4625f435586e",
+        "message": "Fix for issue #136. Now nests fine in both layouts.",
+        "author_name": "pthrasher",
+        "author_email": "philipthrasher@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 3,
+        "net_lines": 3,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "patterns.less": "@@ -742,6 +742,9 @@ input[type=submit].btn {\n   .content {\n     background-color: @white;\n     padding: 14px;\n+    min-width:inherit;\n+    max-width:inherit;\n+    margin:auto;\n     .border-radius(0 0 3px 3px);\n     .background-clip(padding-box);\n     p, ul, ol {\n"
+        },
+        "file_name": "twbs_bootstrap.json"
+    },
+    {
+        "hash": "9934ad77c0f59dcd9c22b9bfd0512beb780d8733",
+        "message": "desktop: check for updates on first load",
+        "author_name": "Jeffrey Morgan",
+        "author_email": "jmorganca@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "index.ts": "@@ -84,6 +84,7 @@ app.on('activate', () => {\n // code. You can also put them in separate files and import them here.\n autoUpdater.setFeedURL({ url: `https://updates.ollama.ai/update/${process.platform}/${app.getVersion()}` })\n \n+autoUpdater.checkForUpdates()\n setInterval(() => {\n   autoUpdater.checkForUpdates()\n }, 60000)\n"
+        },
+        "file_name": "ollama_ollama.json"
+    },
+    {
+        "hash": "85ab02ba583f88ad8aeb04c3dd057778a08f885f",
+        "message": "feat: remove unused React imports (#9853)",
+        "author_name": "Brody McKee",
+        "author_email": "mrmckeb@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 2,
+        "num_inserts": 0,
+        "net_lines": -2,
+        "num_files": 2,
+        "branches": "main",
+        "changes": {
+            "App.js": "@@ -1,4 +1,3 @@\n-import React from 'react';\n import logo from './logo.svg';\n import './App.css';\n \n",
+            "App.test.js": "@@ -1,4 +1,3 @@\n-import React from 'react';\n import { render, screen } from '@testing-library/react';\n import App from './App';\n \n"
+        },
+        "file_name": "facebook_create-react-app.json"
+    },
+    {
+        "hash": "58c56ce7aea12980f4be7e62840f461bb6f0cbc4",
+        "message": "specify mode for windows",
+        "author_name": "Robo",
+        "author_email": "hop2deep@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "util.py": "@@ -30,7 +30,7 @@ def scoped_cwd(path):\n \n \n def download(text, url, path):\n-  with open(path, 'w') as local_file:\n+  with open(path, 'wb') as local_file:\n     web_file = urllib2.urlopen(url)\n     file_size = int(web_file.info().getheaders(\"Content-Length\")[0])\n     downloaded_size = 0\n"
+        },
+        "file_name": "electron_electron.json"
+    },
+    {
+        "hash": "a42a969e079ed2908b5c2fd004376dc43f476d83",
+        "message": "6.1.1-canary.0",
+        "author_name": "Tim Neutkens",
+        "author_email": "timneutkens@me.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "canary",
+        "changes": {
+            "package.json": "@@ -1,6 +1,6 @@\n {\n   \"name\": \"next\",\n-  \"version\": \"6.1.1\",\n+  \"version\": \"6.1.1-canary.0\",\n   \"description\": \"Minimalistic framework for server-rendered React applications\",\n   \"main\": \"./dist/server/next.js\",\n   \"license\": \"MIT\",\n"
+        },
+        "file_name": "vercel_next.js.json"
+    },
+    {
+        "hash": "303f6514bd229c80f58abc87448836ede877c0e5",
+        "message": "+ int SortTuplesInTree = 2560;\n\t(default value for max number of tuples in leftist tree)",
+        "author_name": "Vadim B. Mikheev",
+        "author_email": "vadim4o@yahoo.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 2,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "globals.c": "@@ -7,7 +7,7 @@\n  *\n  *\n  * IDENTIFICATION\n- *\t  $Header: /cvsroot/pgsql/src/backend/utils/init/globals.c,v 1.12 1997/09/08 02:31:56 momjian Exp $\n+ *\t  $Header: /cvsroot/pgsql/src/backend/utils/init/globals.c,v 1.13 1997/09/18 05:23:58 vadim Exp $\n  *\n  * NOTES\n  *\t  Globals used all over the place should be declared here and not\n@@ -80,6 +80,7 @@ char\t\tFloatFormat[20] = \"%f\";\n \n int\t\t\tfsyncOff = 0;\n int\t\t\tSortMem = 512;\n+int\t\t\tSortTuplesInTree = 2560;\n \n char\t   *IndexedCatalogNames[] = {\n \tAttributeRelationName,\n"
+        },
+        "file_name": "postgres_postgres.json"
+    },
+    {
+        "hash": "99bf7c5da5f80beed10fc27414518601a50d5103",
+        "message": "Update touch to the latest version \ud83d\ude80 (#2411)",
+        "author_name": "greenkeeper[bot]",
+        "author_email": "greenkeeper[bot]@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "canary",
+        "changes": {
+            "package.json": "@@ -90,7 +90,7 @@\n     \"source-map-support\": \"0.4.15\",\n     \"strip-ansi\": \"4.0.0\",\n     \"styled-jsx\": \"1.0.6\",\n-    \"touch\": \"2.0.2\",\n+    \"touch\": \"3.0.0\",\n     \"uglifyjs-webpack-plugin\": \"0.4.6\",\n     \"unfetch\": \"3.0.0\",\n     \"url\": \"0.11.0\",\n"
+        },
+        "file_name": "vercel_next.js.json"
+    },
+    {
+        "hash": "cb646082baa173fdee7f2b1e361be368acef4e7e",
+        "message": "remove an extra whitespace (#1625)",
+        "author_name": "Peng Qu",
+        "author_email": "82029664+pengqu123@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "prompt.py": "@@ -18,7 +18,7 @@ ALWAYS use the following format:\n \n Question: the input question you must answer\n Thought: you should always think about what to do\n-Action: \n+Action:\n ```\n $JSON_BLOB\n ```\n"
+        },
+        "file_name": "langchain-ai_langchain.json"
+    },
+    {
+        "hash": "b2c4552416c394ee562fa8fe05e9b5aa485440cb",
+        "message": "feat: re-order zoom buttons (#3837)\n\n* feat: re-order zoom buttons\r\n\r\n* undo last commit & change zoomOut/zoomIn order",
+        "author_name": "David Luzar",
+        "author_email": "luzar.david@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "Actions.tsx": "@@ -204,8 +204,8 @@ export const ZoomActions = ({\n }) => (\n   <Stack.Col gap={1}>\n     <Stack.Row gap={1} align=\"center\">\n-      {renderAction(\"zoomIn\")}\n       {renderAction(\"zoomOut\")}\n+      {renderAction(\"zoomIn\")}\n       {renderAction(\"resetZoom\")}\n     </Stack.Row>\n   </Stack.Col>\n"
+        },
+        "file_name": "excalidraw_excalidraw.json"
+    },
+    {
+        "hash": "27b1a0719a8147a19aa365c3a6009d04ecbdc8fa",
+        "message": "chore(deps) Update Rust crate cargo_toml to 0.11 (#3365)\n\nCo-authored-by: Renovate Bot <bot@renovateapp.com>",
+        "author_name": "renovate[bot]",
+        "author_email": "29139614+renovate[bot]@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "dev",
+        "changes": {
+            "Cargo.toml": "@@ -21,7 +21,7 @@ anyhow = \"1\"\n quote = { version = \"1\", optional = true }\n tauri-codegen = { version = \"1.0.0-beta.4\", path = \"../tauri-codegen\", optional = true }\n tauri-utils = { version = \"1.0.0-beta.0\", path = \"../tauri-utils\", features = [ \"build\", \"resources\" ] }\n-cargo_toml = \"0.10\"\n+cargo_toml = \"0.11\"\n serde_json = \"1\"\n \n [target.\"cfg(windows)\".dependencies]\n"
+        },
+        "file_name": "tauri-apps_tauri.json"
+    },
+    {
+        "hash": "9918e49bb12d9787340b895624b45082b8c19d4c",
+        "message": "Only deploy to NuGet when API changed (interface or implementation), see #360",
+        "author_name": "bao-qian",
+        "author_email": "bao.github@outlook.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "appveyor.yml": "@@ -29,4 +29,4 @@ deploy:\n     secure: yybUOFgBuGVpbmOVZxsurC8OpkClzt9dR+/54WpMWcq6b6oyMatciaelRPnXsjRn\n   artifact: nugetpackage\n   on:\n-    branch: master\n+    branch: api\n"
+        },
+        "file_name": "microsoft_PowerToys.json"
+    },
+    {
+        "hash": "f9bdf6a53f2af84d81c112951198dbde93a4afb3",
+        "message": "Fix typo (#119)",
+        "author_name": "Mark Dalgleish",
+        "author_email": "mark.john.dalgleish@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "next",
+        "changes": {
+            "README.md": "@@ -86,7 +86,7 @@ import React from 'react';\n import { storiesOf, action } from '@kadira/storybook';\n \n storiesOf('Button', module)\n-  .add('with a text', () => (\n+  .add('with text', () => (\n     <button onClick={action('clicked')}>My First Button</button>\n   ))\n   .add('with no text', () => (\n"
+        },
+        "file_name": "storybookjs_storybook.json"
+    },
+    {
+        "hash": "cfdc8845829d080dd2c745f59a8b2b8b8c3a91f7",
+        "message": "typo",
+        "author_name": "Kyle Mathews",
+        "author_email": "mathews.kyle@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "09.4-test-utils.md": "@@ -95,7 +95,7 @@ Traverse all components in `tree` and accumulate all components where `test(comp\n ### scryRenderedDOMComponentsWithClass\n \n ```javascript\n-array scryRenderedDOMComponentsWithClass(ReactCompoennt tree, string className)\n+array scryRenderedDOMComponentsWithClass(ReactComponent tree, string className)\n ```\n \n Finds all instance of components in the rendered tree that are DOM components with the class name matching `className`.\n"
+        },
+        "file_name": "facebook_react.json"
+    },
+    {
+        "hash": "5b2ffeb63d1b763a9ea9de2cc4bf7c3c1c7f3e0e",
+        "message": "update React to React/addons",
+        "author_name": "Matt",
+        "author_email": "duereg@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "classable.js": "@@ -1,4 +1,4 @@\n-var React = require('react'),\n+var React = require('react/addons'),\n   classSet = React.addons.classSet;\n \n module.exports = {\n"
+        },
+        "file_name": "mui_material-ui.json"
+    },
+    {
+        "hash": "7945499021cd217ca25d0a50c603e6bda22fd3ee",
+        "message": ". autoconf",
+        "author_name": "Sam Hocevar",
+        "author_email": "sam@videolan.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "configure": "@@ -592,7 +592,7 @@ host_os=`echo $host | sed 's/^\\([^-]*\\)-\\([^-]*\\)-\\(.*\\)$/\\3/'`\n echo \"$ac_t\"\"$host\" 1>&6\n \n \n-VLC_VERSION=0.1.99\n+VLC_VERSION=0.1.99a\n \n VLC_CODENAME=Onatopp\n \n"
+        },
+        "file_name": "videolan_vlc.json"
+    },
+    {
+        "hash": "bcf36ade9f763b875bd781ad26cdb0549349c5f8",
+        "message": "Remove sudo setting from travis.yml (#1816)",
+        "author_name": "sekky0905",
+        "author_email": "20237968+sekky0905@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 0,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            ".travis.yml": "@@ -1,5 +1,4 @@\n language: go\n-sudo: false\n \n matrix:\n   fast_finish: true\n"
+        },
+        "file_name": "gin-gonic_gin.json"
+    },
+    {
+        "hash": "d90f35831121aef79627f47e64c0737660a0df74",
+        "message": "contents(algo): fix typo in matrix cheat sheet (#273)",
+        "author_name": "Jason Mustafa",
+        "author_email": "41012240+jasonmustafa@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "matrix.md": "@@ -40,7 +40,7 @@ For questions involving traversal or dynamic programming, you almost always want\n This can be done easily in Python in one line.\n \n ```py\n-# Assumes that the matrix is is non-empty\n+# Assumes that the matrix is non-empty\n zero_matrix = [[0 for _ in range(len(matrix[0]))] for _ in range(len(matrix))]\n ```\n \n"
+        },
+        "file_name": "yangshun_tech-interview-handbook.json"
+    },
+    {
+        "hash": "93cd6801f5394ce2452c1eb48831f6f02ff31d49",
+        "message": "\u4fee\u6539gitignore\u4e2d\u7684\u6587\u4ef6 (#773)",
+        "author_name": "\u73e0\u5cf0\u57f9\u8bad",
+        "author_email": "1144709265@qq.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            ".gitignore": "@@ -3,3 +3,4 @@ node_modules/\n .DS_Store\n test/\n npm-debug.log\n+.idea\n"
+        },
+        "file_name": "animate-css_animate.css.json"
+    },
+    {
+        "hash": "89bc5030a2c7c18f2d838a3aba7dfa3dbdc778a6",
+        "message": "Add new item to extension list\n\nAdd mthuret/storybook-addon-specifications to extension list in docs/extensions.md",
+        "author_name": "Kanitkorn Sujautra",
+        "author_email": "lukyth@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "next",
+        "changes": {
+            "extensions.md": "@@ -93,6 +93,7 @@ Rather than creating extensions yourself, you can use extensions available below\n * [Create Groups of stories, display all of them together](https://github.com/jurgob/react-storybook-addon-add-stories-group)\n * [Display internationalized components in different locales](https://github.com/Tarabyte/react-storybook-addon-intl)\n * [Handling stubbed relay data](https://github.com/orta/react-storybooks-relay-container)\n+* [Write tests directly inside stories](https://github.com/mthuret/storybook-addon-specifications)\n \n > Feel free to include your extension to the above list and share it with other. <br/>\n > Just make it available on NPM (and GitHub) and send a PR to this page.\n"
+        },
+        "file_name": "storybookjs_storybook.json"
+    },
+    {
+        "hash": "f0faeaed25b47a91b36e6637121f80559e8c3ccb",
+        "message": "Yeah. Not even a semantic mix-up: just a damn typo.",
+        "author_name": "Graydon Hoare",
+        "author_email": "graydon@mozilla.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "trans.ml": "@@ -2720,7 +2720,7 @@ let trans_visitor\n       (curr_iso:Ast.ty_iso option)\n       : unit =\n     match slot.Ast.slot_mode with\n-        Ast.MODE_alias\n+        Ast.MODE_alias -> ()\n           (* Aliases are always free to drop. *)\n       | Ast.MODE_local ->\n           drop_ty ty_params cell (slot_ty slot) curr_iso\n"
+        },
+        "file_name": "rust-lang_rust.json"
+    },
+    {
+        "hash": "d9d83deb250a8172c9380c0daf57ceeda7feb8be",
+        "message": "Apply gofmt to PR #179",
+        "author_name": "Javier Provecho Fernandez",
+        "author_email": "javiertitan@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 2,
+        "num_inserts": 1,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "routergroup.go": "@@ -5,10 +5,9 @@\n package gin\n \n import (\n+\t\"github.com/julienschmidt/httprouter\"\n \t\"net/http\"\n \t\"path\"\n-\n-\t\"github.com/julienschmidt/httprouter\"\n )\n \n // Used internally to configure router, a RouterGroup is associated with a prefix\n"
+        },
+        "file_name": "gin-gonic_gin.json"
+    },
+    {
+        "hash": "4ac4ce3e4001114ee35d9e762f3fbdf94ba0ea7b",
+        "message": "replaced 8x6 pattern with 9x6, which orientation can be determined without any ambiguity",
+        "author_name": "Vadim Pisarevsky",
+        "author_email": "no@email",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 0,
+        "net_lines": 0,
+        "num_files": 2,
+        "branches": "4.x",
+        "changes": {
+            "pattern.pdf": "Binary files a/doc/pattern.pdf and /dev/null differ\n",
+            "pattern.png": "Binary files /dev/null and b/doc/pattern.png differ\n"
+        },
+        "file_name": "opencv_opencv.json"
+    },
+    {
+        "hash": "58ba2241e9db836c96cb75f1848c31c71c7b9fac",
+        "message": "runtime: Change external plugin directory to \"external-plugin\"",
+        "author_name": "Thiago de Arruda",
+        "author_email": "tpadilha84@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "host.vim": "@@ -119,7 +119,7 @@ function! s:RegistrationCommands(host)\n   let host_id = a:host.'-registration-clone'\n   call rpc#host#RegisterClone(host_id, a:host)\n   let pattern = s:plugin_patterns[a:host]\n-  let paths = globpath(&rtp, 'plugin/external/'.a:host.'/'.pattern, 0, 1)\n+  let paths = globpath(&rtp, 'external-plugin/'.a:host.'/'.pattern, 0, 1)\n   for path in paths\n     call rpc#host#RegisterPlugin(host_id, path, [])\n   endfor\n"
+        },
+        "file_name": "neovim_neovim.json"
+    },
+    {
+        "hash": "39e53b4ae7b958b227535dde7e8284f5d92a96fd",
+        "message": "feat: Allow letters in IDs for storing files in backend (#4224)",
+        "author_name": "Lipis",
+        "author_email": "lipiridis@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "index.tsx": "@@ -163,7 +163,7 @@ const initializeScene = async (opts: {\n   const searchParams = new URLSearchParams(window.location.search);\n   const id = searchParams.get(\"id\");\n   const jsonBackendMatch = window.location.hash.match(\n-    /^#json=([0-9]+),([a-zA-Z0-9_-]+)$/,\n+    /^#json=([a-zA-Z0-9_-]+),([a-zA-Z0-9_-]+)$/,\n   );\n   const externalUrlMatch = window.location.hash.match(/^#url=(.*)$/);\n \n"
+        },
+        "file_name": "excalidraw_excalidraw.json"
+    },
+    {
+        "hash": "ca2840a8e85ca828cc9d19eeb7755b60e17c2c11",
+        "message": "inspect the full repo/image:tag name",
+        "author_name": "James DeFelice",
+        "author_email": "james.defelice@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 2,
+        "num_inserts": 1,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "docker.go": "@@ -222,8 +222,7 @@ func (p throttledDockerPuller) Pull(image string) error {\n \treturn fmt.Errorf(\"pull QPS exceeded.\")\n }\n \n-func (p dockerPuller) IsImagePresent(name string) (bool, error) {\n-\timage, _ := parseImageName(name)\n+func (p dockerPuller) IsImagePresent(image string) (bool, error) {\n \t_, err := p.client.InspectImage(image)\n \tif err == nil {\n \t\treturn true, nil\n"
+        },
+        "file_name": "kubernetes_kubernetes.json"
+    },
+    {
+        "hash": "cc55806a112137976b38ddfb5cbebd971e2c6e9f",
+        "message": "closes #17",
+        "author_name": "Ritesh Kumar",
+        "author_email": "rkritesh078@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "next",
+        "changes": {
+            "index.js": "@@ -91,7 +91,7 @@ class Layout extends React.Component {\n           <SplitPane\n             split={props.downPanelInRight ? 'vertical' : 'horizontal'}\n             primary=\"second\"\n-            minSize={100}\n+            minSize={props.downPanelInRight ? 200 : 100}\n             defaultSize={downPanelDefaultSize}\n             resizerChildren={props.downPanelInRight ? vsplit : hsplit}\n             onDragStarted={onDragStart}\n"
+        },
+        "file_name": "storybookjs_storybook.json"
+    },
+    {
+        "hash": "319aae27567f3ddc40e9083c425f7eaf567006a0",
+        "message": "Increase the number of possible heads requested from git-upload-pack\n\nNow that git-clone-pack exists, we actually have somebody requesting\nmore than just a single head in a pack.  So allow the Jeff's of this\nworld to clone things with tens of heads.",
+        "author_name": "Linus Torvalds",
+        "author_email": "torvalds@g5.osdl.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "upload-pack.c": "@@ -5,7 +5,7 @@\n static const char upload_pack_usage[] = \"git-upload-pack <dir>\";\n \n #define MAX_HAS (16)\n-#define MAX_NEEDS (16)\n+#define MAX_NEEDS (256)\n static int nr_has = 0, nr_needs = 0;\n static unsigned char has_sha1[MAX_HAS][20];\n static unsigned char needs_sha1[MAX_NEEDS][20];\n"
+        },
+        "file_name": "git_git.json"
+    },
+    {
+        "hash": "c16d0df7b2ac87007f789346c32f7e47e4ad1bfe",
+        "message": "Disable test as it needs resolution which the test harness does not support yet",
+        "author_name": "Mohamed Hegazy",
+        "author_email": "mhegazy@microsoft.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 0,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "selfReferencedExternalModule2.ts": ""
+        },
+        "file_name": "microsoft_TypeScript.json"
+    },
+    {
+        "hash": "501397cb6186700203637a37389142b6e9cdaefa",
+        "message": "fix: disable locking aspect ratio for box-selection (#5525)",
+        "author_name": "David Luzar",
+        "author_email": "luzar.david@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "dragElements.ts": "@@ -105,7 +105,7 @@ export const dragNewElement = (\n       true */\n   widthAspectRatio?: number | null,\n ) => {\n-  if (shouldMaintainAspectRatio) {\n+  if (shouldMaintainAspectRatio && draggingElement.type !== \"selection\") {\n     if (widthAspectRatio) {\n       height = width / widthAspectRatio;\n     } else {\n"
+        },
+        "file_name": "excalidraw_excalidraw.json"
+    },
+    {
+        "hash": "aa682bfd1207ce1ad1fd485e792530359251b219",
+        "message": "doc: update the path to profiles.json (#3087)\n\nThis path is consistently `WindowsTerminal_8wekyb3d8bbwe`.",
+        "author_name": "Martin Lopes",
+        "author_email": "54248166+martin389@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "UsingJsonSettings.md": "@@ -4,7 +4,7 @@ One way (currently the only way) to configure Windows Terminal is by editing the\n `profiles.json` settings file. At the time of writing you can open the settings\n file in your default editor by selecting `Settings` from the WT pull down menu.\n \n-The settings are stored in the file `$env:LocalAppData\\Packages\\Microsoft.WindowsTerminal_<randomString>\\LocalState\\profiles.json`.\n+The settings are stored in the file `$env:LocalAppData\\Packages\\Microsoft.WindowsTerminal_8wekyb3d8bbwe\\LocalState\\profiles.json`.\n \n As of [#2515](https://github.com/microsoft/terminal/pull/2515), the settings are\n split into _two_ files: a hardcoded `defaults.json`, and `profiles.json`, which\n"
+        },
+        "file_name": "microsoft_terminal.json"
+    },
+    {
+        "hash": "330fdd2b045343bd07620876cf3db553d46ded6c",
+        "message": "Fix a typo in test expr-alt-generic-box1.rs",
+        "author_name": "Brian Anderson",
+        "author_email": "andersrb@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "expr-alt-generic-box1.rs": "@@ -14,7 +14,7 @@ fn test_generic[T](@T expected, &compare[T] eq) {\n \n fn test_box() {\n   fn compare_box(@bool b1, @bool b2) -> bool {\n-    ret *b1 == b2;\n+    ret *b1 == *b2;\n   }\n   auto eq = bind compare_box(_, _);\n   test_generic[bool](@true, eq);\n"
+        },
+        "file_name": "rust-lang_rust.json"
+    },
+    {
+        "hash": "5226cfe5624290111779dd57bc6139676eded76d",
+        "message": "Reduced Desktop Entries heading size",
+        "author_name": "Alex Mikhalev",
+        "author_email": "alexmikhalevalex@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "README.md": "@@ -92,7 +92,7 @@ If all goes well, this should place a binary at `target/release/alacritty`.\n many things (such as arrow keys) would not work. If you're on macOS, you'll need\n to change the `monospace` font family to something like `Menlo`.\n \n-## Desktop Entry\n+### Desktop Entry\n \n Many linux distributions support desktop entries for adding applications to\n system menus. To install the desktop entry for Alacritty, run\n"
+        },
+        "file_name": "alacritty_alacritty.json"
+    },
+    {
+        "hash": "179213f61c704d2c3a5eec7d3c1ffd6d3b1f0154",
+        "message": "local-up-cluster: terminate all processes on SIGINT",
+        "author_name": "Clayton Coleman",
+        "author_email": "ccoleman@redhat.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "local-up-cluster.sh": "@@ -147,6 +147,6 @@ cleanup()\n     exit 0\n }\n \n-trap cleanup EXIT\n+trap cleanup EXIT SIGINT\n \n while true; do read x; done\n"
+        },
+        "file_name": "kubernetes_kubernetes.json"
+    },
+    {
+        "hash": "f0f2d2ee70a7b1e64d08827f961add853c8b718c",
+        "message": "Fix readdirSync in docs",
+        "author_name": "Ryan Dahl",
+        "author_email": "ry@tinyclouds.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "api.txt": "@@ -637,7 +637,7 @@ Asynchronous readdir(3).  Reads the contents of a directory.\n The callback gets two arguments +(err, files)+ where +files+ is an array of\n the names of the files in the directory excluding +\".\"+ and +\"..\"+.\n \n-+fs.readdir(path, callback)+ ::\n++fs.readdirSync(path)+ ::\n Synchronous readdir(3). Returns an array of filenames excluding +\".\"+ and\n +\"..\"+.\n \n"
+        },
+        "file_name": "nodejs_node.json"
+    },
+    {
+        "hash": "618f204dddd7b6309d10efa8b9227c71e11c99e7",
+        "message": "feat: allow zooming up to 3000% (#4358)",
+        "author_name": "David Luzar",
+        "author_email": "luzar.david@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "zoom.ts": "@@ -25,6 +25,6 @@ export const getNewZoom = (\n \n export const getNormalizedZoom = (zoom: number): NormalizedZoomValue => {\n   const normalizedZoom = parseFloat(zoom.toFixed(2));\n-  const clampedZoom = Math.max(0.1, Math.min(normalizedZoom, 10));\n+  const clampedZoom = Math.max(0.1, Math.min(normalizedZoom, 30));\n   return clampedZoom as NormalizedZoomValue;\n };\n"
+        },
+        "file_name": "excalidraw_excalidraw.json"
+    },
+    {
+        "hash": "ae1995f849aac92ec768361e73ad0ae56ee2bdbb",
+        "message": "Update libchromiumcontent for better Chrome 35 support\n\n* vendor/libchromiumcontent ded3c0a...331dbed (2):\n  > Merge pull request #48 from brightray/chrome35-brightray\n  > Merge pull request #49 from brightray/linux-fix",
+        "author_name": "Adam Roben",
+        "author_email": "adam@roben.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "libchromiumcontent": "@@ -1 +1 @@\n-Subproject commit ded3c0ad1d36cc900d94c7587a88d1b959ebc1c7\n+Subproject commit 331dbed44676c534faf21f7db1985e796260649a\n"
+        },
+        "file_name": "electron_electron.json"
+    },
+    {
+        "hash": "fe4920f138897138cc6eb76306677c4a5bc7980a",
+        "message": "Remove unnecessary assert() in os_dirname().\n\nCompiler warns about buf always being nonnull.\n\nbuf is per function attribute always nonnull, so buf can be removed from\nthe assert(). But a buffer length of zero is also no problem, because it\nmakes uv_cwd() return a failure without writing into buf. So the\nremaining length check can also be removed.",
+        "author_name": "oni-link",
+        "author_email": "knil.ino@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 2,
+        "num_inserts": 0,
+        "net_lines": -2,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "fs.c": "@@ -42,8 +42,6 @@ int os_chdir(const char *path)\n int os_dirname(char_u *buf, size_t len)\n   FUNC_ATTR_NONNULL_ALL\n {\n-  assert(buf && len);\n-\n   int error_number;\n   if ((error_number = uv_cwd((char *)buf, &len)) != kLibuvSuccess) {\n     STRLCPY(buf, uv_strerror(error_number), len);\n"
+        },
+        "file_name": "neovim_neovim.json"
+    },
+    {
+        "hash": "996d1c3242be5569bb4b579b2e3ad25a6d928dfb",
+        "message": "Don't include the test/testdata directory in the youtube-dl.tar.gz\n\nThe last releases included big files that increased the size of the compressed file.",
+        "author_name": "Jaime Marqui\u0301nez Ferra\u0301ndiz",
+        "author_email": "jaime.marquinez.ferrandiz@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "Makefile": "@@ -71,6 +71,7 @@ youtube-dl.tar.gz: youtube-dl README.md README.txt youtube-dl.1 youtube-dl.bash-\n \t\t--exclude '*~' \\\n \t\t--exclude '__pycache' \\\n \t\t--exclude '.git' \\\n+        --exclude 'testdata' \\\n \t\t-- \\\n \t\tbin devscripts test youtube_dl \\\n \t\tCHANGELOG LICENSE README.md README.txt \\\n"
+        },
+        "file_name": "ytdl-org_youtube-dl.json"
+    },
+    {
+        "hash": "9bab8ccb89466be8bc8c579264f51b194aa89612",
+        "message": "add current bookmark to rkj-repos theme",
+        "author_name": "Anatoly Bubenkov",
+        "author_email": "bubenkoff@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "rkj-repos.zsh-theme": "@@ -4,7 +4,7 @@\n \n function hg_prompt_info {\n     hg prompt --angle-brackets \"\\\n-<hg:%{$fg[magenta]%}<branch>%{$reset_color%}>\\\n+<hg:%{$fg[magenta]%}<branch>%{$reset_color%}><:%{$fg[magenta]%}<bookmark>%{$reset_color%}>\\\n </%{$fg[yellow]%}<tags|%{$reset_color%}, %{$fg[yellow]%}>%{$reset_color%}>\\\n %{$fg[red]%}<status|modified|unknown><update>%{$reset_color%}<\n patches: <patches|join( \u2192 )|pre_applied(%{$fg[yellow]%})|post_applied(%{$reset_color%})|pre_unapplied(%{$fg_bold[black]%})|post_unapplied(%{$reset_color%})>>\" 2>/dev/null\n"
+        },
+        "file_name": "ohmyzsh_ohmyzsh.json"
+    },
+    {
+        "hash": "be756011963855038ce7efae586c4dfd8563f236",
+        "message": "Fix annotated var test",
+        "author_name": "Joe Haddad",
+        "author_email": "timer150@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 2,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "App.test.ts": "@@ -8,7 +8,8 @@ it('reads a typescript file with no syntax error', () => {\n });\n \n it('supports decorators', () => {\n+  expect((App as any).annotated).toBe(true);\n+\n   const app = new App();\n-  expect((app as any).annotated).toBe(true);\n   expect(app.decorated).toBe(42);\n });\n"
+        },
+        "file_name": "facebook_create-react-app.json"
+    },
+    {
+        "hash": "822bc2fd52103a62761c4065350b78b21fbf120c",
+        "message": "Only call getDevTools for windows that have devtools.",
+        "author_name": "Cheng Zhao",
+        "author_email": "zcbenz@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "browser-window.coffee": "@@ -57,7 +57,7 @@ BrowserWindow.fromProcessIdAndRoutingId = (processId, routingId) ->\n \n BrowserWindow.fromDevTools = (processId, routingId) ->\n   windows = BrowserWindow.getAllWindows()\n-  for window in windows\n+  for window in windows when window.isDevToolsOpened()\n     devtools = window.getDevTools()\n     return window if devtools.processId == processId and\n                      devtools.routingId == routingId\n"
+        },
+        "file_name": "electron_electron.json"
+    },
+    {
+        "hash": "bc0a0a86516fc47c362b90042a154c82305828ae",
+        "message": "Clone commande do not get submodules recursively (#320)",
+        "author_name": "Jerry Nieuviarts",
+        "author_email": "jerry@mapado.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "README.md": "@@ -99,7 +99,7 @@ Once you completed the above steps, you can build and test SyntaxNet with the\n following commands:\n \n ```shell\n-  git clone --recursive https://github.com/tensorflow/models.git\n+  git clone --recursive --recurse-submodules https://github.com/tensorflow/models.git\n   cd models/syntaxnet/tensorflow\n   ./configure\n   cd ..\n"
+        },
+        "file_name": "tensorflow_models.json"
+    },
+    {
+        "hash": "5a10de422ad8ed21a071ed6f978d67c6410f26e8",
+        "message": "chore(deps): bump ossf/scorecard-action from 1.1.2 to 2.0.3 (#8949)\n\nBumps [ossf/scorecard-action](https://github.com/ossf/scorecard-action) from 1.1.2 to 2.0.3.\r\n- [Release notes](https://github.com/ossf/scorecard-action/releases)\r\n- [Changelog](https://github.com/ossf/scorecard-action/blob/main/RELEASE.md)\r\n- [Commits](https://github.com/ossf/scorecard-action/compare/ce330fde6b1a5c9c75b417e7efc510b822a35564...865b4092859256271290c77adbd10a43f4779972)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: ossf/scorecard-action\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-major\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+        "author_name": "dependabot[bot]",
+        "author_email": "49699333+dependabot[bot]@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "scorecards-analysis.yml": "@@ -28,7 +28,7 @@ jobs:\n           persist-credentials: false\n \n       - name: 'Run analysis'\n-        uses: ossf/scorecard-action@ce330fde6b1a5c9c75b417e7efc510b822a35564 # v1.0.2\n+        uses: ossf/scorecard-action@865b4092859256271290c77adbd10a43f4779972 # v1.0.2\n         with:\n           results_file: results.sarif\n           results_format: sarif\n"
+        },
+        "file_name": "puppeteer_puppeteer.json"
+    },
+    {
+        "hash": "2d8dd49589ce6953dc9866192f2ca0dc53957ace",
+        "message": "chore: fix formatting (#3560)\n\nFixed the markdown formatting for the openWith? parameter options for the open function in shell module.\r\n\r\nsee: https://github.com/tauri-apps/tauri-docs/pull/476",
+        "author_name": "Aidan Labourdette",
+        "author_email": "46062388+Layendan@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "dev",
+        "changes": {
+            "shell.ts": "@@ -394,7 +394,7 @@ type CommandEvent =\n  * or the one specified with `openWith`.\n  *\n  * The `openWith` value must be one of `firefox`, `google chrome`, `chromium` `safari`,\n- * `open`, `start`, `xdg-open`, `gio`, gnome-open`, `kde-open` or `wslview`.\n+ * `open`, `start`, `xdg-open`, `gio`, `gnome-open`, `kde-open` or `wslview`.\n  *\n  * @example\n  * ```typescript\n"
+        },
+        "file_name": "tauri-apps_tauri.json"
+    },
+    {
+        "hash": "0360aa1f1c1137d8125b377c5e3451adc5a96cda",
+        "message": "try to fix travis builds",
+        "author_name": "Joao Moreno",
+        "author_email": "jomo@microsoft.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            ".travis.yml": "@@ -16,6 +16,7 @@ addons:\n       - g++-4.9-multilib\n       - zip\n       - libgtk2.0-0\n+\tfirefox: \"latest\"\n \n before_install:\n   - git submodule update --init --recursive\n"
+        },
+        "file_name": "microsoft_vscode.json"
+    },
+    {
+        "hash": "7bf89340971c38f4757cf58671d8ae83ca15574c",
+        "message": "Suppressed FutureWarning in create_pet_tf_record",
+        "author_name": "Will Ayd",
+        "author_email": "william.ayd@icloud.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "dataset_util.py": "@@ -72,7 +72,7 @@ def recursive_parse_xml_to_dict(xml):\n   Returns:\n     Python dictionary holding XML contents.\n   \"\"\"\n-  if not xml:\n+  if not len(xml):\n     return {xml.tag: xml.text}\n   result = {}\n   for child in xml:\n"
+        },
+        "file_name": "tensorflow_models.json"
+    },
+    {
+        "hash": "fdb77da8d92e8be5ee5859da352f4d776093ec4c",
+        "message": "Update prettyBytes.md",
+        "author_name": "Angelos Chalaris",
+        "author_email": "chalarangelo@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 2,
+        "num_inserts": 1,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "prettyBytes.md": "@@ -8,8 +8,7 @@ Return the prettified string by building it up, taking into account the supplied\n negative or not.\n \n ```js\n-const prettyBytes = (num, options) => {\n-  options = { precision: 3, addSpace: true, ...options };\n+const prettyBytes = (num,  precision = 3, addSpace = true) {\n   const UNITS = ['B','KB','MB','GB','TB','PB','EB','ZB','YB'];\n   if (num < 1) return (num < 0 ? '-' : '') + num + ' B';\n   const exponent = Math.min(Math.floor(Math.log10(num < 0 ? -num : num) / 3), UNITS.length - 1);\n"
+        },
+        "file_name": "Chalarangelo_30-seconds-of-code.json"
+    },
+    {
+        "hash": "f067c4df660ace257147a2886fe26a1006f2166f",
+        "message": "Add component props docs umbrella issue",
+        "author_name": "Matt Brookes",
+        "author_email": "mbrookes@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "ROADMAP.md": "@@ -38,7 +38,7 @@ The roadmap is a living document, and it is likely that priorities will change,\n - [ ] Documentation versioning.\n - [ ] Add example on how to use [react-list](https://github.com/orgsync/react-list) for lists, menu items and table.\n - [ ] [[#2635](https://github.com/callemall/material-ui/pull/2635)] Document the new theme calculation, and it's usage.\n-- [ ] [[#3096](https://github.com/callemall/material-ui/pull/3096)] Annotate callback props with @param tags.\n+- [ ] [[#3191](https://github.com/callemall/material-ui/issues/3191)] Improve component property documentation.\n \n ### Future\n \n"
+        },
+        "file_name": "mui_material-ui.json"
+    },
+    {
+        "hash": "036d751397140e1eae01ea6ce6ebe86f0482f485",
+        "message": "Add createElement alias for createDescriptor",
+        "author_name": "Sebastian Markbage",
+        "author_email": "sema@fb.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 2,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "React.js": "@@ -73,7 +73,8 @@ var React = {\n     EventPluginUtils.useTouchEvents = shouldUseTouch;\n   },\n   createClass: ReactCompositeComponent.createClass,\n-  createDescriptor: createDescriptor,\n+  createDescriptor: createDescriptor, // deprecated, will be removed next week\n+  createElement: createDescriptor,\n   createFactory: createFactory,\n   constructAndRenderComponent: ReactMount.constructAndRenderComponent,\n   constructAndRenderComponentByID: ReactMount.constructAndRenderComponentByID,\n"
+        },
+        "file_name": "facebook_react.json"
+    },
+    {
+        "hash": "2f7a40204088b5c5c9e9eee5e0e7b4445105c28d",
+        "message": "Use yellow instead of red for termination message",
+        "author_name": "Joseph C. Miller, II",
+        "author_email": "josephcmiller2@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "main.py": "@@ -186,7 +186,7 @@ def construct_prompt():\n     if config.ai_name:\n         logger.typewriter_log(\n             f\"Welcome back! \",\n-            Fore.GREEN,\n+            Fore.YELLOW,\n             f\"Would you like me to return to being {config.ai_name}?\",\n             speak_text=True)\n         should_continue = utils.clean_input(f\"\"\"Continue with the last settings?\n"
+        },
+        "file_name": "Significant-Gravitas_AutoGPT.json"
+    },
+    {
+        "hash": "95f2e82f4e18116d1efcede8fbcf7e90f86484f6",
+        "message": "Change version",
+        "author_name": "afc163",
+        "author_email": "afc163@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "package.json": "@@ -1,6 +1,6 @@\n {\n   \"name\": \"antd\",\n-  \"version\": \"0.8.1-beta2\",\n+  \"version\": \"0.9.0-beta1\",\n   \"stableVersion\": \"0.8.0\",\n   \"title\": \"Ant Design\",\n   \"description\": \"\u4e00\u4e2a UI \u8bbe\u8ba1\u8bed\u8a00\",\n"
+        },
+        "file_name": "ant-design_ant-design.json"
+    },
+    {
+        "hash": "a971e4a767118ec41ec0f129770122babfb16a16",
+        "message": "update k-diff once again",
+        "author_name": "C43H66N12O12S2",
+        "author_email": "36072735+C43H66N12O12S2@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "launch.py": "@@ -19,7 +19,7 @@ clip_package = os.environ.get('CLIP_PACKAGE', \"git+https://github.com/openai/CLI\n \r\n stable_diffusion_commit_hash = os.environ.get('STABLE_DIFFUSION_COMMIT_HASH', \"69ae4b35e0a0f6ee1af8bb9a5d0016ccb27e36dc\")\r\n taming_transformers_commit_hash = os.environ.get('TAMING_TRANSFORMERS_COMMIT_HASH', \"24268930bf1dce879235a7fddd0b2355b84d7ea6\")\r\n-k_diffusion_commit_hash = os.environ.get('K_DIFFUSION_COMMIT_HASH', \"567e11f7062ba20ae32b5a8cd07fb0fc4b9410cf\")\r\n+k_diffusion_commit_hash = os.environ.get('K_DIFFUSION_COMMIT_HASH', \"f4e99857772fc3a126ba886aadf795a332774878\")\r\n codeformer_commit_hash = os.environ.get('CODEFORMER_COMMIT_HASH', \"c5b4593074ba6214284d6acd5f1719b6c5d739af\")\r\n blip_commit_hash = os.environ.get('BLIP_COMMIT_HASH', \"48211a1594f1321b00f14c9f7a5b4813144b2fb9\")\r\n \r\n"
+        },
+        "file_name": "AUTOMATIC1111_stable-diffusion-webui.json"
+    },
+    {
+        "hash": "ff757e2d6390b852614918c7bb9cb24b6f73f008",
+        "message": "Fix memory leak in THTensorRandom.c",
+        "author_name": "Thomas K\u00f6ppe",
+        "author_email": "tkoeppe@google.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 2,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "THTensorRandom.c": "@@ -106,7 +106,8 @@ void THTensor_(multinomial)(THLongTensor *self, THGenerator *_generator, THTenso\n         sum \\\n       );\n     }\n-    THArgCheck((sum > 0), 2, \"invalid multinomial distribution (sum of probabilities <= 0)\");\n+    THArgCheckWithCleanup((sum > 0), THCleanup(THTensor_(free)(cum_dist);), 2,\n+                          \"invalid multinomial distribution (sum of probabilities <= 0)\");\n     /* normalize cumulative probability distribution so that last val is 1\n     i.e. dosen't assume original prob_dist row sums to one */\n     if ( (sum > 0) || ( ( sum < 1.00001) && (sum > 0.99999) ) )\n"
+        },
+        "file_name": "pytorch_pytorch.json"
+    },
+    {
+        "hash": "3cd74bb8a86e00d6d78e21b0eb750d6d2240ff46",
+        "message": "Fix typo \"replicationContollers\"",
+        "author_name": "Eric Paris",
+        "author_email": "eparis@redhat.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "kubectl.go": "@@ -190,7 +190,7 @@ func resolveResource(target, resource string) (string, error) {\n \t\t}\n \tdefault:\n \t\t// It might be a GUID, but we don't know how to handle those for now.\n-\t\terr = fmt.Errorf(\"Resource %s not recognized; need pods, replicationContollers, services or minions.\", resource)\n+\t\terr = fmt.Errorf(\"Resource %s not recognized; need pods, replicationControllers, services or minions.\", resource)\n \t}\n \treturn resolved, err\n }\n"
+        },
+        "file_name": "kubernetes_kubernetes.json"
+    },
+    {
+        "hash": "44730f93242fa6860b6eda091c54992ddaf2ec91",
+        "message": "Adding \"Lights\" to featured projects list.",
+        "author_name": "Mr.doob",
+        "author_email": "info@mrdoob.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "dev",
+        "changes": {
+            "README.md": "@@ -63,6 +63,7 @@ More? [#three.js on irc.freenode.net](http://webchat.freenode.net/?channels=thre\n \n ### Featured projects ###\n \n+<a href=\"http://lights.elliegoulding.com/\"><img src=\"http://mrdoob.github.com/three.js/assets/projects/20_lights.png\" width=\"109\" height=\"82\" alt=\"Lights\"></a>\n <a href=\"http://inear.se/beanstalk/\"><img src=\"http://mrdoob.github.com/three.js/assets/projects/19_beanstalk.png\" width=\"109\" height=\"82\" alt=\"Infinite beanstalk\"></a>\n <a href=\"http://superfad.com/missioncontrol/\"><img src=\"http://mrdoob.github.com/three.js/assets/projects/18_missioncontrol.png\" width=\"109\" height=\"82\" alt=\"Mission Control\"></a>\n <a href=\"http://ro.me/\"><img src=\"http://mrdoob.github.com/three.js/assets/projects/17_rome.png\" width=\"109\" height=\"82\" alt=\"ROME\"></a>\n"
+        },
+        "file_name": "mrdoob_three.js.json"
+    },
+    {
+        "hash": "65cbcb2f73d89459a9cae5dc9b083be8f07eabae",
+        "message": "chore(doc-gen): ensure `log` is injected into `getExportDocType`\n\nSee #2446",
+        "author_name": "Peter Bacon Darwin",
+        "author_email": "pete@bacondarwin.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "getExportDocType.js": "@@ -1,6 +1,6 @@\n var ts = require('typescript');\n \n-module.exports = function getExportDocType() {\n+module.exports = function getExportDocType(log) {\n \n   return function(symbol) {\n     if(symbol.flags & ts.SymbolFlags.FunctionScopedVariable) {\n"
+        },
+        "file_name": "angular_angular.json"
+    },
+    {
+        "hash": "4cdd97210266b6bbfd69f2eaa45b273ca1f0b523",
+        "message": "Typo fix for mnist_tpu.py",
+        "author_name": "Neal Wu",
+        "author_email": "neal@nealwu.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "mnist_tpu.py": "@@ -41,7 +41,7 @@ tf.flags.DEFINE_string(\n     help=\"Name of the Cloud TPU for Cluster Resolvers. You must specify either \"\n     \"this flag or --master.\")\n \n-# Model specific paramenters\n+# Model specific parameters\n tf.flags.DEFINE_string(\n     \"master\", default=None,\n     help=\"GRPC URL of the master (e.g. grpc://ip.address.of.tpu:8470). You \"\n"
+        },
+        "file_name": "tensorflow_models.json"
+    },
+    {
+        "hash": "bbe818a61b6db36afaf6f18212d2890bfb428c93",
+        "message": "Fix wrong detection of proptype when isRequired is set",
+        "author_name": "Kanitkorn S",
+        "author_email": "k.sujautra@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "next",
+        "changes": {
+            "PropTable.js": "@@ -8,6 +8,7 @@ for (let typeName in React.PropTypes) {\n   }\n   const type = React.PropTypes[typeName];\n   PropTypesMap.set(type, typeName);\n+  PropTypesMap.set(type.isRequired, typeName);\n }\n \n const stylesheet = {\n"
+        },
+        "file_name": "storybookjs_storybook.json"
+    },
+    {
+        "hash": "38c24726092773bc360d7c440683b57316d6aeac",
+        "message": "Unterminated declaration breaks build.\n\nR=rsc\nAPPROVED=rsc\nDELTA=1  (0 added, 0 deleted, 1 changed)\nOCL=16688\nCL=16690",
+        "author_name": "Cary Hull",
+        "author_email": "chull@google.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "fd_linux.go": "@@ -39,7 +39,7 @@ export func NewPollster() (p *Pollster, err *os.Error) {\n }\n \n func (p *Pollster) AddFD(fd int64, mode int, repeat bool) *os.Error {\n-\tvar ev syscall.EpollEvent\n+\tvar ev syscall.EpollEvent;\n \tvar already bool;\n \tev.fd = int32(fd);\n \tev.events, already = p.events[fd];\n"
+        },
+        "file_name": "golang_go.json"
+    },
+    {
+        "hash": "b676bf3d4ccce96ce33a4b54b6236e0ae9b4526f",
+        "message": "Remove unused babel-loader from babel-preset-react-app (#6780)",
+        "author_name": "Tom Robinson",
+        "author_email": "tlrobinson@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 0,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "package.json": "@@ -32,7 +32,6 @@\n     \"@babel/preset-react\": \"7.0.0\",\n     \"@babel/preset-typescript\": \"7.3.3\",\n     \"@babel/runtime\": \"7.4.3\",\n-    \"babel-loader\": \"8.0.5\",\n     \"babel-plugin-dynamic-import-node\": \"2.2.0\",\n     \"babel-plugin-macros\": \"2.5.1\",\n     \"babel-plugin-transform-react-remove-prop-types\": \"0.4.24\"\n"
+        },
+        "file_name": "facebook_create-react-app.json"
+    },
+    {
+        "hash": "79fc659f1cf9d24388aba810c400624dcb2fcb94",
+        "message": "\ud83d\udc4c IMPROVE: update fork-corner (#1248)",
+        "author_name": "Waren Gonzaga",
+        "author_email": "github@warengonzaga.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "template.html": "@@ -48,7 +48,7 @@\n   <body>\n \n     <!-- Fork Corner -->\n-    <a href=\"https://github.com/animate-css/animate.css\" target=\"_blank\" id=\"fork-corner\" class=\"fork-corner fc-size-small fc-pos-tl fc-animate-default fc-theme-github\"></a>\n+    <a href=\"https://github.com/animate-css/animate.css\" target=\"_blank\" id=\"fork-corner\" class=\"fork-corner fc-size-small fc-pos-tl fc-animate-grow fc-theme-github\"></a>\n \n     <article class=\"intro\">\n       <section class=\"callout\">\n"
+        },
+        "file_name": "animate-css_animate.css.json"
+    },
+    {
+        "hash": "f94177367a5765f89be526837330459cf840747b",
+        "message": "Fix windows build in windows Qt SDK",
+        "author_name": "Wladimir J. van der Laan",
+        "author_email": "laanwj@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "bitcoin-qt.pro": "@@ -312,7 +312,7 @@ INCLUDEPATH += $$BOOST_INCLUDE_PATH $$BDB_INCLUDE_PATH $$OPENSSL_INCLUDE_PATH $$\n LIBS += $$join(BOOST_LIB_PATH,,-L,) $$join(BDB_LIB_PATH,,-L,) $$join(OPENSSL_LIB_PATH,,-L,) $$join(QRENCODE_LIB_PATH,,-L,)\n LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX\n # -lgdi32 has to happen after -lcrypto (see  #681)\n-windows:LIBS += -lgdi32\n+windows:LIBS += -lole32 -luuid -lgdi32\n LIBS += -lboost_system$$BOOST_LIB_SUFFIX -lboost_filesystem$$BOOST_LIB_SUFFIX -lboost_program_options$$BOOST_LIB_SUFFIX -lboost_thread$$BOOST_THREAD_LIB_SUFFIX\n \n contains(RELEASE, 1) {\n"
+        },
+        "file_name": "bitcoin_bitcoin.json"
+    },
+    {
+        "hash": "2a7ed1ada74e9625d8f73eec03dfe560ba978b32",
+        "message": "fix(firefox): add ExecutionContext to api (#3963)",
+        "author_name": "Andrey Lushnikov",
+        "author_email": "aslushnikov@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "api.js": "@@ -5,6 +5,7 @@ module.exports = {\n   ConsoleMessage: require('./Page').ConsoleMessage,\n   Dialog: require('./Dialog').Dialog,\n   ElementHandle: require('./JSHandle').ElementHandle,\n+  ExecutionContext: require('./ExecutionContext').ExecutionContext,\n   Frame: require('./Page').Frame,\n   JSHandle: require('./JSHandle').JSHandle,\n   Keyboard: require('./Input').Keyboard,\n"
+        },
+        "file_name": "puppeteer_puppeteer.json"
+    },
+    {
+        "hash": "432ba82ad2ec42e8de988974e8fe5bb50215b55a",
+        "message": "Set Chrome userDataDir to be under .vscode folder (#1657)",
+        "author_name": "Ryan Sullivan",
+        "author_email": "ryansully@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "README.md": "@@ -269,7 +269,7 @@ Then add the block below to your `launch.json` file and put it inside the `.vsco\n     \"request\": \"launch\",\n     \"url\": \"http://localhost:3000\",\n     \"webRoot\": \"${workspaceRoot}/src\",\n-    \"userDataDir\": \"${workspaceRoot}/.chrome\",\n+    \"userDataDir\": \"${workspaceRoot}/.vscode/chrome\",\n     \"sourceMapPathOverrides\": {\n       \"webpack:///src/*\": \"${webRoot}/*\"\n     }\n"
+        },
+        "file_name": "facebook_create-react-app.json"
+    },
+    {
+        "hash": "22503cdb942b3546db596a26ac3d68e02620fc56",
+        "message": "#279 Fix merge",
+        "author_name": "nvbn",
+        "author_email": "nvbn.rm@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 0,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "setup.py": "@@ -1,5 +1,4 @@\n #!/usr/bin/env python\n-import sys\n from setuptools import setup, find_packages\n import sys\n \n"
+        },
+        "file_name": "nvbn_thefuck.json"
+    },
+    {
+        "hash": "1cadc9221a90e8b0f195912e87c8278c76e31994",
+        "message": "win: Download ATL binaries.",
+        "author_name": "Cheng Zhao",
+        "author_email": "zcbenz@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 2,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "update-external-binaries.py": "@@ -7,7 +7,7 @@ import os\n from lib.util import safe_mkdir, rm_rf, extract_zip, tempdir, download\n \n \n-VERSION = 'v0.1.0'\n+VERSION = 'v0.2.0'\n SOURCE_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))\n FRAMEWORKS_URL = 'https://github.com/atom/atom-shell-frameworks/releases' \\\n                  '/download/' + VERSION\n@@ -28,6 +28,7 @@ def main():\n     download_and_unzip('ReactiveCocoa')\n     download_and_unzip('Squirrel')\n   elif sys.platform in ['cygwin', 'win32']:\n+    download_and_unzip('atl')\n     download_and_unzip('directxsdk')\n     download_and_unzip('vs2012_crt')\n \n"
+        },
+        "file_name": "electron_electron.json"
+    },
+    {
+        "hash": "cb9d1b88bed2ecc2434ff1017526697037144b27",
+        "message": "Adds cursor-text class",
+        "author_name": "Marina Mosti",
+        "author_email": "marina@mosti.com.mx",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "next",
+        "changes": {
+            "cursor.js": "@@ -8,6 +8,7 @@ export default function() {\n         '.cursor-wait': { cursor: 'wait' },\n         '.cursor-move': { cursor: 'move' },\n         '.cursor-not-allowed': { cursor: 'not-allowed' },\n+        '.cursor-text': { cursor: 'text'}\n       },\n       config('modules.cursor')\n     )\n"
+        },
+        "file_name": "tailwindlabs_tailwindcss.json"
+    },
+    {
+        "hash": "8c9a24983e8b9dd452f5e378e845104e81333b74",
+        "message": "Remove calls to `Range.detach`\n\nThis method is a no-op, as demonstrated by console warnings in Chrome and https://developer.mozilla.org/en-US/docs/Web/API/range.detach.\n\nRemove callsites.\n\nFixes #2142",
+        "author_name": "Isaac Salier-Hellendag",
+        "author_email": "isaac@fb.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 3,
+        "num_inserts": 0,
+        "net_lines": -3,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "ReactDOMSelection.js": "@@ -114,7 +114,6 @@ function getModernOffsets(node) {\n   detectionRange.setStart(anchorNode, anchorOffset);\n   detectionRange.setEnd(focusNode, focusOffset);\n   var isBackward = detectionRange.collapsed;\n-  detectionRange.detach();\n \n   return {\n     start: isBackward ? end : start,\n@@ -194,8 +193,6 @@ function setModernOffsets(node, offsets) {\n       range.setEnd(endMarker.node, endMarker.offset);\n       selection.addRange(range);\n     }\n-\n-    range.detach();\n   }\n }\n \n"
+        },
+        "file_name": "facebook_react.json"
+    },
+    {
+        "hash": "100ffb4ffe7e140894761b1b7b98a7dc6cd0e9ba",
+        "message": "remove some comment bloat.",
+        "author_name": "Taylor Otwell",
+        "author_email": "taylorotwell@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 2,
+        "num_inserts": 1,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "11.x",
+        "changes": {
+            "url.php": "@@ -27,8 +27,7 @@ public static function to($url = '', $https = false)\n \n \t\t// Since SSL is often not used while developing the application, we allow the\n \t\t// developer to disable SSL on all framework generated links to make it more\n-\t\t// convenient to work with the site while developing. When the \"ssl\" option\n-\t\t// is disabled, all links will use the HTTP protocol instead of HTTPS.\n+\t\t// convenient to work with the site while developing.\n \t\tif ($https and Config::$items['application']['ssl'])\n \t\t{\n \t\t\t$root = preg_replace('~http://~', 'https://', $root, 1);\n"
+        },
+        "file_name": "laravel_laravel.json"
+    },
+    {
+        "hash": "5d9a4f343494ae8969014a3224443b6d7ce5caf5",
+        "message": "remove reference to atom-shell-installer-assets",
+        "author_name": "Jo\u00e3o Moreno",
+        "author_email": "joaomoreno@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 2,
+        "num_inserts": 1,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "package.json": "@@ -31,7 +31,6 @@\n \t},\n \t\"devDependencies\": {\n \t\t\"async\": \"^1.4.0\",\n-\t\t\"atom-shell-installer-assets\": \"^0.2.0\",\n \t\t\"azure-storage\": \"^0.3.1\",\n \t\t\"clone\": \"^1.0.2\",\n \t\t\"debounce\": \"^1.0.0\",\n@@ -84,4 +83,4 @@\n \t\"bugs\": {\n \t\t\"url\": \"https://github.com/Microsoft/vscode/issues\"\n \t}\n-}\n\\ No newline at end of file\n+}\n"
+        },
+        "file_name": "microsoft_vscode.json"
+    },
+    {
+        "hash": "a2139d82f577486f168cbbb570178ae9d40ec0f5",
+        "message": "debug: fix breakpoint helper glyph",
+        "author_name": "isidor",
+        "author_email": "inikolic@microsoft.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "debugEditorContribution.ts": "@@ -203,7 +203,7 @@ export class DebugEditorContribution implements editorcommon.IEditorContribution\n \t// end hover business\n \n \tprivate static BREAKPOINT_HELPER_DECORATION: editorcommon.IModelDecorationOptions = {\n-\t\tglyphMarginClassName: 'debug-breakpoint-glyph-hint',\n+\t\tglyphMarginClassName: 'debug-breakpoint-hint-glyph',\n \t\tstickiness: editorcommon.TrackedRangeStickiness.NeverGrowsWhenTypingAtEdges\n \t};\n \n"
+        },
+        "file_name": "microsoft_vscode.json"
+    },
+    {
+        "hash": "00902cd60139c919871aa30c43d0ae21c130fb86",
+        "message": "release 2013.12.16.2",
+        "author_name": "Philipp Hagemeister",
+        "author_email": "phihag@phihag.de",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "version.py": "@@ -1,2 +1,2 @@\n \n-__version__ = '2013.12.16.1'\n+__version__ = '2013.12.16.2'\n"
+        },
+        "file_name": "ytdl-org_youtube-dl.json"
+    },
+    {
+        "hash": "5da6daa4023f74a0753206e7990492fab13c9c35",
+        "message": "Rename the file to add CRC32 hash",
+        "author_name": "WindowsAddict",
+        "author_email": "windowsaddict@protonmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 0,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "MAS_AIO-CRC32_63055B8E.cmd": ""
+        },
+        "file_name": "massgravel_Microsoft-Activation-Scripts.json"
+    },
+    {
+        "hash": "0f5fef4fbe04f0dd74ddd0c18af8178dda6270c8",
+        "message": "Update README.md",
+        "author_name": "Vladimir Iakovlev",
+        "author_email": "nvbn.rm@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 2,
+        "net_lines": 2,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "README.md": "@@ -81,6 +81,8 @@ function fuck\n end\n ```\n \n+Changes will available only in a new shell session.\n+\n ## How it works\n \n The Fuck tries to match rule for the previous command, create new command\n"
+        },
+        "file_name": "nvbn_thefuck.json"
+    },
+    {
+        "hash": "193e2df8ba95efd6e3326cb0907576a0c74f1d74",
+        "message": "Remove rogue comment",
+        "author_name": "Jade Abbott",
+        "author_email": "jabbott@retrorabbit.co.za",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 0,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "run_classifier.py": "@@ -566,7 +566,6 @@ def main():\n \n     if args.do_eval and (args.local_rank == -1 or torch.distributed.get_rank() == 0):\n         eval_examples = processor.get_dev_examples(args.data_dir)\n-        # should tokenize this too. \n         eval_features = convert_examples_to_features(\n             eval_examples, label_list, args.max_seq_length, tokenizer)\n         logger.info(\"***** Running evaluation *****\")\n"
+        },
+        "file_name": "huggingface_transformers.json"
+    },
+    {
+        "hash": "e79cda6dade8bde4f3e67e55f3a4eab6405cb781",
+        "message": "Add pyopencl to dependency installs (#174)\n\n* Add pyopencl to dependency installs\r\n\r\nOpenCL was not actually being tested as pyopencl was not installed.\r\n\r\n* Reduce installation to 1 liner",
+        "author_name": "Liam",
+        "author_email": "3579535@myuwc.ac.za",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "test.yml": "@@ -29,6 +29,6 @@ jobs:\n       with:\n         python-version: 3.8\n     - name: Install Dependencies\n-      run: pip install -r requirements.txt\n+      run: pip install -e '.[gpu,testing]'\n     - name: Run Pytest\n       run: python -m pytest -s -v\n"
+        },
+        "file_name": "tinygrad_tinygrad.json"
+    },
+    {
+        "hash": "beea6f9c829928f472b1dc78e805314099bd5658",
+        "message": "chore(testrunner): fix typo in readme",
+        "author_name": "Andrey Lushnikov",
+        "author_email": "aslushnikov@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "README.md": "@@ -31,7 +31,7 @@ beforeAll(state => {\n \n describe('math', () => {\n   it('to be sane', async (state, test) => {\n-    state.parallel; // Very first test will always be ran by the 0's thread\n+    state.parallelIndex; // Very first test will always be ran by the 0's thread\n     state.foo; // this will be 'bar'\n     expect(2 + 2).toBe(4);\n   });\n"
+        },
+        "file_name": "puppeteer_puppeteer.json"
+    },
+    {
+        "hash": "d90cf9b8ac02e7335997ca695f4269c91e7a406d",
+        "message": "Boilerplate checks on 2014, but commit included a 2015 (breaks travis)\n\nRevert boilerplate to 2014 until hack/verify-boilerplate.sh is fixed",
+        "author_name": "Clayton Coleman",
+        "author_email": "ccoleman@redhat.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "e2e-from-release.sh": "@@ -1,6 +1,6 @@\n #!/bin/bash\n \n-# Copyright 2015 Google Inc. All rights reserved.\n+# Copyright 2014 Google Inc. All rights reserved.\n #\n # Licensed under the Apache License, Version 2.0 (the \"License\");\n # you may not use this file except in compliance with the License.\n"
+        },
+        "file_name": "kubernetes_kubernetes.json"
+    },
+    {
+        "hash": "17769d5a6c24eb8f5d609aa99f84debc3fe4adec",
+        "message": "release 2013.11.29",
+        "author_name": "Philipp Hagemeister",
+        "author_email": "phihag@phihag.de",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "version.py": "@@ -1,2 +1,2 @@\n \n-__version__ = '2013.11.28.1'\n+__version__ = '2013.11.29'\n"
+        },
+        "file_name": "yt-dlp_yt-dlp.json"
+    },
+    {
+        "hash": "71c4d116fa8a7edd4b5ae1970763fd0e86ff36c9",
+        "message": "Minor performance improvements (#7587)\n\n- use ESLint cache\r\n- remove useless `watch` option in fork-ts-checker",
+        "author_name": "Tom\u00e1\u0161 Szabo",
+        "author_email": "tomas.szabo@deftomat.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "webpack.config.js": "@@ -334,6 +334,7 @@ module.exports = function(webpackEnv) {\n           use: [\n             {\n               options: {\n+                cache: true,\n                 formatter: require.resolve('react-dev-utils/eslintFormatter'),\n                 eslintPath: require.resolve('eslint'),\n                 resolvePluginsRelativeTo: __dirname,\n@@ -690,7 +691,6 @@ module.exports = function(webpackEnv) {\n             '!**/src/setupProxy.*',\n             '!**/src/setupTests.*',\n           ],\n-          watch: paths.appSrc,\n           silent: true,\n           // The formatter is invoked directly in WebpackDevServerUtils during development\n           formatter: isEnvProduction ? typescriptFormatter : undefined,\n"
+        },
+        "file_name": "facebook_create-react-app.json"
+    },
+    {
+        "hash": "2f9e65f16b64e524adb245159ecee82bfc5f9dff",
+        "message": "Update gitignore to ignore internal test folders",
+        "author_name": "Yui T",
+        "author_email": "yuisu@microsoft.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            ".gitignore": "@@ -43,3 +43,4 @@ scripts/word2md.js\n scripts/ior.js\r\n scripts/*.js.map\r\n coverage/\r\n+internal/\r\n"
+        },
+        "file_name": "microsoft_TypeScript.json"
+    },
+    {
+        "hash": "c3c2ad1454a5df39b10596692934081797da206b",
+        "message": "fix: improve type of TreeNode.children.",
+        "author_name": "Martin Probst",
+        "author_email": "martin@probst.io",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "element_injector.ts": "@@ -150,7 +150,7 @@ export class TreeNode<T extends TreeNode<any>> {\n   get parent() { return this._parent; }\n \n   // TODO(rado): replace with a function call, does too much work for a getter.\n-  get children(): TreeNode<any>[] {\n+  get children(): T[] {\n     var res = [];\n     var child = this._head;\n     while (child != null) {\n"
+        },
+        "file_name": "angular_angular.json"
+    },
+    {
+        "hash": "9a769630d7a2e3d3413527d1d8ca21612b86175a",
+        "message": "[readme] fix typo in resolv.conf filename\n\nSigned-off-by: emmanuel-ferdman <35470921+emmanuel-ferdman@users.noreply.github.com>",
+        "author_name": "emmanuel-ferdman",
+        "author_email": "35470921+emmanuel-ferdman@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "README.md": "@@ -1020,7 +1020,7 @@ This could simply be solved by running this in your root directory:\n   sudo chattr +i /etc/resolv.conf\n   ```\n \n-This deletes your `resolve.conf` file thats automatically generated when u run WSL, creates a new file and puts `nameserver 8.8.8.8`, then creates a `wsl.conf` file and adds `[network]` and `generateResolveConf = false` to prevent auto generation of that file.\n+This deletes your `resolv.conf` file thats automatically generated when u run WSL, creates a new file and puts `nameserver 8.8.8.8`, then creates a `wsl.conf` file and adds `[network]` and `generateResolveConf = false` to prevent auto generation of that file.\n \n You can check the contents of the file by running:\n \n"
+        },
+        "file_name": "nvm-sh_nvm.json"
+    },
+    {
+        "hash": "7766ce66dd788a780a54f890711ad58cb3d96f5f",
+        "message": "update bertology",
+        "author_name": "thomwolf",
+        "author_email": "thomwolf@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 3,
+        "net_lines": 3,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "bertology.py": "@@ -281,9 +281,11 @@ def run_model():\n         score_masking = compute_metrics(task_name, preds, labels)[args.metric_name]\n         original_time = datetime.now() - before_time\n \n+        original_num_params = sum(p.numel() for p in model.parameters())\n         heads_to_prune = dict((layer, (1 - head_mask[layer].long()).nonzero().tolist()) for layer in range(len(head_mask)))\n         assert sum(len(h) for h in heads_to_prune.values()) == (1 - head_mask.long()).sum().item()\n         model.bert.prune_heads(heads_to_prune)\n+        pruned_num_params = sum(p.numel() for p in model.parameters())\n \n         before_time = datetime.now()\n         _, _, preds, labels = compute_heads_importance(args, model, eval_dataloader,\n@@ -292,6 +294,7 @@ def run_model():\n         score_pruning = compute_metrics(task_name, preds, labels)[args.metric_name]\n         new_time = datetime.now() - before_time\n \n+        logger.info(\"Pruning: original num of params: %.2e, after pruning %.2e (%.1f percents)\", original_num_params, pruned_num_params, pruned_num_params/original_num_params * 100)\n         logger.info(\"Pruning: score with masking: %f score with pruning: %f\", score_masking, score_pruning)\n         logger.info(\"Pruning: speed ratio (new timing / original timing): %f percents\", original_time/new_time * 100)\n \n"
+        },
+        "file_name": "huggingface_transformers.json"
+    },
+    {
+        "hash": "43e8ecb118d7ef62caf39309c63f3fbdd2ac8cb8",
+        "message": "win: screen module is now browser only.",
+        "author_name": "Cheng Zhao",
+        "author_email": "zcbenz@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "screen.coffee": "@@ -1,5 +1,5 @@\n module.exports =\n-  if process.platform is 'linux' and process.type is 'renderer'\n+  if process.platform in ['linux', 'win32'] and process.type is 'renderer'\n     # On Linux we could not access screen in renderer process.\n     require('remote').require 'screen'\n   else\n"
+        },
+        "file_name": "electron_electron.json"
+    },
+    {
+        "hash": "32cc53a901b24a683787d3417fd635fa06a278b6",
+        "message": "Fix stack-overflow when creating a new atlas\n\nWhen an atlas is full and the `insert` call fails, a new atlas should be\ncreated. This is the current strategy, however the atlas is put at the\nend of the vector, but the `current_atlas` index is set to 0, instead of\nthe last element. This leads to a recursion where it keeps trying to\ninsert into the full atlas at position 0 instead of the new at\n`atlas.len() - 1`.\n\nWith this simple fix a stack-overflow is prevented because the new atlas\nis inserted as the first element, which then will be used correctly for\nloading new glyphs.\n\nThis fixes jwilm/alacritty/issues/842 and might also solve\njwilm/alacritty/issues/914 (I wasn't able to reproduce this with the\nlatest master).",
+        "author_name": "Christian Duerr",
+        "author_email": "contact@christianduerr.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "mod.rs": "@@ -876,7 +876,7 @@ impl<'a> LoadGlyph for LoaderApi<'a> {\n                 let atlas = Atlas::new(ATLAS_SIZE);\n                 *self.active_tex = 0; // Atlas::new binds a texture. Ugh this is sloppy.\n                 *self.current_atlas = 0;\n-                self.atlas.push(atlas);\n+                self.atlas.insert(0, atlas);\n                 self.load_glyph(rasterized)\n             }\n         }\n"
+        },
+        "file_name": "alacritty_alacritty.json"
+    },
+    {
+        "hash": "c66c3aef8126bf943b2746afb6a9c2a536990db5",
+        "message": "Fix graphical bug in cypher theme when return status is non-zero\n\n- When the previous command's return status is non-zero and the prompt\n  is redrawn, graphical errors sometimes arise due to the fg{red} not\n  being escaped.",
+        "author_name": "Fice-T",
+        "author_email": "Fice-T@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "cypher.zsh-theme": "@@ -1,4 +1,4 @@\n # Based on evan's prompt\n # Shows the exit status of the last command if non-zero\n # Uses \"#\" instead of \"\u00bb\" when running with elevated privileges\n-PROMPT=\"%m %{${fg_bold[red]}%}:: %{${fg[green]}%}%3~%(0?. . ${fg[red]}%? )%{${fg[blue]}%}\u00bb%{${reset_color}%} \"\n+PROMPT=\"%m %{${fg_bold[red]}%}:: %{${fg[green]}%}%3~%(0?. . %{${fg[red]}%}%? )%{${fg[blue]}%}\u00bb%{${reset_color}%} \"\n"
+        },
+        "file_name": "ohmyzsh_ohmyzsh.json"
+    },
+    {
+        "hash": "f81d9ddb76cf4a404a3d38d8b38f3671574ebac6",
+        "message": "Bring back CUDA and CuDNN versions.",
+        "author_name": "lissyx",
+        "author_email": "lissyx+github@lissyx.dyndns.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "README.md": "@@ -90,7 +90,7 @@ Please refer to your system's documentation on how to install these dependencies\n \n ### CUDA dependency\n \n-The GPU capable builds (Python, NodeJS, C++, etc) depend on the same CUDA runtime as upstream TensorFlow. Make sure you've installed the correct version of CUDA\n+The GPU capable builds (Python, NodeJS, C++, etc) depend on the same CUDA runtime as upstream TensorFlow. Currently with TensorFlow 1.13 it depends on CUDA 10.0 and CuDNN v7.5.\n \n ### Getting the pre-trained model\n \n"
+        },
+        "file_name": "mozilla_DeepSpeech.json"
+    },
+    {
+        "hash": "b0c733e3279011fa6d82e29fc730c47f63b6e167",
+        "message": "list of messages (#4651)",
+        "author_name": "Harrison Chase",
+        "author_email": "hw.chase.17@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 0,
+        "net_lines": 0,
+        "num_files": 0,
+        "branches": "master",
+        "changes": {},
+        "file_name": "langchain-ai_langchain.json"
+    },
+    {
+        "hash": "0e5fba2dfbb4492b6819da89a4787eb5bbff5ba0",
+        "message": "[Docs] Also add `--compressed` for `curl` in issue template, cc #1437",
+        "author_name": "Peter Dave Hello",
+        "author_email": "hsu@peterdavehello.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "ISSUE_TEMPLATE.md": "@@ -32,7 +32,7 @@\n - Is there anything in any of your profile files (`.bashrc`, `.bash_profile`, `.zshrc`, etc) that modifies the `PATH`?\n \n <!-- if this does not apply, please delete this section -->\n-- If you are having installation issues, or getting \"N/A\", what does `curl -v nodejs.org/dist/` print out?\n+- If you are having installation issues, or getting \"N/A\", what does `curl --compressed -v nodejs.org/dist/` print out?\n <details>\n <!-- do not delete the following blank line -->\n \n"
+        },
+        "file_name": "nvm-sh_nvm.json"
+    },
+    {
+        "hash": "fe68f708ce723cef640c1cf784cb29da513bca22",
+        "message": "Removed funky characters.",
+        "author_name": "Martin Bean",
+        "author_email": "martin@mcbwebdesign.co.uk",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "javascript.html": "@@ -76,7 +76,7 @@\n     <div class=\"container\">\n \n     <!-- Modal\n-    =================================================\uf701\uf700= -->\n+    ================================================== -->\n \n     <section id=\"modal\">\n       <div class=\"page-header\">\n"
+        },
+        "file_name": "twbs_bootstrap.json"
+    },
+    {
+        "hash": "110fdedef0c28bd5b26e5611e4510163d0a6242c",
+        "message": "Update detect-port-alt (#4250)",
+        "author_name": "Joe Haddad",
+        "author_email": "timer150@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "package.json": "@@ -40,7 +40,7 @@\n     \"babel-code-frame\": \"6.26.0\",\n     \"chalk\": \"1.1.3\",\n     \"cross-spawn\": \"5.1.0\",\n-    \"detect-port-alt\": \"1.1.5\",\n+    \"detect-port-alt\": \"1.1.6\",\n     \"escape-string-regexp\": \"1.0.5\",\n     \"filesize\": \"3.5.11\",\n     \"global-modules\": \"1.0.0\",\n"
+        },
+        "file_name": "facebook_create-react-app.json"
+    },
+    {
+        "hash": "27ec5610598ce51d792f9adadde8eab727481e7c",
+        "message": "feat: add form to antd.",
+        "author_name": "SimaQ",
+        "author_email": "sima.zhang1990@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 2,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "index.js": "@@ -53,7 +53,8 @@ const antd = {\n   Icon: require('./components/iconfont'),\n   Row: require('./components/layout').Row,\n   Col: require('./components/layout').Col,\n-  Spin: require('./components/spin')\n+  Spin: require('./components/spin'),\n+  Form: require('./components/form'),\n };\n \n antd.version = require('./package.json').version;\n"
+        },
+        "file_name": "ant-design_ant-design.json"
+    },
+    {
+        "hash": "02b324a23dcf03b364318fcba305ffc968b3d661",
+        "message": "Restore 2.5 compat by activating with_statement future",
+        "author_name": "Philipp Hagemeister",
+        "author_email": "phihag@phihag.de",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 2,
+        "net_lines": 2,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "__init__.py": "@@ -1,6 +1,8 @@\n #!/usr/bin/env python\n # -*- coding: utf-8 -*-\n \n+from __future__ import with_statement\n+\n __authors__  = (\n \t'Ricardo Garcia Gonzalez',\n \t'Danny Colligan',\n"
+        },
+        "file_name": "yt-dlp_yt-dlp.json"
+    },
+    {
+        "hash": "35e882e74fb01d91e24df7c08fafe58e9f5bef6c",
+        "message": "feat: add constructors without type arguments.\n\nAs the constructed objects have an any type, the\nresulting containers are assignable to any type:\n\n    var x: Map<string, number> = new Map();\n\nThat is useful to avoid having to specify types\ntwice when declaration and assignment are in\ndifferent places.",
+        "author_name": "Martin Probst",
+        "author_email": "martin@probst.io",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 2,
+        "net_lines": 2,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "traceur-runtime.d.ts": "@@ -45,6 +45,7 @@ interface Map<K, V> {\n   size: number;\n }\n declare var Map: {\n+  new (): Map<any, any>;\n   new<K, V>(): Map<K, V>;\n   // alexeagle: PATCHED\n   new<K, V>(m: Map<K, V>): Map<K, V>;\n@@ -61,6 +62,7 @@ interface Set<T> {\n   size: number;\n }\n declare var Set: {\n+  new (): Set<any>;\n   new<T>(): Set<T>;\n   // alexeagle PATCHED\n   new<T>(s: Set<T>): Set<T>;\n"
+        },
+        "file_name": "angular_angular.json"
+    },
+    {
+        "hash": "66b4ed9552d3ff7d6f49d531c1a13f05352ffce6",
+        "message": "Added link to Senegal playlist",
+        "author_name": "freearhey",
+        "author_email": "free.arhey@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 3,
+        "net_lines": 3,
+        "num_files": 2,
+        "branches": "master",
+        "changes": {
+            "README.md": "@@ -162,6 +162,7 @@ Or select a playlist for a specific country from the list below.\n | Saint Kitts and Nevis  | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kn.m3u` |\n | San Marino             | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sm.m3u` |\n | Saudi Arabia           | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sa.m3u` | `http://195.154.221.171/epg/guidearab.xml.gz`\n+| Senegal                | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sn.m3u` |\n | Serbia                 | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/rs.m3u` | `http://epg.streamstv.me/epg/guide-exyu.xml.gz`\n | Sierra Leone           | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sl.m3u` |\n | Singapore              | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sg.m3u` |\n",
+            "index.m3u": "@@ -243,6 +243,8 @@ channels/kn.m3u\n channels/sm.m3u\n #EXTINF:-1,Saudi Arabia\n channels/sa.m3u\n+#EXTINF:-1,Senegal\n+channels/sn.m3u\n #EXTINF:-1,Serbia\n channels/rs.m3u\n #EXTINF:-1,Sierra Leone\n"
+        },
+        "file_name": "iptv-org_iptv.json"
+    },
+    {
+        "hash": "cccc277dd933bf06f2186e894130f5b78c4d448e",
+        "message": "fix eslint",
+        "author_name": "Evan You",
+        "author_email": "yyx990803@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 2,
+        "net_lines": 2,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "compile.spec.js": "@@ -25,6 +25,7 @@ describe('compile class', () => {\n   it('should compile data bindings with children', () => {\n     const { render, staticRenderFns, errors } = compile(`<foo :a=\"b\"><text>Hello</text></foo>`)\n     expect(render).toEqual(`with(this){return _h('foo',{attrs:{\"a\":b}},[_h('text',[\"Hello\"])])}`)\n+    expect(staticRenderFns).toEqual([])\n     expect(errors).toEqual([])\n   })\n \n@@ -38,6 +39,7 @@ describe('compile class', () => {\n       </refresh>\n     `)\n     expect(render).toEqual(`with(this){return _h('refresh',{staticClass:[\"refresh\"],staticStyle:{flexDirection:\"row\"},attrs:{\"display\":displayRefresh},on:{\"refresh\":handleRefresh}},[_h('loading-indicator'),_h('text',{staticStyle:{marginLeft:\"36px\",color:\"#eee\"}},[\"Load more...\"])])}`)\n+    expect(staticRenderFns).toEqual([])\n     expect(errors).toEqual([])\n   })\n })\n"
+        },
+        "file_name": "vuejs_vue.json"
+    },
+    {
+        "hash": "352b4ea5b924412f3485290123fdf538cfdd8aa8",
+        "message": "Reduce minimum TX fee for new transactions, to 0.0005.",
+        "author_name": "Jeff Garzik",
+        "author_email": "jeff@garzik.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "main.h": "@@ -29,7 +29,7 @@ static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;\n static const int MAX_BLOCK_SIGOPS = MAX_BLOCK_SIZE/50;\n static const int64 COIN = 100000000;\n static const int64 CENT = 1000000;\n-static const int64 MIN_TX_FEE = CENT;\n+static const int64 MIN_TX_FEE = 50000;\n static const int64 MIN_RELAY_TX_FEE = 50000;\n static const int64 MAX_MONEY = 21000000 * COIN;\n inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }\n"
+        },
+        "file_name": "bitcoin_bitcoin.json"
+    },
+    {
+        "hash": "dd4b4dd9d0e7e64080bed04d9e21f43933f8021f",
+        "message": "Release 2.4.1",
+        "author_name": "Guillermo Rauch",
+        "author_email": "rauchg@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "canary",
+        "changes": {
+            "package.json": "@@ -1,6 +1,6 @@\n {\n   \"name\": \"next\",\n-  \"version\": \"2.4.0\",\n+  \"version\": \"2.4.1\",\n   \"description\": \"Minimalistic framework for server-rendered React applications\",\n   \"main\": \"./dist/server/next.js\",\n   \"license\": \"MIT\",\n"
+        },
+        "file_name": "vercel_next.js.json"
+    },
+    {
+        "hash": "8b7b819b4b9e6ba457e011e92e33266690e26957",
+        "message": "Use const instead of var in env.js (#7526)",
+        "author_name": "Jannis Hell",
+        "author_email": "Primajin@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "env.js": "@@ -23,7 +23,7 @@ if (!NODE_ENV) {\n }\n \n // https://github.com/bkeepers/dotenv#what-other-env-files-can-i-use\n-var dotenvFiles = [\n+const dotenvFiles = [\n   `${paths.dotenv}.${NODE_ENV}.local`,\n   `${paths.dotenv}.${NODE_ENV}`,\n   // Don't include `.env.local` for `test` environment\n"
+        },
+        "file_name": "facebook_create-react-app.json"
+    },
+    {
+        "hash": "13bc0e032faaca301863a118316dda7be30bc40f",
+        "message": "Fix upload progress event example",
+        "author_name": "Igor De Paula",
+        "author_email": "principe.borodin@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "v1.x",
+        "changes": {
+            "index.html": "@@ -28,7 +28,7 @@\n \n           var config = {\n             onUploadProgress: function(progressEvent) {\n-              var percentCompleted = progressEvent.loaded / progressEvent.total;\n+              var percentCompleted = Math.round( (progressEvent.loaded * 100) / progressEvent.total );\n             }\n           };\n \n"
+        },
+        "file_name": "axios_axios.json"
+    },
+    {
+        "hash": "d31f190239e9236cbfdd0900a89cff68b606e764",
+        "message": "Fixed #1959 -- Fixed typo in django/contrib/admin/views/doc.py\n\ngit-svn-id: http://code.djangoproject.com/svn/django/trunk@2957 bcc190cf-cafb-0310-a4f2-bffc1f526a37",
+        "author_name": "Adrian Holovaty",
+        "author_email": "adrian@holovaty.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "doc.py": "@@ -284,7 +284,7 @@ DATA_TYPE_MAPPING = {\n     'DateTimeField'             : _('Date (with time)'),\n     'EmailField'                : _('E-mail address'),\n     'FileField'                 : _('File path'),\n-    'FilePathField',            : _('File path'),\n+    'FilePathField'             : _('File path'),\n     'FloatField'                : _('Decimal number'),\n     'ForeignKey'                : _('Integer'),\n     'ImageField'                : _('File path'),\n"
+        },
+        "file_name": "django_django.json"
+    },
+    {
+        "hash": "dc105cca5ad907d77354b0570a38f3abf964d8a6",
+        "message": "appveyor: fix conditional\n\nIf the build is not a tag build, APPVEYOR_REPO_TAG is [string]\"false\",\nwhich is a truthy value.",
+        "author_name": "Bert Belder",
+        "author_email": "bertbelder@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            ".appveyor.yml": "@@ -333,7 +333,7 @@ after_test:\n \n   # If this build is going to be deployed, build a zip file.\n   - ps: |-\n-      if ($env:APPVEYOR_REPO_TAG) {\n+      if ($env:APPVEYOR_REPO_TAG -eq \"true\") {\n         Compress-Archive -CompressionLevel Optimal -Force `\n           -Path \"$env:DENO_BUILD_PATH\\deno.exe\" `\n           -DestinationPath \"$env:APPVEYOR_BUILD_FOLDER\\$env:RELEASE_ARTIFACT\"\n"
+        },
+        "file_name": "denoland_deno.json"
+    },
+    {
+        "hash": "23fbd750dec59df54cdded1fd542f090f1ca9be8",
+        "message": "Resolves Codacy quality test issue",
+        "author_name": "Angelos Chalaris",
+        "author_email": "chalarangelo@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "noneBy.test.js": "@@ -6,7 +6,7 @@ test('Testing noneBy', (t) => {\n   //Please go to https://github.com/substack/tape\n   t.true(typeof noneBy === 'function', 'noneBy is a Function');\n   t.true(noneBy([4,1,0,3], x => x < 0), 'Returns true with a predicate function');\n-  t.false(noneBy([0,1,2], x => x == 1), 'Returns false with predicate function');\n+  t.false(noneBy([0,1,2], x => x === 1), 'Returns false with predicate function');\n   //t.deepEqual(noneBy(args..), 'Expected');\n   //t.equal(noneBy(args..), 'Expected');\n   //t.false(noneBy(args..), 'Expected');\n"
+        },
+        "file_name": "Chalarangelo_30-seconds-of-code.json"
+    },
+    {
+        "hash": "e3926720118f76e4b1352a75e332026e49154f34",
+        "message": "Remove extra out argument sent to Parcel and reduce logging in output (#22)\n\nUse log-level=1 for parcel.",
+        "author_name": "Mohsen Azimi",
+        "author_email": "me@azimi.me",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "Makefile": "@@ -54,7 +54,7 @@ msg.pb.d.ts: msg.pb.js node_modules\n \n dist/main.js: $(TS_FILES) node_modules\n \t./node_modules/.bin/tsc --noEmit # Only for type checking.\n-\t./node_modules/.bin/parcel build --out-dir=dist/ --no-minify main.ts\n+\t./node_modules/.bin/parcel build --out-dir=dist/ --log-level=1 --no-minify main.ts\n \n node_modules:\n \tyarn\n"
+        },
+        "file_name": "denoland_deno.json"
+    },
+    {
+        "hash": "9c5c70dc0a2531b621ba825c2599189717694d56",
+        "message": "order aliases alphabetically",
+        "author_name": "Hakan Ensari",
+        "author_email": "hakan.ensari@papercavalier.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "bundler.plugin.zsh": "@@ -1,8 +1,8 @@\n alias be=\"bundle exec\"\n alias bi=\"bundle install\"\n alias bl=\"bundle list\"\n-alias bu=\"bundle update\"\n alias bp=\"bundle package\"\n+alias bu=\"bundle update\"\n \n # The following is based on https://github.com/gma/bundler-exec\n \n"
+        },
+        "file_name": "ohmyzsh_ohmyzsh.json"
+    },
+    {
+        "hash": "61c1bf0a41157bdfbc06b060e6f6ef34db72065a",
+        "message": "fixes browserify task transforms support",
+        "author_name": "Thomas Aylott",
+        "author_email": "aylott@fb.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "browserify.js": "@@ -46,7 +46,7 @@ module.exports = function() {\n   };\n \n   // TODO: make sure this works, test with this too\n-  config.transforms.forEach(bundle.transform, this);\n+  config.transforms.forEach(bundle.transform, bundle);\n \n   // Actually bundle it up\n   var _this = this;\n"
+        },
+        "file_name": "facebook_react.json"
+    },
+    {
+        "hash": "b5a6ff5bdd70b5d35db473b3519866537fec0088",
+        "message": "Fixed #488 -- removetags template filter now removes tags without a space before the final slash\n\ngit-svn-id: http://code.djangoproject.com/svn/django/trunk@1018 bcc190cf-cafb-0310-a4f2-bffc1f526a37",
+        "author_name": "Adrian Holovaty",
+        "author_email": "adrian@holovaty.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "defaultfilters.py": "@@ -175,7 +175,7 @@ def removetags(value, tags):\n     \"Removes a space separated list of [X]HTML tags from the output\"\n     tags = [re.escape(tag) for tag in tags.split()]\n     tags_re = '(%s)' % '|'.join(tags)\n-    starttag_re = re.compile('<%s(>|(\\s+[^>]*>))' % tags_re)\n+    starttag_re = re.compile(r'<%s(/?>|(\\s+[^>]*>))' % tags_re)\n     endtag_re = re.compile('</%s>' % tags_re)\n     value = starttag_re.sub('', value)\n     value = endtag_re.sub('', value)\n"
+        },
+        "file_name": "django_django.json"
+    },
+    {
+        "hash": "78e7a18fd60a64fe82718070c2e8e615deba92c5",
+        "message": "disable travis at tip",
+        "author_name": "Daniel Smith",
+        "author_email": "dbsmith@google.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 0,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            ".travis.yml": "@@ -1,7 +1,6 @@\n language: go\n \n go:\n-  - tip\n   - 1.3\n   - 1.2\n \n"
+        },
+        "file_name": "kubernetes_kubernetes.json"
+    },
+    {
+        "hash": "f339e9e3391465de4921aea3194f3021016f07d1",
+        "message": "Make ThreadOpenAddedConnections2 exit quicker if(GetNameProxy()).",
+        "author_name": "Matt Corallo",
+        "author_email": "matt@bluematt.me",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 2,
+        "net_lines": 2,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "net.cpp": "@@ -1544,6 +1544,8 @@ void ThreadOpenAddedConnections2(void* parg)\n                 CSemaphoreGrant grant(*semOutbound);\n                 OpenNetworkConnection(addr, &grant, strAddNode.c_str());\n                 Sleep(500);\n+                if (fShutdown)\n+                    return;\n             }\n             vnThreadsRunning[THREAD_ADDEDCONNECTIONS]--;\n             Sleep(120000); // Retry every 2 minutes\n"
+        },
+        "file_name": "bitcoin_bitcoin.json"
+    },
+    {
+        "hash": "55cad3c3b7bd955a78b9b202366b936ac473de6f",
+        "message": "Update af.m3u\n\nTest GitHub action",
+        "author_name": "Aleksandr Statciuk",
+        "author_email": "free.arhey@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "af.m3u": "@@ -47,5 +47,5 @@ rtmp://live.noorlive.com:1935/wesal/wesal1\n http://173.208.166.179/zan_tv_live_456qwer586_stop_tyui123ikm159-fuck-off/tracks-v1a1/mono.m3u8\n #EXTINF:-1 tvg-id=\"\" tvg-name=\"\" tvg-logo=\"https://i.imgur.com/TwRnJmn.jpg\" group-title=\"\",Zarin TV\n https://5c21f7ec1999d.streamlock.net/8176/8176/playlist.m3u8\n-#EXTINF:-1 tvg-id=\"\" tvg-name=\"\" tvg-logo=\"https://i.imgur.com/dl13q0r.jpg\" group-title=\"\",Zhwandoon TV\n+#EXTINF:-1 tvg-id=\"\" tvg-name=\"\" tvg-logo=\"https://i.imgur.com/dl13q0r.jpg\" group-title=\"\",Zhwandoon TV \n http://173.208.166.179/zhwandoon_tv_live-ca76ca2c8763_bastard-koni-dozd-lanati-kona-warkawa-c2df49a4/tracks-v1a1/mono.m3u8\n"
+        },
+        "file_name": "iptv-org_iptv.json"
+    },
+    {
+        "hash": "e704f4d3785b318d7f4d3a034424b54ce50beb88",
+        "message": "YoutubeIE: If not subtitles language is given default to English for automatic captions (related #901)",
+        "author_name": "Jaime Marqui\u0301nez Ferra\u0301ndiz",
+        "author_email": "jaime.marquinez.ferrandiz@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "InfoExtractors.py": "@@ -420,7 +420,7 @@ class YoutubeIE(InfoExtractor):\n     def _request_automatic_caption(self, video_id, webpage):\n         \"\"\"We need the webpage for getting the captions url, pass it as an\n            argument to speed up the process.\"\"\"\n-        sub_lang = self._downloader.params.get('subtitleslang')\n+        sub_lang = self._downloader.params.get('subtitleslang') or 'en'\n         sub_format = self._downloader.params.get('subtitlesformat')\n         self.to_screen(u'%s: Looking for automatic captions' % video_id)\n         mobj = re.search(r';ytplayer.config = ({.*?});', webpage)\n"
+        },
+        "file_name": "ytdl-org_youtube-dl.json"
+    },
+    {
+        "hash": "0bc3756250ef110a1c6adfd910cc1ecf0ededefd",
+        "message": "update all-contributors config",
+        "author_name": "Ilkka Sepp\u00e4l\u00e4",
+        "author_email": "ilkka.seppala@gofore.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            ".all-contributorsrc": "@@ -283,7 +283,7 @@\n       ]\n     }\n   ],\n-  \"contributorsPerLine\": 7,\n+  \"contributorsPerLine\": 4,\n   \"projectName\": \"java-design-patterns\",\n   \"projectOwner\": \"iluwatar\",\n   \"repoType\": \"github\",\n"
+        },
+        "file_name": "iluwatar_java-design-patterns.json"
+    },
+    {
+        "hash": "5e8f9380584b01bf8a029172c716c95411aadce5",
+        "message": "contents: add references to compensation data (#127)\n\nDisclosure: I'm one of the makers of Levels.fyi.\r\n\r\nThis is 5, obviously a big red flag that I'm adding a reference to a site I have an interest in. I think the community would find our data useful and more accurate than alternatives. A quick search on Google would bring up that folks regularly consult data on our site over say Glassdoor, etc.",
+        "author_name": "Zaheer Mohiuddin",
+        "author_email": "zaheer@mohiuddin.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "understanding-compensation.md": "@@ -5,7 +5,7 @@ title: Understanding Compensation\n \n Compensation is a huge factor when it comes to deciding between job offers. This section gives you a breakdown of the common components of compensation in the tech industry.\n \n-In most companies, your compensation will consist of base salary, a performance bonus and equity/stocks.\n+In most companies, your compensation will consist of base salary, a performance bonus and equity/stocks. For compensation data, check out [Levels.fyi](https://www.levels.fyi/comp.html).\n \n ### Base salary\n \n"
+        },
+        "file_name": "yangshun_tech-interview-handbook.json"
+    },
+    {
+        "hash": "4a8906dd8abffaab069eee03f8f3f84129ec534f",
+        "message": "Add THCThrustAllocator.cuh to install files to downstream projects can use it.",
+        "author_name": "Gregory Chanan",
+        "author_email": "gchanan@fb.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "CMakeLists.txt": "@@ -268,6 +268,7 @@ INSTALL(FILES\n           THCTensorTypeUtils.cuh\n           THCTensorRandom.cuh\n           THCTensorMathMagma.cuh\n+          THCThrustAllocator.cuh\n           DESTINATION \"${THC_INSTALL_INCLUDE_SUBDIR}/THC\")\n \n INSTALL(FILES\n"
+        },
+        "file_name": "pytorch_pytorch.json"
+    },
+    {
+        "hash": "372cc4a0100efd3dbd80193b74ee65752d139ea8",
+        "message": "Fix typo (#2772)",
+        "author_name": "Lanco",
+        "author_email": "35420416+lancoLiu@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "context.go": "@@ -732,7 +732,7 @@ func (c *Context) ShouldBindBodyWith(obj interface{}, bb binding.BindingBody) (e\n // If the headers are nots syntactically valid OR the remote IP does not correspong to a trusted proxy,\n // the remote IP (coming form Request.RemoteAddr) is returned.\n func (c *Context) ClientIP() string {\n-\t// Check if we're running on a tursted platform\n+\t// Check if we're running on a trusted platform\n \tswitch c.engine.TrustedPlatform {\n \tcase PlatformGoogleAppEngine:\n \t\tif addr := c.requestHeader(\"X-Appengine-Remote-Addr\"); addr != \"\" {\n"
+        },
+        "file_name": "gin-gonic_gin.json"
+    },
+    {
+        "hash": "0e13d8c952bb960837ce5e6553b25331e272370b",
+        "message": "Remove route event in componentWillUnmount (#6196)\n\n`Router.events.off` should be called instead of `Router.events.on` in `componentWillInmount`.",
+        "author_name": "Christian S\u00e1nchez Mendoza",
+        "author_email": "christian_sm21@hotmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "canary",
+        "changes": {
+            "header-nav.js": "@@ -26,7 +26,7 @@ class HeaderNav extends React.Component {\n \n   componentWillUnmount () {\n     Router.onRouteChangeComplete = null\n-    Router.events.on('routeChangeComplete', this.handleRouteChangeTopLevelRouter)\n+    Router.events.off('routeChangeComplete', this.handleRouteChangeTopLevelRouter)\n     this.props.router.events.off('routeChangeComplete', this.handleRouteChange)\n   }\n \n"
+        },
+        "file_name": "vercel_next.js.json"
+    },
+    {
+        "hash": "b7dc04c086c1c17195c86d57d47e8b522e810259",
+        "message": "fix links",
+        "author_name": "Harrison Chase",
+        "author_email": "hw.chase.17@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "autonomous_agents.md": "@@ -16,5 +16,5 @@ usage of LangChain's collection of tools.\n - [Baby AGI with Tools](autonomous_agents/baby_agi_with_agent.ipynb): building off the above notebook, this example substitutes in an agent with tools as the execution tools, allowing it to actually take actions.\n \n \n-## AutoGPT ([Original Repo] (https://github.com/Significant-Gravitas/Auto-GPT))\n+## AutoGPT ([Original Repo](https://github.com/Significant-Gravitas/Auto-GPT))\n - [AutoGPT](autonomous_agents/autogpt.ipynb): a notebook implementing AutoGPT in LangChain primitives\n"
+        },
+        "file_name": "langchain-ai_langchain.json"
+    },
+    {
+        "hash": "6d78b0501a2377f44fb19d24e32b1a5a6bbb58a3",
+        "message": "Remove reference to oblique\n\nWe removed this value from the engine because it's not useful.",
+        "author_name": "Adam Barth",
+        "author_email": "abarth@chromium.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 0,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "text_style.dart": "@@ -183,7 +183,6 @@ class TextStyle {\n       cssStyle['font-style'] = const {\n         FontStyle.normal: 'normal',\n         FontStyle.italic: 'italic',\n-        FontStyle.oblique: 'oblique',\n       }[fontStyle];\n     }\n     if (decoration != null) {\n"
+        },
+        "file_name": "flutter_flutter.json"
+    },
+    {
+        "hash": "21a916d953c258fcfba0c52d6ef87c5a141b531f",
+        "message": "#708: Fix handling of shelve errors",
+        "author_name": "Vladimir Iakovlev",
+        "author_email": "nvbn.rm@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "utils.py": "@@ -195,7 +195,7 @@ class Cache(object):\n \n         try:\n             self._db = shelve.open(cache_path)\n-        except (shelve_open_error, ImportError):\n+        except shelve_open_error + (ImportError,):\n             # Caused when switching between Python versions\n             warn(\"Removing possibly out-dated cache\")\n             os.remove(cache_path)\n"
+        },
+        "file_name": "nvbn_thefuck.json"
+    },
+    {
+        "hash": "aa1e20bcefa88e18e971cb37252750f07c678923",
+        "message": "fixed bug in auto-loader that caused module classes to not load correctly.",
+        "author_name": "Taylor Otwell",
+        "author_email": "taylorotwell@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "11.x",
+        "changes": {
+            "loader.php": "@@ -52,7 +52,7 @@ public static function load($class)\n \t\t\treturn class_alias(static::$aliases[$class], $class);\n \t\t}\n \n-\t\t( ! static::load_from_registered($file)) or static::load_from_module($file);\n+\t\t(static::load_from_registered($file)) or static::load_from_module($file);\n \t}\n \n \t/**\n"
+        },
+        "file_name": "laravel_laravel.json"
+    },
+    {
+        "hash": "20b940a73a4573484f072833ecaf375361bd99dc",
+        "message": "deprecate store.onchange",
+        "author_name": "Rich Harris",
+        "author_email": "richard.a.harris@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 2,
+        "net_lines": 2,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "store.js": "@@ -118,6 +118,8 @@ assign(Store.prototype, {\n \n \tonchange: function(callback) {\n \t\t// TODO remove this method\n+\t\tconsole.warn(\"store.onchange is deprecated in favour of store.on('state', event => {...})\");\n+\n \t\treturn this.on('state', function(event) {\n \t\t\tcallback(event.current, event.changed);\n \t\t});\n"
+        },
+        "file_name": "sveltejs_svelte.json"
+    },
+    {
+        "hash": "31ec7a71f2742da7155e1365b9b48b1fb956b9bd",
+        "message": "Fix undefined variable when saving test samples to --test_output_file\n\nX-DeepSpeech: NOBUILD",
+        "author_name": "Reuben Morais",
+        "author_email": "reuben.morais@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "DeepSpeech.py": "@@ -669,7 +669,7 @@ def train():\n \n \n def test():\n-    evaluate(FLAGS.test_files.split(','), create_model, try_loading)\n+    samples = evaluate(FLAGS.test_files.split(','), create_model, try_loading)\n     if FLAGS.test_output_file:\n         # Save decoded tuples as JSON, converting NumPy floats to Python floats\n         json.dump(samples, open(FLAGS.test_output_file, 'w'), default=float)\n"
+        },
+        "file_name": "mozilla_DeepSpeech.json"
+    },
+    {
+        "hash": "b9a836515fad5df57a86412b2cd41c49869ec0d6",
+        "message": "Update the Vimeo test vector md5\n\nconfirmed that this is indeed the first 10241 (we went off by one with\nbyte range 0-10240) of the full, playing mp4, so they probably\nreencoded or something",
+        "author_name": "Filippo Valsorda",
+        "author_email": "filippo.valsorda@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "vimeo.py": "@@ -27,7 +27,7 @@ class VimeoIE(InfoExtractor):\n         {\n             u'url': u'http://vimeo.com/56015672#at=0',\n             u'file': u'56015672.mp4',\n-            u'md5': u'ae7a1d8b183758a0506b0622f37dfa14',\n+            u'md5': u'8879b6cc097e987f02484baf890129e5',\n             u'info_dict': {\n                 u\"upload_date\": u\"20121220\", \n                 u\"description\": u\"This is a test case for youtube-dl.\\nFor more information, see github.com/rg3/youtube-dl\\nTest chars: \\u2605 \\\" ' \\u5e78 / \\\\ \\u00e4 \\u21ad \\U0001d550\", \n"
+        },
+        "file_name": "yt-dlp_yt-dlp.json"
+    },
+    {
+        "hash": "2eb6a3c30392aff274028d82aa6f94973313e831",
+        "message": "chore(build): removed redundant postcss operation",
+        "author_name": "Sarbbottam Bandyopadhyay",
+        "author_email": "sarbbottam@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 0,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "gulpfile.js": "@@ -60,7 +60,6 @@ gulp.task('createCSS', function() {\n     ]))\n     .pipe(gulp.dest(opts.destPath))\n     .pipe(postcss([\n-      autoprefixer(opts.autoprefixer),\n       cssnano({reduceIdents: {keyframes: false}})\n     ]))\n     .pipe(rename(opts.minRename))\n"
+        },
+        "file_name": "animate-css_animate.css.json"
+    },
+    {
+        "hash": "4dadadd0015b6efb31869cca52d6bae36762c36e",
+        "message": "build: Compile static luajit lib with -fPIC #996\n\nShould fix the following travis error:\n\n    /usr/bin/ld: /opt/neovim-deps/lib/libluajit-5.1.a(lj_err.o): relocation R_X86_64_32S against `.rodata' can not be used when making a shared object; recompile with -fPIC\n    /opt/neovim-deps/lib/libluajit-5.1.a: could not read symbols: Bad value",
+        "author_name": "ZyX",
+        "author_email": "kp-pav@yandex.ru",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "CMakeLists.txt": "@@ -115,6 +115,7 @@ if(USE_BUNDLED_LUAJIT)\n     BUILD_COMMAND \"\"\n     INSTALL_COMMAND ${MAKE_PRG} CC=${CMAKE_C_COMPILER}\n                                 PREFIX=${DEPS_INSTALL_DIR}\n+                                CFLAGS=-fPIC\n                                 BUILDMODE=static\n                                 install)\n   list(APPEND THIRD_PARTY_DEPS luajit)\n"
+        },
+        "file_name": "neovim_neovim.json"
+    },
+    {
+        "hash": "510a21946f9b30d766bea9175436b26c3deda6bd",
+        "message": "Add mh-aix",
+        "author_name": "Stu Grossman",
+        "author_email": "grossman@cygnus",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            ".Sanitize": "@@ -21,6 +21,7 @@ Do-first:\n \n Things-to-keep:\n \n+mh-aix\n mh-apollo68\n mh-decstation\n mh-delta88\n"
+        },
+        "file_name": "bminor_binutils-gdb.json"
+    },
+    {
+        "hash": "f61dd7239bfe0aa750f4f0d4db74d5e060ea1183",
+        "message": "fixes #4277: typo",
+        "author_name": "Mark Otto",
+        "author_email": "markotto@twitter.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "README.md": "@@ -92,7 +92,7 @@ $ npm install recess connect uglify-js jshint -g\n Runs the recess compiler to rebuild the `/less` files and compiles the docs pages. Requires recess and uglify-js. <a href=\"http://twitter.github.com/bootstrap/less.html#compiling\">Read more in our docs &raquo;</a>\n \n + **test** - `make test`\n-Runs jshint and qunit tests headlessly in [phatomjs] (http://code.google.com/p/phantomjs/) (used for ci). Depends on having phatomjs installed.\n+Runs jshint and qunit tests headlessly in [phatomjs] (http://code.google.com/p/phantomjs/) (used for ci). Depends on having phantomjs installed.\n \n + **watch** - `make watch`\n This is a convenience method for watching just Less files and automatically building them whenever you save. Requires the Watchr gem.\n"
+        },
+        "file_name": "twbs_bootstrap.json"
+    },
+    {
+        "hash": "564b01cf73c4209e769f65752e2b20279647d7b3",
+        "message": "fix: use babel-core/register rather than babel-register",
+        "author_name": "Benjamin Coe",
+        "author_email": "ben@npmjs.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "canary",
+        "changes": {
+            "package.json": "@@ -26,7 +26,7 @@\n   },\n   \"nyc\": {\n     \"require\": [\n-      \"babel-register\"\n+      \"babel-core/register\"\n     ],\n     \"exclude\": [\n       \"gulpfile.js\",\n"
+        },
+        "file_name": "vercel_next.js.json"
+    },
+    {
+        "hash": "e7eb3327990a189884df53796c67a99fc119bd38",
+        "message": "fix export bug",
+        "author_name": "Juan Linietsky",
+        "author_email": "reduzio@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "export.cpp": "@@ -1168,7 +1168,7 @@ Error EditorExportPlatformAndroid::export_project(const String& p_path, bool p_d\n \n \tgen_export_flags(cl,p_flags);\n \n-\tif (p_flags) {\n+\tif (p_flags&EXPORT_DUMB_CLIENT) {\n \n \t\t/*String host = EditorSettings::get_singleton()->get(\"file_server/host\");\n \t\tint port = EditorSettings::get_singleton()->get(\"file_server/post\");\n"
+        },
+        "file_name": "godotengine_godot.json"
+    },
+    {
+        "hash": "9257682b01d71bf9cb554c1e7ba6b48e9b6c5dc1",
+        "message": "Remove stray period added from web editor.",
+        "author_name": "Eric Seidel",
+        "author_email": "eseidel@google.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "analyze.dart": "@@ -12,7 +12,7 @@ import 'package:path/path.dart' as path;\n import '../artifacts.dart';\n import '../base/logging.dart';\n import '../base/process.dart';\n-import '../build_configuration.dart';.\n+import '../build_configuration.dart';\n import '../runner/flutter_command.dart';\n \n class AnalyzeCommand extends FlutterCommand {\n"
+        },
+        "file_name": "flutter_flutter.json"
+    },
+    {
+        "hash": "0c548516bc951cbbd3f153a8e5c7b6a2108962c0",
+        "message": "Fixed #1185 -- Fixed Python 2.4 bug in Django authentication mod_python handler. Thanks, Brian Ray\n\ngit-svn-id: http://code.djangoproject.com/svn/django/trunk@1853 bcc190cf-cafb-0310-a4f2-bffc1f526a37",
+        "author_name": "Adrian Holovaty",
+        "author_email": "adrian@holovaty.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 2,
+        "net_lines": 1,
+        "num_files": 2,
+        "branches": "main",
+        "changes": {
+            "AUTHORS": "@@ -81,6 +81,7 @@ answer newbie questions, and generally made Django that much better:\n     phaedo <http://phaedo.cx/>\n     Luke Plant <http://lukeplant.me.uk/>\n     plisk\n+    Brian Ray <http://brianray.chipy.org/>\n     Oliver Rutherfurd <http://rutherfurd.net/>\n     David Schein\n     sopel\n",
+            "modpython.py": "@@ -13,7 +13,7 @@ def authenhandler(req, **kwargs):\n     from django.models.auth import users\n \n     # check for PythonOptions\n-    _str_to_bool = lambda s: s.lower() in '1', 'true', 'on', 'yes'\n+    _str_to_bool = lambda s: s.lower() in ('1', 'true', 'on', 'yes')\n \n     options = req.get_options()\n     permission_name = options.get('DjangoPermissionName', None)\n"
+        },
+        "file_name": "django_django.json"
+    },
+    {
+        "hash": "f2861448ab16ae06ffdc8560e9f50d6c192c0623",
+        "message": "Fix bug in win32 command-line arg processing.",
+        "author_name": "Graydon Hoare",
+        "author_email": "graydon@mozilla.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "rust.cpp": "@@ -167,7 +167,7 @@ command_line_args\n #if defined(__WIN32__)\n         LPCWSTR cmdline = GetCommandLineW();\n         LPWSTR *wargv = CommandLineToArgvW(cmdline, &argc);\n-        dom.win32_require(\"CommandLineToArgvW\", argv != NULL);\n+        dom.win32_require(\"CommandLineToArgvW\", wargv != NULL);\n         argv = (char **) dom.malloc(sizeof(char*) * argc);\n         for (int i = 0; i < argc; ++i) {\n             int n_chars = WideCharToMultiByte(CP_UTF8, 0, wargv[i], -1,\n"
+        },
+        "file_name": "rust-lang_rust.json"
+    },
+    {
+        "hash": "dfb81c969f795275e1c238f4ee618d4249e2333f",
+        "message": "bump version 0.0.6 (#56)",
+        "author_name": "Harrison Chase",
+        "author_email": "hw.chase.17@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "VERSION": "@@ -1 +1 @@\n-0.0.5\n+0.0.6\n"
+        },
+        "file_name": "langchain-ai_langchain.json"
+    },
+    {
+        "hash": "6860d09c722b3afc3b5b5de124e3fc80f4e5e42c",
+        "message": "only delete applicable transition animations - fixes #1290",
+        "author_name": "Rich-Harris",
+        "author_email": "richard.a.harris@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "transitions.js": "@@ -199,7 +199,7 @@ export var transitionManager = {\n \t\tnode.style.animation = node.style.animation\n \t\t\t.split(', ')\n \t\t\t.filter(function(anim) {\n-\t\t\t\treturn !/__svelte/.test(anim);\n+\t\t\t\treturn anim.indexOf(name) === -1;\n \t\t\t})\n \t\t\t.join(', ');\n \t}\n"
+        },
+        "file_name": "sveltejs_svelte.json"
+    },
+    {
+        "hash": "f63cf3f283dfba6a97f5d729d7ed5fd1db476935",
+        "message": "Update apm URL to new location in atom org.",
+        "author_name": "Kevin Sawicki",
+        "author_email": "kevin@github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            ".gitmodules": "@@ -12,4 +12,4 @@\n \turl = https://chromium.googlesource.com/chromium/tools/depot_tools.git\n [submodule \"vendor/apm\"]\n \tpath = vendor/apm\n-\turl = https://github.com/github/apm.git\n+\turl = https://github.com/atom/apm.git\n"
+        },
+        "file_name": "electron_electron.json"
+    },
+    {
+        "hash": "54dd1bc9badf461b77eea64aaff1038b4694c970",
+        "message": "Rename eager get started notebook to custom-training-walkthrough",
+        "author_name": "Billy Lamberta",
+        "author_email": "blamb@google.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 0,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "custom-training-walkthrough.ipynb": ""
+        },
+        "file_name": "tensorflow_models.json"
+    },
+    {
+        "hash": "25580f3251a8dcaa04a3edd9af328372c7caca4a",
+        "message": "8tracks: Ignore hashes",
+        "author_name": "Philipp Hagemeister",
+        "author_email": "phihag@phihag.de",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "InfoExtractors.py": "@@ -3861,7 +3861,7 @@ def _real_extract(self, url):\n \n class EightTracksIE(InfoExtractor):\n     IE_NAME = '8tracks'\n-    _VALID_URL = r'https?://8tracks.com/(?P<user>[^/]+)/(?P<id>[^/]+)'\n+    _VALID_URL = r'https?://8tracks.com/(?P<user>[^/]+)/(?P<id>[^/#]+)(?:#.*)?$'\n \n     def _real_extract(self, url):\n         mobj = re.match(self._VALID_URL, url)\n"
+        },
+        "file_name": "yt-dlp_yt-dlp.json"
+    },
+    {
+        "hash": "39b7dcf91fb49f34020e7103ed31d5d29f96ac07",
+        "message": "Update build_imagenet_data.py",
+        "author_name": "Yuxin Wu",
+        "author_email": "ppwwyyxxc@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "build_imagenet_data.py": "@@ -171,7 +171,7 @@ def _float_feature(value):\n \n def _bytes_feature(value):\n   \"\"\"Wrapper for inserting bytes features into Example proto.\"\"\"\n-  if isinstance(value, six.string_types):           \n+  if six.PY3 and isinstance(value, six.text_type):           \n     value = six.binary_type(value, encoding='utf-8') \n   return tf.train.Feature(bytes_list=tf.train.BytesList(value=[value]))\n \n"
+        },
+        "file_name": "tensorflow_models.json"
+    },
+    {
+        "hash": "5d1265df2406f4284339688191218333894aadcf",
+        "message": "algo: remove similar question (#202)\n\nRemoved\r\n`- Sort a list where each element is no more than k positions away from its sorted position.`\r\nas it is same as \r\n`Sort a list of numbers in which each number is at a distance K from its actual position.`",
+        "author_name": "Abhijeet Chakraborty",
+        "author_email": "16278759+abhijeet1403@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 0,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "sorting-searching.md": "@@ -11,7 +11,6 @@ title: Sorting and Searching\n - Given users with locations in a list and a logged-in user with locations, find their travel buddies (people who shared more than half of your locations).\n - Search for an element in a sorted and rotated array.\n   - [Source](http://blog.gainlo.co/index.php/2017/01/12/rotated-array-binary-search/)\n-- Sort a list where each element is no more than k positions away from its sorted position.\n - Merge two sorted lists together.\n - Give 3 distinct algorithms to find the K largest values in a list of N items.\n - Find the minimum element in a sorted rotated array in faster than O(n) time.\n"
+        },
+        "file_name": "yangshun_tech-interview-handbook.json"
+    },
+    {
+        "hash": "c40b46ff63d1af2d32e6457dcb4a70d157648db2",
+        "message": "Rename deetection_inference.py to detection_inference.py (#6199)\n\nThis file was inadvertantly renamed in #6071.",
+        "author_name": "Chris Tessum",
+        "author_email": "ctessum@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 0,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "detection_inference.py": ""
+        },
+        "file_name": "tensorflow_models.json"
+    },
+    {
+        "hash": "64c88c1ba31b83d678056e6bac561e42ed753a10",
+        "message": "fix disabled demo",
+        "author_name": "afc163",
+        "author_email": "afc163@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "disable.md": "@@ -16,7 +16,7 @@ function toggleDisabled() {\n var App = React.createClass({\n   getInitialState() {\n     return {\n-      disabled: false\n+      disabled: true\n     };\n   },\n   toggleDisabled() {\n"
+        },
+        "file_name": "ant-design_ant-design.json"
+    },
+    {
+        "hash": "e527b0424a55b188ed205f4c9c2f1fb1afda996e",
+        "message": "remove stray CLI piece",
+        "author_name": "Conduitry",
+        "author_email": "git@chor.date",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 2,
+        "num_inserts": 0,
+        "net_lines": -2,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "svelte": "@@ -1,2 +0,0 @@\n-#!/usr/bin/env node\n-require('./cli/index.js');\n\\ No newline at end of file\n"
+        },
+        "file_name": "sveltejs_svelte.json"
+    },
+    {
+        "hash": "4967dd09b9ee511a6f83b9045e18c1ba85f2b27a",
+        "message": "Update the test that was actually failing",
+        "author_name": "Adam Wathan",
+        "author_email": "adam.wathan@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "next",
+        "changes": {
+            "cli.compile.test.js": "@@ -13,7 +13,7 @@ describe('cli compile', () => {\n   it('compiles CSS file', () => {\n     return compile({ inputFile, outputFile, plugins }).then((result) => {\n       expect(result.css).toContain('.example')\n-      expect(result.css).toContain('-ms-input-placeholder')\n+      expect(result.css).toContain('-webkit-max-content')\n     })\n   })\n })\n"
+        },
+        "file_name": "tailwindlabs_tailwindcss.json"
+    },
+    {
+        "hash": "2975939cfb3fa4948d6a6b4a67e1ae874081c6e5",
+        "message": "Do not check for interactive session to shut down dev server (#8845)",
+        "author_name": "Jeremy Wadsack",
+        "author_email": "jeremy.wadsack@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "start.js": "@@ -165,7 +165,7 @@ checkBrowsers(paths.appPath, isInteractive)\n       });\n     });\n \n-    if (isInteractive || process.env.CI !== 'true') {\n+    if (process.env.CI !== 'true') {\n       // Gracefully exit when stdin ends\n       process.stdin.on('end', function() {\n         devServer.close();\n"
+        },
+        "file_name": "facebook_create-react-app.json"
+    },
+    {
+        "hash": "9fbb4dec8edf6a72cc49b9c8f086eed48bdf44ab",
+        "message": "app-admin/clsync: drop redundant USE=seccomp description",
+        "author_name": "Mike Frysinger",
+        "author_email": "vapier@gentoo.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 0,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "metadata.xml": "@@ -23,7 +23,6 @@\n     <flag name=\"gio\">Enable GIO for FS monitoring (glib based alternative to inotify interface, not recommended; if both are compiled, may be selected at runtime).</flag>\n     <flag name=\"highload-locks\">Allows to use spinlocks for short delays instead of mutexes, but only on SMP systems.</flag>\n     <flag name=\"namespaces\">Enable namespaces isolation.</flag>\n-    <flag name=\"seccomp\">Enable seccomp for system call filtering.</flag>\n   </use>\n   <upstream>\n     <remote-id type=\"github\">xaionaro/clsync</remote-id>\n"
+        },
+        "file_name": "gentoo_gentoo.json"
+    },
+    {
+        "hash": "7d3aac2d7111138b288a83005171b7900b8bcddd",
+        "message": "Fix warnings: spell.c: find_word(): Dead assignment: HI.\n\nProblem    : Dead assignment @ 1602.\nDiagnostic : Harmless issue.\nRationale  : Code using this assignment (line 1666) was disabled. Vim's\n             tip at Wed Nov 12 13:07:54 2014 +0100 (changeset\n             6352:2f7bf5f90f57) hasn't changed this yet.\nResolution : Disable assignment. Directive processors are used for that\n             in order to match the way the other code was disabled.",
+        "author_name": "Eliseo Marti\u0301nez",
+        "author_email": "eliseomarmol@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 2,
+        "net_lines": 2,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "spell.c": "@@ -1599,7 +1599,9 @@ static void find_word(matchinf_T *mip, int mode)\n             mip->mi_compoff = (int)(p - mip->mi_fword);\n           }\n         }\n+#if 0\n         c = mip->mi_compoff;\n+#endif\n         ++mip->mi_complen;\n         if (flags & WF_COMPROOT)\n           ++mip->mi_compextra;\n"
+        },
+        "file_name": "neovim_neovim.json"
+    },
+    {
+        "hash": "84d654ef1f08541a7982b700ea42170b2edb3421",
+        "message": "Use default cursor for .git-statusbar-item\n\nPrevent the text selection cursor from showing on .git-statusbar-item. This is\nhappening because there is an &nbsp; being used currently to position the\nelement.\n\nFixes #307",
+        "author_name": "Daniel Imms",
+        "author_email": "tyriar@tyriar.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 2,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "git.contribution.css": "@@ -226,6 +226,7 @@\n \tbackground-repeat: no-repeat;\n \tbackground-position: 4px 50%;\n \tbackground-size: 17px;\n+\tcursor: default;\n \tpadding: 0 5px 0 22px;\n }\n \n@@ -248,4 +249,4 @@\n \n .monaco-shell .git-statusbar-item.headless {\n \tfont-style: italic;\n-}\n\\ No newline at end of file\n+}\n"
+        },
+        "file_name": "microsoft_vscode.json"
+    },
+    {
+        "hash": "ff442a2eb0a69df80bc5c721541b62858a18096f",
+        "message": "#682: Remove `script` log on exit",
+        "author_name": "Vladimir Iakovlev",
+        "author_email": "nvbn.rm@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 2,
+        "net_lines": 2,
+        "num_files": 2,
+        "branches": "master",
+        "changes": {
+            "bash.py": "@@ -41,6 +41,7 @@ class Bash(Generic):\n                 export THEFUCK_INSTANT_MODE=True;\n                 export THEFUCK_OUTPUT_LOG={log};\n                 script -feq {log};\n+                rm {log};\n                 exit\n             '''.format(log='/tmp/thefuck-script-log-{}'.format(uuid4().hex))\n \n",
+            "zsh.py": "@@ -40,6 +40,7 @@ class Zsh(Generic):\n                 export THEFUCK_INSTANT_MODE=True;\n                 export THEFUCK_OUTPUT_LOG={log};\n                 script -feq {log};\n+                rm {log};\n                 exit\n             '''.format(log='/tmp/thefuck-script-log-{}'.format(uuid4().hex))\n \n"
+        },
+        "file_name": "nvbn_thefuck.json"
+    },
+    {
+        "hash": "e3f4593e76210a5afe6f52318d3f240318ededbd",
+        "message": "Fix regex error when only subtitled video is available on arte.",
+        "author_name": "Dominik",
+        "author_email": "meyerd@mytum.de",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "arte.py": "@@ -98,7 +98,7 @@ class ArteTvIE(InfoExtractor):\n                 l = 'F'\n             elif lang == 'de':\n                 l = 'A'\n-            regexes = [r'VO?%s' % l, r'V%s-ST.' % l]\n+            regexes = [r'VO?%s' % l, r'VO?.-ST%s' % l]\n             return any(re.match(r, f['versionCode']) for r in regexes)\n         # Some formats may not be in the same language as the url\n         formats = filter(_match_lang, formats)\n"
+        },
+        "file_name": "ytdl-org_youtube-dl.json"
+    },
+    {
+        "hash": "93f464a1455831695858d1f2298727a33bc9ab27",
+        "message": "feat(change_detection.ts): export PipeFactory\n\nCloses #2245",
+        "author_name": "PatrickJS",
+        "author_email": "github@gdi2290.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "change_detection.ts": "@@ -47,7 +47,7 @@ export {DynamicChangeDetector} from './src/change_detection/dynamic_change_detec\n export {ChangeDetectorRef} from './src/change_detection/change_detector_ref';\n export {PipeRegistry} from './src/change_detection/pipes/pipe_registry';\n export {uninitialized} from './src/change_detection/change_detection_util';\n-export {WrappedValue, Pipe} from './src/change_detection/pipes/pipe';\n+export {WrappedValue, Pipe, PipeFactory} from './src/change_detection/pipes/pipe';\n export {NullPipe, NullPipeFactory} from './src/change_detection/pipes/null_pipe';\n export {\n   defaultPipes,\n"
+        },
+        "file_name": "angular_angular.json"
+    },
+    {
+        "hash": "96bd155cbdf03c67d88f1facb13fabfa86e094d4",
+        "message": "Support marginHeight and marginWidth attributes\n\nmarginHeight and marginWidth are used on iframes to set the default body margin inside the iframe.",
+        "author_name": "Ian Obermiller",
+        "author_email": "ian@obermillers.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 2,
+        "net_lines": 2,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "HTMLDOMPropertyConfig.js": "@@ -104,6 +104,8 @@ var HTMLDOMPropertyConfig = {\n     list: MUST_USE_ATTRIBUTE,\n     loop: MUST_USE_PROPERTY | HAS_BOOLEAN_VALUE,\n     manifest: MUST_USE_ATTRIBUTE,\n+    marginHeight: MUST_USE_ATTRIBUTE,\n+    marginWidth: MUST_USE_ATTRIBUTE,\n     max: null,\n     maxLength: MUST_USE_ATTRIBUTE,\n     media: MUST_USE_ATTRIBUTE,\n"
+        },
+        "file_name": "facebook_react.json"
+    },
+    {
+        "hash": "ed55491ef8e63cf7a09a19c72966abb34d9cfdc9",
+        "message": "update requirement.txt file path\n\nIts now in root",
+        "author_name": "Saurabh Vyas",
+        "author_email": "saurabhorange@msn.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "README.md": "@@ -18,7 +18,7 @@ Manually install [Git Large File Storage](https://git-lfs.github.com/), then ope\n ```\n git clone https://github.com/mozilla/DeepSpeech\n cd DeepSpeech\n-pip install -r doc/requirements.txt\n+pip install -r requirements.txt\n ```\n \n ## Recommendations\n"
+        },
+        "file_name": "mozilla_DeepSpeech.json"
+    },
+    {
+        "hash": "6255f54f413ae9784d9bfb94151b59aeca72c0ec",
+        "message": "fix[TagsView]: fixed refresh affixed-tag bug (#1653)",
+        "author_name": "kaisawind",
+        "author_email": "wind.kaisa@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "TagsView.vue": "@@ -76,6 +76,7 @@ export default {\n       routes.forEach(route => {\n         if (route.meta && route.meta.affix) {\n           tags.push({\n+            fullPath: path.resolve(basePath, route.path),\n             path: path.resolve(basePath, route.path),\n             name: route.name,\n             meta: { ...route.meta }\n"
+        },
+        "file_name": "PanJiaChen_vue-element-admin.json"
+    },
+    {
+        "hash": "c08182509dbf4913288b389577a2e07c5f010077",
+        "message": "Update README.md",
+        "author_name": "Camille Diez",
+        "author_email": "diezcami@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "README.md": "@@ -166,6 +166,7 @@ using the matched rule and runs it. Rules enabled by default are as follows:\n * `git_pull` &ndash; sets upstream before executing previous `git pull`;\n * `git_push` &ndash; adds `--set-upstream origin $branch` to previous failed `git push`;\n * `git_stash` &ndash; stashes you local modifications before rebasing or switching branch;\n+* `go_run` &ndash; appends `.go` extension when compiling/running Go programs\n * `grep_recursive` &ndash; adds `-r` when you trying to grep directory; \n * `has_exists_script` &ndash; prepends `./` when script/binary exists;\n * `lein_not_task` &ndash; fixes wrong `lein` tasks like `lein rpl`;\n"
+        },
+        "file_name": "nvbn_thefuck.json"
+    },
+    {
+        "hash": "8ec78688b80e8d1c92cc71a61a442e5c5c17c974",
+        "message": "Add empty actionParameters check (#148)",
+        "author_name": "Jeremy Wu",
+        "author_email": "jeremy24wu@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "QueryBuilder.cs": "@@ -24,7 +24,7 @@ namespace Wox.Core.Plugin\n             { // use non global plugin for query\n                 actionKeyword = possibleActionKeyword;\n                 actionParameters = terms.Skip(1).ToList();\n-                search = rawQuery.Substring(actionKeyword.Length + 1);\n+                search = actionParameters.Count > 0 ? rawQuery.Substring(actionKeyword.Length + 1) : string.Empty;\n             }\n             else\n             { // non action keyword\n"
+        },
+        "file_name": "microsoft_PowerToys.json"
+    },
+    {
+        "hash": "384c5bed2d921027085cd1f2d4eff9a2652b6513",
+        "message": "update golden.out for two versions of hello, world\n\nSVN=121479",
+        "author_name": "Rob Pike",
+        "author_email": "r@golang.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 2,
+        "net_lines": 2,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "golden.out": "@@ -18,6 +18,7 @@ BUG: known to fail incorrectly\n hashmap.go:46: fatal error: optoas: no entry LSH-<uint32>UINT32\n BUG: known to fail incorrectly\n =========== helloworld.go\n+hello, world\n =========== if.go\n =========== int_lit.go\n int_lit.go:5: syntax error\n@@ -47,3 +48,4 @@ test0.go:54: illegal types for operand\n \t(<Point2>{}) AS ({})\n BUG: known to fail incorrectly\n =========== turing.go\n+Hello World!\n"
+        },
+        "file_name": "golang_go.json"
+    },
+    {
+        "hash": "b52a089f46c10c8184ccf9e276c6cbf3ec1977b2",
+        "message": "Update us.m3u",
+        "author_name": "boomski",
+        "author_email": "vandevelde.t@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 2,
+        "net_lines": 2,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "us.m3u": "@@ -111,6 +111,8 @@ http://170.178.189.66:1935/live/Stream1/.m3u8\n http://170.178.189.66:1935/live/Stream1/playlist.m3u8\n #EXTINF:-1 tvg-id=\"\" tvg-name=\"\" tvg-logo=\"https://i.imgur.com/BgwAqlG.png\" group-title=\"\",AMGTV\n https://api.locastnet.org/api/watch/stream/1094/34/-118/?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkdWRlc2VrLnBldGVyQGdtYWlsLmNvbSIsInJvbGUiOjEsImV4cCI6MTU4OTEyNjI3OH0.UmdOQBwiO5JjceZ-WpWKYXZy2v6aooUi1808NTolbIo&fbclid=IwAR3EW3T_ZSm_BwKxzpTSlethc322oxJ_Z5JYgPOkD4SSB08yvxqmsbM_zTU\n+#EXTINF:-1 tvg-id=\"\" tvg-name=\"\" tvg-logo=\"https://i.imgur.com/DQSHHTS.png\" group-title=\"\",America Teve\n+http://api.new.livestream.com/accounts/5730046/events/2966225/live.m3u8\n #EXTINF:-1 tvg-id=\"\" tvg-name=\"\" tvg-logo=\"https://i.imgur.com/HidIMbv.png\" group-title=\"\",AntennaTV\n https://api.locastnet.org/api/watch/stream/1080/34/-118/?token=eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkdWRlc2VrLnBldGVyQGdtYWlsLmNvbSIsInJvbGUiOjEsImV4cCI6MTU4OTEyNjI3OH0.UmdOQBwiO5JjceZ-WpWKYXZy2v6aooUi1808NTolbIo&fbclid=IwAR3EW3T_ZSm_BwKxzpTSlethc322oxJ_Z5JYgPOkD4SSB08yvxqmsbM_zTU\n #EXTINF:-1 tvg-id=\"\" tvg-name=\"\" tvg-logo=\"https://i.imgur.com/hSYez3V.png\" group-title=\"\",Atlanta Channel\n"
+        },
+        "file_name": "iptv-org_iptv.json"
+    },
+    {
+        "hash": "e16099adf396900c2a0493d185c154c0d84e56f4",
+        "message": "Update README.md",
+        "author_name": "Ilkka Sepp\u00e4l\u00e4",
+        "author_email": "iluwatar@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "README.md": "@@ -66,7 +66,7 @@\n * you need to use several existing subclasses, but it's impractical to adapt their interface by subclassing every one. An object adapter can adapt the interface of its parent class.\n \n ##Bridge\n-**Intent:** Decouple an abstraction from its implementationso that the two can vary independently.\n+**Intent:** Decouple an abstraction from its implementation so that the two can vary independently.\n \n \n ![alt text](https://github.com/iluwatar/java-design-patterns/blob/master/bridge/etc/bridge.jpg \"Bridge\")\n"
+        },
+        "file_name": "iluwatar_java-design-patterns.json"
+    },
+    {
+        "hash": "10f1aeb144b253d5a5436b3235defb1d68b19fdc",
+        "message": "fixed broken link (#1097)",
+        "author_name": "Eli Frigo",
+        "author_email": "4386738+EliTheCoder@users.noreply.github.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "transformer.py": "@@ -6,7 +6,7 @@ from tinygrad.nn.optim import Adam, get_parameters\n from extra.training import train, evaluate\n from models.transformer import Transformer\n \n-# dataset idea from https://github.com/karpathy/minGPT/blob/master/play_math.ipynb\n+# dataset idea from https://github.com/karpathy/minGPT/blob/master/projects/adder/adder.py\n def make_dataset():\n   ds = []\n   for i in range(100):\n"
+        },
+        "file_name": "tinygrad_tinygrad.json"
+    },
+    {
+        "hash": "fcc84c7abc143d667168cf1e30a83cc599795a16",
+        "message": "Use glob.",
+        "author_name": "Mike Bostock",
+        "author_email": "mbostock@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "package.json": "@@ -27,7 +27,7 @@\n   },\n   \"scripts\": {\n     \"pretest\": \"rm -rf build && mkdir build && json2module package.json > build/package.js && bin/rollup-node\",\n-    \"test\": \"tape test/**/*-test.js\",\n+    \"test\": \"tape 'test/**/*-test.js'\",\n     \"prepublish\": \"npm run test && bin/rollup && uglifyjs build/d3.js -c -m -o build/d3.min.js\",\n     \"postpublish\": \"VERSION=`node -e 'console.log(require(\\\"./package.json\\\").version)'`; git push && cp -v build/d3.js ../d3.github.com/d3.v${VERSION}.js && cp -v build/d3.min.js ../d3.github.com/d3.v${VERSION}.min.js && cd ../d3.github.com && git add d3.v${VERSION}.js d3.v${VERSION}.min.js && git commit -m \\\"d3 ${VERSION}\\\" && git push && cd - && zip -j build/d3.zip -- LICENSE README.md build/d3.js build/d3.min.js\"\n   },\n"
+        },
+        "file_name": "d3_d3.json"
+    },
+    {
+        "hash": "a2986acc1aca28e1a0260d6add6657898d19538c",
+        "message": "correct order of argument for tf.image.resize_image_with_crop_or_pad",
+        "author_name": "piper",
+        "author_email": "jihobak0@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "cifar10_input.py": "@@ -237,7 +237,7 @@ def inputs(eval_data, data_dir, batch_size):\n   # Image processing for evaluation.\n   # Crop the central [height, width] of the image.\n   resized_image = tf.image.resize_image_with_crop_or_pad(reshaped_image,\n-                                                         width, height)\n+                                                         height, width)\n \n   # Subtract off the mean and divide by the variance of the pixels.\n   float_image = tf.image.per_image_standardization(resized_image)\n"
+        },
+        "file_name": "tensorflow_models.json"
+    },
+    {
+        "hash": "147e4aece0cfa6ca5d584b57785dc99f31d1e4eb",
+        "message": "[vbox7] New video checksum",
+        "author_name": "Philipp Hagemeister",
+        "author_email": "phihag@phihag.de",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "vbox7.py": "@@ -15,7 +15,7 @@ class Vbox7IE(InfoExtractor):\n     _TEST = {\n         u'url': u'http://vbox7.com/play:249bb972c2',\n         u'file': u'249bb972c2.flv',\n-        u'md5': u'9c70d6d956f888bdc08c124acc120cfe',\n+        u'md5': u'99f65c0c9ef9b682b97313e052734c3f',\n         u'info_dict': {\n             u\"title\": u\"\\u0421\\u043c\\u044f\\u0445! \\u0427\\u0443\\u0434\\u043e - \\u0447\\u0438\\u0441\\u0442 \\u0437\\u0430 \\u0441\\u0435\\u043a\\u0443\\u043d\\u0434\\u0438 - \\u0421\\u043a\\u0440\\u0438\\u0442\\u0430 \\u043a\\u0430\\u043c\\u0435\\u0440\\u0430\"\n         }\n"
+        },
+        "file_name": "ytdl-org_youtube-dl.json"
+    },
+    {
+        "hash": "07420419bb1a7da3f1c1ad3116e40dfdea57aed6",
+        "message": "Fix Typo in Design Document Overview\n\ns/arechitecture/architecture/",
+        "author_name": "Travis Beatty",
+        "author_email": "travisby@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "DESIGN.md": "@@ -21,7 +21,7 @@ Kubernetes builds on top of [Docker](http://www.docker.io) to construct a cluste\n \n As container based applications and systems get larger, some tools are provided to facilitate sanity. This includes ways for containers to find and communicate with each other and ways to work with and manage sets of containers that do similar work.\n \n-When looking at the arechitecture of the system, we'll break it down to services that run on the worker node and services that play a \"master\" role.\n+When looking at the architecture of the system, we'll break it down to services that run on the worker node and services that play a \"master\" role.\n \n ## Key Concept: Container Pod\n \n"
+        },
+        "file_name": "kubernetes_kubernetes.json"
+    },
+    {
+        "hash": "34f873721804d57a5faf3eab8ef50340c69ed180",
+        "message": "feat: add Khmer (Cambodian) language support (#8809)",
+        "author_name": "Seanghay Yath",
+        "author_email": "seanghay.dev@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "Dockerfile": "@@ -8,7 +8,7 @@ RUN apt-get update \\\n     && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \\\n     && sh -c 'echo \"deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main\" >> /etc/apt/sources.list.d/google.list' \\\n     && apt-get update \\\n-    && apt-get install -y google-chrome-stable fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst fonts-freefont-ttf libxss1 \\\n+    && apt-get install -y google-chrome-stable fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-khmeros fonts-kacst fonts-freefont-ttf libxss1 \\\n       --no-install-recommends \\\n     && rm -rf /var/lib/apt/lists/*\n \n"
+        },
+        "file_name": "puppeteer_puppeteer.json"
+    },
+    {
+        "hash": "57b5f42847c70347afe43d04f007f937c46b2699",
+        "message": "Remove unintended double negation in docstring (#6541)\n\nSmall typo fix.\r\n\r\n`ImportError: If importing vertexai SDK didn't not succeed.` ->\r\n`ImportError: If importing vertexai SDK did not succeed.`.",
+        "author_name": "Jeroen Van Goey",
+        "author_email": "jeroen.vangoey@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "vertexai.py": "@@ -32,7 +32,7 @@ def init_vertexai(\n                 will be ascertained from the environment.\n \n     Raises:\n-        ImportError: If importing vertexai SDK didn't not succeed.\n+        ImportError: If importing vertexai SDK did not succeed.\n     \"\"\"\n     try:\n         import vertexai\n"
+        },
+        "file_name": "langchain-ai_langchain.json"
+    },
+    {
+        "hash": "0c9794eefa5671bdae4c702da046badbe8237f93",
+        "message": "Update atom-shell-vs-node-webkit.md",
+        "author_name": "Dan Schuman",
+        "author_email": "danschuman@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "atom-shell-vs-node-webkit.md": "@@ -4,7 +4,7 @@ Like node-webkit, atom-shell provides a platform to write desktop applications\n with JavaScript and HTML, and has node integration to grant access to low level\n system in web pages.\n \n-But there are also fundamental differences between the two projects that making\n+But there are also fundamental differences between the two projects that make\n atom-shell a completely separate product from node-webkit:\n \n **1. Entry of application**\n"
+        },
+        "file_name": "electron_electron.json"
+    },
+    {
+        "hash": "73160869417275200be19bd37372b6218dbc5f63",
+        "message": "feat: extend husky checks (#7574)",
+        "author_name": "Jan Scheffler",
+        "author_email": "janscheffler@chromium.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 2,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "package.json": "@@ -116,8 +116,9 @@\n   },\n   \"husky\": {\n     \"hooks\": {\n+      \"pre-commit\": \"npm run eslint\",\n       \"commit-msg\": \"commitlint --env HUSKY_GIT_PARAMS\",\n-      \"pre-push\": \"npm run ensure-pinned-deps\"\n+      \"pre-push\": \"npm run tsc && npm run eslint && npm run doc && npm run ensure-pinned-deps\"\n     }\n   }\n }\n"
+        },
+        "file_name": "puppeteer_puppeteer.json"
+    },
+    {
+        "hash": "620a2ffcfb0a47dc3cd69f098845c4efba245ce3",
+        "message": "Added cmdh to community section in README",
+        "author_name": "pgibler",
+        "author_email": "paul.gibler@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "README.md": "@@ -261,6 +261,7 @@ See the [API documentation](./docs/api.md) for all endpoints.\n - [ogpt.nvim](https://github.com/huynle/ogpt.nvim)\n - [gptel Emacs client](https://github.com/karthink/gptel)\n - [Oatmeal](https://github.com/dustinblackman/oatmeal)\n+- [cmdh](https://github.com/pgibler/cmdh)\n \n ### Database\n \n"
+        },
+        "file_name": "ollama_ollama.json"
+    },
+    {
+        "hash": "74efa54f7f69be8394f52f9fbe3f7d9254b928fe",
+        "message": "app-admin/apache-tools: ia64 stable wrt bug #557198\n\nPackage-Manager: portage-2.2.20.1",
+        "author_name": "Mikle Kolyada",
+        "author_email": "zlogene@gentoo.org",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "apache-tools-2.2.31.ebuild": "@@ -11,7 +11,7 @@ SRC_URI=\"mirror://apache/httpd/httpd-${PV}.tar.bz2\"\n \n LICENSE=\"Apache-2.0\"\n SLOT=\"0\"\n-KEYWORDS=\"alpha amd64 ~arm ~arm64 hppa ~ia64 ~mips ~ppc ppc64 ~s390 ~sh ~sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd\"\n+KEYWORDS=\"alpha amd64 ~arm ~arm64 hppa ia64 ~mips ~ppc ppc64 ~s390 ~sh ~sparc x86 ~amd64-fbsd ~sparc-fbsd ~x86-fbsd\"\n IUSE=\"ssl\"\n RESTRICT=\"test\"\n \n"
+        },
+        "file_name": "gentoo_gentoo.json"
+    },
+    {
+        "hash": "6a414cb9a3d39bd0d8338b9625cd40c039b7c5fb",
+        "message": "Update ECOSYSTEM.md (#1690)\n\nAdd Axios Actions package",
+        "author_name": "Dave Stewart",
+        "author_email": "info@davestewart.co.uk",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "v1.x",
+        "changes": {
+            "ECOSYSTEM.md": "@@ -19,3 +19,4 @@ This is a list of axios related libraries and resources. If you have a suggestio\n * [redux-saga-requests](https://github.com/klis87/redux-saga-requests) - Redux-Saga addon to simplify handling of AJAX requests.\n * [axios-fetch](https://github.com/lifeomic/axios-fetch) - A WebAPI Fetch implementation backed by an Axios client \n * [axios-curlirize](https://www.npmjs.com/package/axios-curlirize) - Logs axios requests as curl commands, also adds a property to the response object with the curl command as value.\n+* [axios-actions](https://github.com/davestewart/axios-actions) - Bundle endpoints as callable, reusable services\n"
+        },
+        "file_name": "axios_axios.json"
+    },
+    {
+        "hash": "9ae80acde59d9d149ee5e4e2097f209eac6f834f",
+        "message": "feat: expose performance measures\n\nref #7570",
+        "author_name": "Evan You",
+        "author_email": "yyx990803@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "perf.js": "@@ -18,7 +18,7 @@ if (process.env.NODE_ENV !== 'production') {\n       perf.measure(name, startTag, endTag)\n       perf.clearMarks(startTag)\n       perf.clearMarks(endTag)\n-      perf.clearMeasures(name)\n+      // perf.clearMeasures(name)\n     }\n   }\n }\n"
+        },
+        "file_name": "vuejs_vue.json"
+    },
+    {
+        "hash": "4d186aa1b0d6279bf8c146d294d9f28c1468745c",
+        "message": "dont use options.filename for original code when generating magicstring bundle (#43)",
+        "author_name": "Rich-Harris",
+        "author_email": "richard.a.harris@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 0,
+        "net_lines": -1,
+        "num_files": 1,
+        "branches": "main",
+        "changes": {
+            "index.js": "@@ -508,7 +508,6 @@ export default function generate ( parsed, source, options ) {\n \n \tfunction addString ( str ) {\n \t\tcompiled.addSource({\n-\t\t\tfilename: options.filename,\n \t\t\tcontent: new MagicString( str )\n \t\t});\n \t}\n"
+        },
+        "file_name": "sveltejs_svelte.json"
+    },
+    {
+        "hash": "b5a86f6a597f72ae8e6228b140eae3a4400d9a32",
+        "message": "kde-plasma/powerdevil: Block kde-base/systemsettings[handbook]\n\nReported in #gentoo-kde by diddly\n\nPackage-Manager: portage-2.2.20.1",
+        "author_name": "Andreas Sturmlechner",
+        "author_email": "andreas.sturmlechner@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 0,
+        "num_inserts": 1,
+        "net_lines": 1,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "powerdevil-5.4.0.ebuild": "@@ -46,6 +46,7 @@ RDEPEND=\"${DEPEND}\n \t|| ( sys-power/upower-pm-utils >=sys-power/upower-0.9.23 )\n \t!systemd? ( sys-auth/polkit-pkla-compat )\n \t!kde-base/powerdevil\n+\t!kde-base/systemsettings[handbook]\n \"\n \n src_install() {\n"
+        },
+        "file_name": "gentoo_gentoo.json"
+    },
+    {
+        "hash": "530dc5395da7d81f1edb4a416a674ba842990638",
+        "message": "Delete equivalence between step and learning rate; the two are different concepts.",
+        "author_name": "Akshay Agrawal",
+        "author_email": "akshayka@google.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "eager.ipynb": "@@ -534,7 +534,7 @@\n       \"source\": [\n         \"### Create an optimizer\\n\",\n         \"\\n\",\n-        \"An *[optimizer](https://developers.google.com/machine-learning/crash-course/glossary#optimizer)* applies the computed gradients to the model's variables to minimize the `loss` function. You can think of a curved surface (see Figure 3) and we want to find its lowest point by walking around. The gradients point in the direction of steepest ascent\u2014so we'll travel the opposite way and move down the hill. By iteratively calculating the loss and gradients for each *step* (or *[learning rate](https://developers.google.com/machine-learning/crash-course/glossary#learning_rate)*), we'll adjust the model during training. Gradually, the model will find the best combination of weights and bias to minimize loss. And the lower the loss, the better the model's predictions.\\n\",\n+        \"An *[optimizer](https://developers.google.com/machine-learning/crash-course/glossary#optimizer)* applies the computed gradients to the model's variables to minimize the `loss` function. You can think of a curved surface (see Figure 3) and we want to find its lowest point by walking around. The gradients point in the direction of steepest ascent\u2014so we'll travel the opposite way and move down the hill. By iteratively calculating the loss and gradient for each example, we'll adjust the model during training. Gradually, the model will find the best combination of weights and bias to minimize loss. And the lower the loss, the better the model's predictions.\\n\",\n         \"\\n\",\n         \"<table>\\n\",\n         \"  <tr><td>\\n\",\n"
+        },
+        "file_name": "tensorflow_models.json"
+    },
+    {
+        "hash": "2272cf2f35fafd5cd486bfb4ee89df5bbc625b97",
+        "message": "fix two bug",
+        "author_name": "yfszzx",
+        "author_email": "yfszzx@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "master",
+        "changes": {
+            "images_history.py": "@@ -133,7 +133,7 @@ def archive_images(dir_name, date_to):\n             date = sort_array[loads_num][2]\n             filenames = [x[1] for x in sort_array]\n         else:\n-            date =  sort_array[-1][2]\n+            date =  None if len(sort_array) == 0 else sort_array[-1][2]\n             filenames = [x[1] for x in sort_array]\n         filenames = [x[1] for x in sort_array if x[2]>= date]\n     _, image_list, _, visible_num = get_recent_images(1, 0, filenames)\n"
+        },
+        "file_name": "AUTOMATIC1111_stable-diffusion-webui.json"
+    },
+    {
+        "hash": "8b651b9e31ba794d1a008e71e8a5569d7ff307ca",
+        "message": "feat: pub use tauri_runtime as runtime (#2926)\n\nCo-authored-by: Lucas Nogueira <lucas@tauri.studio>",
+        "author_name": "Chaoqian Xu",
+        "author_email": "chaoranxu@gmail.com",
+        "in_main": true,
+        "is_merge": false,
+        "num_deletes": 1,
+        "num_inserts": 1,
+        "net_lines": 0,
+        "num_files": 1,
+        "branches": "dev",
+        "changes": {
+            "lib.rs": "@@ -38,7 +38,7 @@ mod hooks;\n mod manager;\n pub mod plugin;\n pub mod window;\n-use tauri_runtime as runtime;\n+pub use tauri_runtime as runtime;\n pub mod settings;\n mod state;\n #[cfg(feature = \"updater\")]\n"
+        },
+        "file_name": "tauri-apps_tauri.json"
+    }
+]

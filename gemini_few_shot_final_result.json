@@ -1,0 +1,1488 @@
+[
+    {
+        "hash": "5640d641d6066a85439d7027b960ebc2cebd37de",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "5,Skipping the test if the browser doesn't support Web Workers makes the code more robust and improves maintainability."
+    },
+    {
+        "hash": "d6cc887627de8868d88fe93968978a90f243c8e1",
+        "type": "BUG_FIX",
+        "comment": "4,The commit message explicitly states that the fix addresses a build issue on Windows."
+    },
+    {
+        "hash": "730111b9cf99d5b27adfa6c688d7666df8146d60",
+        "type": "BUG_FIX",
+        "comment": "3,The commit message states that the test requires a specific configuration and doesn't build, hence restricting it."
+    },
+    {
+        "hash": "3ac05d38eb9e67d4c1923f05a2c22139782289fe",
+        "type": "CONFIG_CHANGE",
+        "comment": "2,The change involves modifying the UI text, which is a configuration change, not a bug fix."
+    },
+    {
+        "hash": "24b7f4312f408eeef234f2e41f9141610ee1acd6",
+        "type": "CONFIG_CHANGE",
+        "comment": "4,Adding a title to the license file is considered a configuration change, not a new feature."
+    },
+    {
+        "hash": "1088b4b00fe52309a75aa8508d425010fa6cd475",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Ignoring specific files in a .gitignore file is a configuration change."
+    },
+    {
+        "hash": "f5db38452477cc697a86cf0d3e7ecba4fa9cfe78",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3,The commit message indicates a stabilization of the code for a bug fix, implying code improvement."
+    },
+    {
+        "hash": "18a25be11a146450f2d3c2b8035dcb726acf2ade",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Changing the Node.js version used in Travis CI is a configuration change."
+    },
+    {
+        "hash": "5857eb884c6ffc74fa3fa7e6dd11fad0fdf845b1",
+        "type": "CONFIG_CHANGE",
+        "comment": "5,The commit message states that the change was likely a typo, indicating a configuration change."
+    },
+    {
+        "hash": "e6ffd3a86fcc3585cf2291b151fb4625f435586e",
+        "type": "BUG_FIX",
+        "comment": "4,The commit message references a specific issue, indicating a bug fix."
+    },
+    {
+        "hash": "9934ad77c0f59dcd9c22b9bfd0512beb780d8733",
+        "type": "NEW_FEAT",
+        "comment": "4,The commit message describes adding a new feature: checking for updates on the first load."
+    },
+    {
+        "hash": "85ab02ba583f88ad8aeb04c3dd057778a08f885f",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "5,Removing unused imports is a code improvement related to maintainability."
+    },
+    {
+        "hash": "58c56ce7aea12980f4be7e62840f461bb6f0cbc4",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Specifying the mode for Windows is a configuration change."
+    },
+    {
+        "hash": "a42a969e079ed2908b5c2fd004376dc43f476d83",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,The commit message only contains a version number, indicating a configuration change."
+    },
+    {
+        "hash": "303f6514bd229c80f58abc87448836ede877c0e5",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Adding a constant for a default value is a configuration change."
+    },
+    {
+        "hash": "99bf7c5da5f80beed10fc27414518601a50d5103",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4,Updating a dependency to the latest version can be considered a code improvement, especially if it fixes bugs or adds features."
+    },
+    {
+        "hash": "cb646082baa173fdee7f2b1e361be368acef4e7e",
+        "type": "CONFIG_CHANGE",
+        "comment": "4,Removing extra whitespace is a cosmetic change and can be categorized as a configuration change."
+    },
+    {
+        "hash": "b2c4552416c394ee562fa8fe05e9b5aa485440cb",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Re-ordering zoom buttons is a visual change and can be classified as a configuration change."
+    },
+    {
+        "hash": "27b1a0719a8147a19aa365c3a6009d04ecbdc8fa",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3,Updating a dependency to the latest version is a code improvement, especially if it addresses vulnerabilities or improves performance."
+    },
+    {
+        "hash": "9918e49bb12d9787340b895624b45082b8c19d4c",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,The commit message indicates a change in deployment criteria, which falls under configuration changes."
+    },
+    {
+        "hash": "f9bdf6a53f2af84d81c112951198dbde93a4afb3",
+        "type": "CONFIG_CHANGE",
+        "comment": "4,The commit message explicitly mentions a typo, indicating a configuration change."
+    },
+    {
+        "hash": "cfdc8845829d080dd2c745f59a8b2b8b8c3a91f7",
+        "type": "CONFIG_CHANGE",
+        "comment": "2,The commit message simply states typo, indicating a configuration change."
+    },
+    {
+        "hash": "5b2ffeb63d1b763a9ea9de2cc4bf7c3c1c7f3e0e",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3,Updating to a different version of React is a code improvement, possibly due to new features or bug fixes."
+    },
+    {
+        "hash": "7945499021cd217ca25d0a50c603e6bda22fd3ee",
+        "type": "CONFIG_CHANGE",
+        "comment": "2,The commit message seems to involve a configuration file, making it a configuration change."
+    },
+    {
+        "hash": "bcf36ade9f763b875bd781ad26cdb0549349c5f8",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Removing a setting from a CI configuration file is a configuration change."
+    },
+    {
+        "hash": "d90f35831121aef79627f47e64c0737660a0df74",
+        "type": "CONFIG_CHANGE",
+        "comment": "4,Fixing a typo in a documentation file is a configuration change."
+    },
+    {
+        "hash": "93cd6801f5394ce2452c1eb48831f6f02ff31d49",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,The commit message indicates a modification to a .gitignore file, a configuration change."
+    },
+    {
+        "hash": "89bc5030a2c7c18f2d838a3aba7dfa3dbdc778a6",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Adding a new item to a documentation list is a configuration change."
+    },
+    {
+        "hash": "f0faeaed25b47a91b36e6637121f80559e8c3ccb",
+        "type": "CONFIG_CHANGE",
+        "comment": "5,The commit message explicitly mentions a typo, indicating a configuration change."
+    },
+    {
+        "hash": "d9d83deb250a8172c9380c0daf57ceeda7feb8be",
+        "type": "CONFIG_CHANGE",
+        "comment": "2,Applying formatting changes, like gofmt, is a configuration change."
+    },
+    {
+        "hash": "4ac4ce3e4001114ee35d9e762f3fbdf94ba0ea7b",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,The commit message describes changing a pattern, which is a configuration change."
+    },
+    {
+        "hash": "58ba2241e9db836c96cb75f1848c31c71c7b9fac",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,The commit message describes a change to the directory structure, which is a configuration change."
+    },
+    {
+        "hash": "39e53b4ae7b958b227535dde7e8284f5d92a96fd",
+        "type": "NEW_FEAT",
+        "comment": "4,The commit message mentions allowing letters in IDs for storing files, indicating a new feature."
+    },
+    {
+        "hash": "ca2840a8e85ca828cc9d19eeb7755b60e17c2c11",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3,The commit message indicates inspecting a different part of the repository, potentially for improved accuracy or functionality."
+    },
+    {
+        "hash": "cc55806a112137976b38ddfb5cbebd971e2c6e9f",
+        "type": "BUG_FIX",
+        "comment": "3,The commit message references a specific issue and mentions closes, indicating a bug fix."
+    },
+    {
+        "hash": "319aae27567f3ddc40e9083c425f7eaf567006a0",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3,The commit message describes an increase in the number of possible heads requested, potentially related to performance optimization."
+    },
+    {
+        "hash": "c16d0df7b2ac87007f789346c32f7e47e4ad1bfe",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Disabling a test is generally a configuration change, as it affects how the code is tested, not its core functionality."
+    },
+    {
+        "hash": "501397cb6186700203637a37389142b6e9cdaefa",
+        "type": "BUG_FIX",
+        "comment": "4,The commit message mentions fix and a specific issue, clearly indicating a bug fix."
+    },
+    {
+        "hash": "aa682bfd1207ce1ad1fd485e792530359251b219",
+        "type": "CONFIG_CHANGE",
+        "comment": "4,The commit message mentions updating a documentation file, making it a configuration change."
+    },
+    {
+        "hash": "330fdd2b045343bd07620876cf3db553d46ded6c",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Fixing a typo in a test file is a configuration change, as it does not affect the functionality of the code."
+    },
+    {
+        "hash": "5226cfe5624290111779dd57bc6139676eded76d",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Reducing a heading size is a visual change, making it a configuration change."
+    },
+    {
+        "hash": "179213f61c704d2c3a5eec7d3c1ffd6d3b1f0154",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3,Adding a trap to terminate processes on SIGINT improves the robustness and stability of the application."
+    },
+    {
+        "hash": "f0f2d2ee70a7b1e64d08827f961add853c8b718c",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,The commit message mentions fixing a documentation file, suggesting a configuration change."
+    },
+    {
+        "hash": "618f204dddd7b6309d10efa8b9227c71e11c99e7",
+        "type": "NEW_FEAT",
+        "comment": "4,The commit message mentions adding a new feature: allowing zooming up to 3000%."
+    },
+    {
+        "hash": "ae1995f849aac92ec768361e73ad0ae56ee2bdbb",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3,Updating a dependency to a newer version is a code improvement, especially if it addresses compatibility issues."
+    },
+    {
+        "hash": "fe4920f138897138cc6eb76306677c4a5bc7980a",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4,Removing an unnecessary assertion is a code improvement related to performance or readability."
+    },
+    {
+        "hash": "996d1c3242be5569bb4b579b2e3ad25a6d928dfb",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Excluding a directory from a compressed file is a change in how the code is packaged, hence a configuration change."
+    },
+    {
+        "hash": "9bab8ccb89466be8bc8c579264f51b194aa89612",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,The commit message describes adding a new item to a theme, which is a configuration change."
+    },
+    {
+        "hash": "be756011963855038ce7efae586c4dfd8563f236",
+        "type": "BUG_FIX",
+        "comment": "4,The commit message mentions fixing a test, indicating a bug fix."
+    },
+    {
+        "hash": "330fdd2b045343bd07620876cf3db553d46ded6c",
+        "type": "CONFIG_CHANGE",
+        "comment": "2,Fixing a typo in a test file is a configuration change, as it does not affect the functionality of the code."
+    },
+    {
+        "hash": "5226cfe5624290111779dd57bc6139676eded76d",
+        "type": "CONFIG_CHANGE",
+        "comment": "2,Reducing a heading size is a visual change, making it a configuration change."
+    },
+    {
+        "hash": "179213f61c704d2c3a5eec7d3c1ffd6d3b1f0154",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3,Adding a trap to terminate processes on SIGINT improves the robustness and stability of the application."
+    },
+    {
+        "hash": "f0f2d2ee70a7b1e64d08827f961add853c8b718c",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,The commit message mentions fixing a documentation file, suggesting a configuration change."
+    },
+    {
+        "hash": "618f204dddd7b6309d10efa8b9227c71e11c99e7",
+        "type": "NEW_FEAT",
+        "comment": "4,The commit message mentions adding a new feature: allowing zooming up to 3000%."
+    },
+    {
+        "hash": "ae1995f849aac92ec768361e73ad0ae56ee2bdbb",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3,Updating a dependency to a newer version is a code improvement, especially if it addresses compatibility issues."
+    },
+    {
+        "hash": "fe4920f138897138cc6eb76306677c4a5bc7980a",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4,Removing an unnecessary assertion is a code improvement related to performance or readability."
+    },
+    {
+        "hash": "996d1c3242be5569bb4b579b2e3ad25a6d928dfb",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,Excluding a directory from a compressed file is a change in how the code is packaged, hence a configuration change."
+    },
+    {
+        "hash": "9bab8ccb89466be8bc8c579264f51b194aa89612",
+        "type": "CONFIG_CHANGE",
+        "comment": "3,The commit message describes adding a new item to a theme, which is a configuration change."
+    },
+    {
+        "hash": "be756011963855038ce7efae586c4dfd8563f236",
+        "type": "BUG_FIX",
+        "comment": "4,The commit message mentions fixing a test, indicating a bug fix."
+    },
+    {
+        "hash": "822bc2fd52103a62761c4065350b78b21fbf120c",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, improve code quality by only calling function if needed"
+    },
+    {
+        "hash": "bc0a0a86516fc47c362b90042a154c82305828ae",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, README change, change in command"
+    },
+    {
+        "hash": "5a10de422ad8ed21a071ed6f978d67c6410f26e8",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, update dependency"
+    },
+    {
+        "hash": "2d8dd49589ce6953dc9866192f2ca0dc53957ace",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, markdown format"
+    },
+    {
+        "hash": "0360aa1f1c1137d8125b377c5e3451adc5a96cda",
+        "type": "BUG_FIX",
+        "comment": "3, commit msg suggest that build was broken"
+    },
+    {
+        "hash": "7bf89340971c38f4757cf58671d8ae83ca15574c",
+        "type": "BUG_FIX",
+        "comment": "3, fix warning message"
+    },
+    {
+        "hash": "fdb77da8d92e8be5ee5859da352f4d776093ec4c",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, improve code by refactoring arguments"
+    },
+    {
+        "hash": "f067c4df660ace257147a2886fe26a1006f2166f",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, change in ROADMAP file"
+    },
+    {
+        "hash": "036d751397140e1eae01ea6ce6ebe86f0482f485",
+        "type": "NEW_FEAT",
+        "comment": "5, add alias to createDescriptor"
+    },
+    {
+        "hash": "2f7a40204088b5c5c9e9eee5e0e7b4445105c28d",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, change in log message color"
+    },
+    {
+        "hash": "95f2e82f4e18116d1efcede8fbcf7e90f86484f6",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, change in version"
+    },
+    {
+        "hash": "a971e4a767118ec41ec0f129770122babfb16a16",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, updating hash"
+    },
+    {
+        "hash": "ff757e2d6390b852614918c7bb9cb24b6f73f008",
+        "type": "BUG_FIX",
+        "comment": "4, fix memory leak"
+    },
+    {
+        "hash": "3cd74bb8a86e00d6d78e21b0eb750d6d2240ff46",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, typo fix"
+    },
+    {
+        "hash": "44730f93242fa6860b6eda091c54992ddaf2ec91",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, update README.md"
+    },
+    {
+        "hash": "65cbcb2f73d89459a9cae5dc9b083be8f07eabae",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, inject log into getExportDocType"
+    },
+    {
+        "hash": "4cdd97210266b6bbfd69f2eaa45b273ca1f0b523",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, typo fix"
+    },
+    {
+        "hash": "bbe818a61b6db36afaf6f18212d2890bfb428c93",
+        "type": "BUG_FIX",
+        "comment": "4, fix proptype detection"
+    },
+    {
+        "hash": "38c24726092773bc360d7c440683b57316d6aeac",
+        "type": "BUG_FIX",
+        "comment": "4, fix unterminated declaration"
+    },
+    {
+        "hash": "b676bf3d4ccce96ce33a4b54b6236e0ae9b4526f",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, remove unused dependency"
+    },
+    {
+        "hash": "79fc659f1cf9d24388aba810c400624dcb2fcb94",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, update fork-corner"
+    },
+    {
+        "hash": "f94177367a5765f89be526837330459cf840747b",
+        "type": "BUG_FIX",
+        "comment": "4, fix windows build"
+    },
+    {
+        "hash": "2a7ed1ada74e9625d8f73eec03dfe560ba978b32",
+        "type": "BUG_FIX",
+        "comment": "5, fix firefox issue"
+    },
+    {
+        "hash": "432ba82ad2ec42e8de988974e8fe5bb50215b55a",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, change Chrome userDataDir"
+    },
+    {
+        "hash": "22503cdb942b3546db596a26ac3d68e02620fc56",
+        "type": "BUG_FIX",
+        "comment": "4, fix merge conflict"
+    },
+    {
+        "hash": "1cadc9221a90e8b0f195912e87c8278c76e31994",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, download ATL binaries"
+    },
+    {
+        "hash": "cb9d1b88bed2ecc2434ff1017526697037144b27",
+        "type": "NEW_FEAT",
+        "comment": "5, add cursor-text class"
+    },
+    {
+        "hash": "8c9a24983e8b9dd452f5e378e845104e81333b74",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, remove calls to Range.detach"
+    },
+    {
+        "hash": "100ffb4ffe7e140894761b1b7b98a7dc6cd0e9ba",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, remove bloat comment"
+    },
+    {
+        "hash": "5d9a4f343494ae8969014a3224443b6d7ce5caf5",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, remove unused dependency"
+    },
+    {
+        "hash": "a2139d82f577486f168cbbb570178ae9d40ec0f5",
+        "type": "BUG_FIX",
+        "comment": "4, fix breakpoint helper glyph"
+    },
+    {
+        "hash": "00902cd60139c919871aa30c43d0ae21c130fb86",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, release 2013.12.16.2"
+    },
+    {
+        "hash": "5da6daa4023f74a0753206e7990492fab13c9c35",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, rename file to include hash"
+    },
+    {
+        "hash": "0f5fef4fbe04f0dd74ddd0c18af8178dda6270c8",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, Update README.md"
+    },
+    {
+        "hash": "193e2df8ba95efd6e3326cb0907576a0c74f1d74",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, remove rogue comment"
+    },
+    {
+        "hash": "e79cda6dade8bde4f3e67e55f3a4eab6405cb781",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, add pyopencl to dependency"
+    },
+    {
+        "hash": "beea6f9c829928f472b1dc78e805314099bd5658",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, fix typo in README"
+    },
+    {
+        "hash": "d90cf9b8ac02e7335997ca695f4269c91e7a406d",
+        "type": "BUG_FIX",
+        "comment": "4, revert boilerplate to 2014"
+    },
+    {
+        "hash": "17769d5a6c24eb8f5d609aa99f84debc3fe4adec",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, release 2013.11.29"
+    },
+    {
+        "hash": "71c4d116fa8a7edd4b5ae1970763fd0e86ff36c9",
+        "type": "PERF_IMPROVEMENT",
+        "comment": "4, improve performance"
+    },
+    {
+        "hash": "2f9e65f16b64e524adb245159ecee82bfc5f9dff",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, Update gitignore"
+    },
+    {
+        "hash": "c3c2ad1454a5df39b10596692934081797da206b",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, improve type of TreeNode.children"
+    },
+    {
+        "hash": "9a769630d7a2e3d3413527d1d8ca21612b86175a",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, fix typo in README"
+    },
+    {
+        "hash": "7766ce66dd788a780a54f890711ad58cb3d96f5f",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, update bertology"
+    },
+    {
+        "hash": "43e8ecb118d7ef62caf39309c63f3fbdd2ac8cb8",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, screen module browser only"
+    },
+    {
+        "hash": "32cc53a901b24a683787d3417fd635fa06a278b6",
+        "type": "BUG_FIX",
+        "comment": "4, fix stack-overflow when creating atlas"
+    },
+    {
+        "hash": "c66c3aef8126bf943b2746afb6a9c2a536990db5",
+        "type": "BUG_FIX",
+        "comment": "4, fix graphical bug in cypher theme"
+    },
+    {
+        "hash": "f81d9ddb76cf4a404a3d38d8b38f3671574ebac6",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, Bring back CUDA and CuDNN versions"
+    },
+    {
+        "hash": "b0c733e3279011fa6d82e29fc730c47f63b6e167",
+        "type": "CONFIG_CHANGE",
+        "comment": "1, no changes found"
+    },
+    {
+        "hash": "44730f93242fa6860b6eda091c54992ddaf2ec91",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, update README.md"
+    },
+    {
+        "hash": "65cbcb2f73d89459a9cae5dc9b083be8f07eabae",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, inject log into getExportDocType"
+    },
+    {
+        "hash": "4cdd97210266b6bbfd69f2eaa45b273ca1f0b523",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, typo fix"
+    },
+    {
+        "hash": "bbe818a61b6db36afaf6f18212d2890bfb428c93",
+        "type": "BUG_FIX",
+        "comment": "4, fix proptype detection"
+    },
+    {
+        "hash": "38c24726092773bc360d7c440683b57316d6aeac",
+        "type": "BUG_FIX",
+        "comment": "4, fix unterminated declaration"
+    },
+    {
+        "hash": "b676bf3d4ccce96ce33a4b54b6236e0ae9b4526f",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, remove unused dependency"
+    },
+    {
+        "hash": "79fc659f1cf9d24388aba810c400624dcb2fcb94",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, update fork-corner"
+    },
+    {
+        "hash": "f94177367a5765f89be526837330459cf840747b",
+        "type": "BUG_FIX",
+        "comment": "4, fix windows build"
+    },
+    {
+        "hash": "2a7ed1ada74e9625d8f73eec03dfe560ba978b32",
+        "type": "BUG_FIX",
+        "comment": "5, fix firefox issue"
+    },
+    {
+        "hash": "432ba82ad2ec42e8de988974e8fe5bb50215b55a",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, change Chrome userDataDir"
+    },
+    {
+        "hash": "22503cdb942b3546db596a26ac3d68e02620fc56",
+        "type": "BUG_FIX",
+        "comment": "4, fix merge conflict"
+    },
+    {
+        "hash": "1cadc9221a90e8b0f195912e87c8278c76e31994",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, download ATL binaries"
+    },
+    {
+        "hash": "cb9d1b88bed2ecc2434ff1017526697037144b27",
+        "type": "NEW_FEAT",
+        "comment": "5, add cursor-text class"
+    },
+    {
+        "hash": "8c9a24983e8b9dd452f5e378e845104e81333b74",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, remove calls to Range.detach"
+    },
+    {
+        "hash": "100ffb4ffe7e140894761b1b7b98a7dc6cd0e9ba",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, remove bloat comment"
+    },
+    {
+        "hash": "5d9a4f343494ae8969014a3224443b6d7ce5caf5",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, remove unused dependency"
+    },
+    {
+        "hash": "a2139d82f577486f168cbbb570178ae9d40ec0f5",
+        "type": "BUG_FIX",
+        "comment": "4, fix breakpoint helper glyph"
+    },
+    {
+        "hash": "00902cd60139c919871aa30c43d0ae21c130fb86",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, release 2013.12.16.2"
+    },
+    {
+        "hash": "5da6daa4023f74a0753206e7990492fab13c9c35",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, rename file to include hash"
+    },
+    {
+        "hash": "0f5fef4fbe04f0dd74ddd0c18af8178dda6270c8",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, Update README.md"
+    },
+    {
+        "hash": "193e2df8ba95efd6e3326cb0907576a0c74f1d74",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, remove rogue comment"
+    },
+    {
+        "hash": "e79cda6dade8bde4f3e67e55f3a4eab6405cb781",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, add pyopencl to dependency"
+    },
+    {
+        "hash": "beea6f9c829928f472b1dc78e805314099bd5658",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, fix typo in README"
+    },
+    {
+        "hash": "d90cf9b8ac02e7335997ca695f4269c91e7a406d",
+        "type": "BUG_FIX",
+        "comment": "4, revert boilerplate to 2014"
+    },
+    {
+        "hash": "17769d5a6c24eb8f5d609aa99f84debc3fe4adec",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, release 2013.11.29"
+    },
+    {
+        "hash": "71c4d116fa8a7edd4b5ae1970763fd0e86ff36c9",
+        "type": "PERF_IMPROVEMENT",
+        "comment": "4, improve performance"
+    },
+    {
+        "hash": "2f9e65f16b64e524adb245159ecee82bfc5f9dff",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, Update gitignore"
+    },
+    {
+        "hash": "c3c2ad1454a5df39b10596692934081797da206b",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, improve type of TreeNode.children"
+    },
+    {
+        "hash": "9a769630d7a2e3d3413527d1d8ca21612b86175a",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, fix typo in README"
+    },
+    {
+        "hash": "7766ce66dd788a780a54f890711ad58cb3d96f5f",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, update bertology"
+    },
+    {
+        "hash": "43e8ecb118d7ef62caf39309c63f3fbdd2ac8cb8",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, screen module browser only"
+    },
+    {
+        "hash": "32cc53a901b24a683787d3417fd635fa06a278b6",
+        "type": "BUG_FIX",
+        "comment": "4, fix stack-overflow when creating atlas"
+    },
+    {
+        "hash": "c66c3aef8126bf943b2746afb6a9c2a536990db5",
+        "type": "BUG_FIX",
+        "comment": "4, fix graphical bug in cypher theme"
+    },
+    {
+        "hash": "f81d9ddb76cf4a404a3d38d8b38f3671574ebac6",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, Bring back CUDA and CuDNN versions"
+    },
+    {
+        "hash": "b0c733e3279011fa6d82e29fc730c47f63b6e167",
+        "type": "CONFIG_CHANGE",
+        "comment": "1, no changes found"
+    },
+    {
+        "hash": "44730f93242fa6860b6eda091c54992ddaf2ec91",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, update README.md"
+    },
+    {
+        "hash": "65cbcb2f73d89459a9cae5dc9b083be8f07eabae",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, inject log into getExportDocType"
+    },
+    {
+        "hash": "4cdd97210266b6bbfd69f2eaa45b273ca1f0b523",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, typo fix"
+    },
+    {
+        "hash": "bbe818a61b6db36afaf6f18212d2890bfb428c93",
+        "type": "BUG_FIX",
+        "comment": "4, fix proptype detection"
+    },
+    {
+        "hash": "38c24726092773bc360d7c440683b57316d6aeac",
+        "type": "BUG_FIX",
+        "comment": "4, fix unterminated declaration"
+    },
+    {
+        "hash": "b676bf3d4ccce96ce33a4b54b6236e0ae9b4526f",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, remove unused dependency"
+    },
+    {
+        "hash": "79fc659f1cf9d24388aba810c400624dcb2fcb94",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, update fork-corner"
+    },
+    {
+        "hash": "f94177367a5765f89be526837330459cf840747b",
+        "type": "BUG_FIX",
+        "comment": "4, fix windows build"
+    },
+    {
+        "hash": "2a7ed1ada74e9625d8f73eec03dfe560ba978b32",
+        "type": "BUG_FIX",
+        "comment": "5, fix firefox issue"
+    },
+    {
+        "hash": "432ba82ad2ec42e8de988974e8fe5bb50215b55a",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, change Chrome userDataDir"
+    },
+    {
+        "hash": "22503cdb942b3546db596a26ac3d68e02620fc56",
+        "type": "BUG_FIX",
+        "comment": "4, fix merge conflict"
+    },
+    {
+        "hash": "1cadc9221a90e8b0f195912e87c8278c76e31994",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, download ATL binaries"
+    },
+    {
+        "hash": "cb9d1b88bed2ecc2434ff1017526697037144b27",
+        "type": "NEW_FEAT",
+        "comment": "5, add cursor-text class"
+    },
+    {
+        "hash": "8c9a24983e8b9dd452f5e378e845104e81333b74",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, remove calls to Range.detach"
+    },
+    {
+        "hash": "100ffb4ffe7e140894761b1b7b98a7dc6cd0e9ba",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, remove bloat comment"
+    },
+    {
+        "hash": "5d9a4f343494ae8969014a3224443b6d7ce5caf5",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, remove unused dependency"
+    },
+    {
+        "hash": "a2139d82f577486f168cbbb570178ae9d40ec0f5",
+        "type": "BUG_FIX",
+        "comment": "4, fix breakpoint helper glyph"
+    },
+    {
+        "hash": "00902cd60139c919871aa30c43d0ae21c130fb86",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, release 2013.12.16.2"
+    },
+    {
+        "hash": "5da6daa4023f74a0753206e7990492fab13c9c35",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, rename file to include hash"
+    },
+    {
+        "hash": "0f5fef4fbe04f0dd74ddd0c18af8178dda6270c8",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, Update README.md"
+    },
+    {
+        "hash": "193e2df8ba95efd6e3326cb0907576a0c74f1d74",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, remove rogue comment"
+    },
+    {
+        "hash": "e79cda6dade8bde4f3e67e55f3a4eab6405cb781",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, add pyopencl to dependency"
+    },
+    {
+        "hash": "beea6f9c829928f472b1dc78e805314099bd5658",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, fix typo in README"
+    },
+    {
+        "hash": "d90cf9b8ac02e7335997ca695f4269c91e7a406d",
+        "type": "BUG_FIX",
+        "comment": "4, revert boilerplate to 2014"
+    },
+    {
+        "hash": "17769d5a6c24eb8f5d609aa99f84debc3fe4adec",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, release 2013.11.29"
+    },
+    {
+        "hash": "71c4d116fa8a7edd4b5ae1970763fd0e86ff36c9",
+        "type": "PERF_IMPROVEMENT",
+        "comment": "4, improve performance"
+    },
+    {
+        "hash": "2f9e65f16b64e524adb245159ecee82bfc5f9dff",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, Update gitignore"
+    },
+    {
+        "hash": "c3c2ad1454a5df39b10596692934081797da206b",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, improve type of TreeNode.children"
+    },
+    {
+        "hash": "9a769630d7a2e3d3413527d1d8ca21612b86175a",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, fix typo in README"
+    },
+    {
+        "hash": "0e5fba2dfbb4492b6819da89a4787eb5bbff5ba0",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, added --compressed for curl"
+    },
+    {
+        "hash": "fe68f708ce723cef640c1cf784cb29da513bca22",
+        "type": "CONFIG_CHANGE",
+        "comment": "3, removed funky characters"
+    },
+    {
+        "hash": "110fdedef0c28bd5b26e5611e4510163d0a6242c",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, updated detect-port-alt"
+    },
+    {
+        "hash": "27ec5610598ce51d792f9adadde8eab727481e7c",
+        "type": "NEW_FEAT",
+        "comment": "5, added form to antd"
+    },
+    {
+        "hash": "02b324a23dcf03b364318fcba305ffc968b3d661",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, activated with_statement future for compatability"
+    },
+    {
+        "hash": "35e882e74fb01d91e24df7c08fafe58e9f5bef6c",
+        "type": "NEW_FEAT",
+        "comment": "4, added constructors without type arguments"
+    },
+    {
+        "hash": "66b4ed9552d3ff7d6f49d531c1a13f05352ffce6",
+        "type": "NEW_FEAT",
+        "comment": "5, added link to Senegal playlist"
+    },
+    {
+        "hash": "cccc277dd933bf06f2186e894130f5b78c4d448e",
+        "type": "BUG_FIX",
+        "comment": "5, fixed eslint"
+    },
+    {
+        "hash": "352b4ea5b924412f3485290123fdf538cfdd8aa8",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, reduced minimum TX fee"
+    },
+    {
+        "hash": "dd4b4dd9d0e7e64080bed04d9e21f43933f8021f",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, released version 2.4.1"
+    },
+    {
+        "hash": "8b7b819b4b9e6ba457e011e92e33266690e26957",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "5, used const instead of var"
+    },
+    {
+        "hash": "13bc0e032faaca301863a118316dda7be30bc40f",
+        "type": "BUG_FIX",
+        "comment": "5, fixed upload progress event example"
+    },
+    {
+        "hash": "d31f190239e9236cbfdd0900a89cff68b606e764",
+        "type": "BUG_FIX",
+        "comment": "5, fixed typo in django/contrib/admin/views/doc.py"
+    },
+    {
+        "hash": "dc105cca5ad907d77354b0570a38f3abf964d8a6",
+        "type": "BUG_FIX",
+        "comment": "5, fixed conditional in appveyor"
+    },
+    {
+        "hash": "23fbd750dec59df54cdded1fd542f090f1ca9be8",
+        "type": "BUG_FIX",
+        "comment": "5, resolved Codacy quality test issue"
+    },
+    {
+        "hash": "e3926720118f76e4b1352a75e332026e49154f34",
+        "type": "PERF_IMPROVEMENT",
+        "comment": "4, removed extra out argument sent to Parcel and reduced logging"
+    },
+    {
+        "hash": "9c5c70dc0a2531b621ba825c2599189717694d56",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, ordered aliases alphabetically"
+    },
+    {
+        "hash": "61c1bf0a41157bdfbc06b060e6f6ef34db72065a",
+        "type": "BUG_FIX",
+        "comment": "5, fixes browserify task transforms support"
+    },
+    {
+        "hash": "b5a6ff5bdd70b5d35db473b3519866537fec0088",
+        "type": "BUG_FIX",
+        "comment": "5, removetags template filter now removes tags without a space before the final slash"
+    },
+    {
+        "hash": "78e7a18fd60a64fe82718070c2e8e615deba92c5",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, disabled travis at tip"
+    },
+    {
+        "hash": "f339e9e3391465de4921aea3194f3021016f07d1",
+        "type": "PERF_IMPROVEMENT",
+        "comment": "3, commii msg suggest that connection will exit quicker"
+    },
+    {
+        "hash": "55cad3c3b7bd955a78b9b202366b936ac473de6f",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, updated af.m3u"
+    },
+    {
+        "hash": "e704f4d3785b318d7f4d3a034424b54ce50beb88",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, default to English for automatic captions"
+    },
+    {
+        "hash": "0bc3756250ef110a1c6adfd910cc1ecf0ededefd",
+        "type": "CONFIG_CHANGE",
+        "comment": "3, updated all-contributors config"
+    },
+    {
+        "hash": "5e8f9380584b01bf8a029172c716c95411aadce5",
+        "type": "CONFIG_CHANGE",
+        "comment": "3, added reference to compensation data"
+    },
+    {
+        "hash": "4a8906dd8abffaab069eee03f8f3f84129ec534f",
+        "type": "NEW_FEAT",
+        "comment": "4, added THCThrustAllocator.cuh"
+    },
+    {
+        "hash": "372cc4a0100efd3dbd80193b74ee65752d139ea8",
+        "type": "BUG_FIX",
+        "comment": "5, fixed typo"
+    },
+    {
+        "hash": "0e13d8c952bb960837ce5e6553b25331e272370b",
+        "type": "BUG_FIX",
+        "comment": "5, removed route event in componentWillUnmount"
+    },
+    {
+        "hash": "b7dc04c086c1c17195c86d57d47e8b522e810259",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, fixed links"
+    },
+    {
+        "hash": "6d78b0501a2377f44fb19d24e32b1a5a6bbb58a3",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, removed reference to oblique"
+    },
+    {
+        "hash": "21a916d953c258fcfba0c52d6ef87c5a141b531f",
+        "type": "BUG_FIX",
+        "comment": "5, fixed handling of shelve errors"
+    },
+    {
+        "hash": "aa1e20bcefa88e18e971cb37252750f07c678923",
+        "type": "BUG_FIX",
+        "comment": "5, fixed bug in auto-loader"
+    },
+    {
+        "hash": "20b940a73a4573484f072833ecaf375361bd99dc",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, deprecated store.onchange"
+    },
+    {
+        "hash": "31ec7a71f2742da7155e1365b9b48b1fb956b9bd",
+        "type": "BUG_FIX",
+        "comment": "4, fixed undefined variable when saving test samples"
+    },
+    {
+        "hash": "b9a836515fad5df57a86412b2cd41c49869ec0d6",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, updated Vimeo test vector md5"
+    },
+    {
+        "hash": "2eb6a3c30392aff274028d82aa6f94973313e831",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, removed redundant postcss operation"
+    },
+    {
+        "hash": "4dadadd0015b6efb31869cca52d6bae36762c36e",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, compiled static luajit lib with -fPIC"
+    },
+    {
+        "hash": "510a21946f9b30d766bea9175436b26c3deda6bd",
+        "type": "NEW_FEAT",
+        "comment": "5, added mh-aix"
+    },
+    {
+        "hash": "f61dd7239bfe0aa750f4f0d4db74d5e060ea1183",
+        "type": "BUG_FIX",
+        "comment": "5, fixed typo"
+    },
+    {
+        "hash": "564b01cf73c4209e769f65752e2b20279647d7b3",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "5, used babel-core/register rather than babel-register"
+    },
+    {
+        "hash": "e7eb3327990a189884df53796c67a99fc119bd38",
+        "type": "BUG_FIX",
+        "comment": "5, fixed export bug"
+    },
+    {
+        "hash": "9257682b01d71bf9cb554c1e7ba6b48e9b6c5dc1",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, removed stray period"
+    },
+    {
+        "hash": "0c548516bc951cbbd3f153a8e5c7b6a2108962c0",
+        "type": "BUG_FIX",
+        "comment": "5, fixed Python 2.4 bug in Django authentication mod_python handler"
+    },
+    {
+        "hash": "f2861448ab16ae06ffdc8560e9f50d6c192c0623",
+        "type": "BUG_FIX",
+        "comment": "5, fixed bug in win32 command-line arg processing"
+    },
+    {
+        "hash": "dfb81c969f795275e1c238f4ee618d4249e2333f",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, bumped version to 0.0.6"
+    },
+    {
+        "hash": "6860d09c722b3afc3b5b5de124e3fc80f4e5e42c",
+        "type": "BUG_FIX",
+        "comment": "5, only delete applicable transition animations"
+    },
+    {
+        "hash": "f63cf3f283dfba6a97f5d729d7ed5fd1db476935",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, updated apm URL"
+    },
+    {
+        "hash": "54dd1bc9badf461b77eea64aaff1038b4694c970",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, renamed eager get started notebook"
+    },
+    {
+        "hash": "25580f3251a8dcaa04a3edd9af328372c7caca4a",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, ignore hashes for 8tracks"
+    },
+    {
+        "hash": "5e8f9380584b01bf8a029172c716c95411aadce5",
+        "type": "CONFIG_CHANGE",
+        "comment": "3, added reference to compensation data"
+    },
+    {
+        "hash": "4a8906dd8abffaab069eee03f8f3f84129ec534f",
+        "type": "NEW_FEAT",
+        "comment": "4, added THCThrustAllocator.cuh"
+    },
+    {
+        "hash": "372cc4a0100efd3dbd80193b74ee65752d139ea8",
+        "type": "BUG_FIX",
+        "comment": "5, fixed typo"
+    },
+    {
+        "hash": "0e13d8c952bb960837ce5e6553b25331e272370b",
+        "type": "BUG_FIX",
+        "comment": "5, removed route event in componentWillUnmount"
+    },
+    {
+        "hash": "b7dc04c086c1c17195c86d57d47e8b522e810259",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, fixed links"
+    },
+    {
+        "hash": "6d78b0501a2377f44fb19d24e32b1a5a6bbb58a3",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, removed reference to oblique"
+    },
+    {
+        "hash": "21a916d953c258fcfba0c52d6ef87c5a141b531f",
+        "type": "BUG_FIX",
+        "comment": "5, fixed handling of shelve errors"
+    },
+    {
+        "hash": "aa1e20bcefa88e18e971cb37252750f07c678923",
+        "type": "BUG_FIX",
+        "comment": "5, fixed bug in auto-loader"
+    },
+    {
+        "hash": "20b940a73a4573484f072833ecaf375361bd99dc",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, deprecated store.onchange"
+    },
+    {
+        "hash": "31ec7a71f2742da7155e1365b9b48b1fb956b9bd",
+        "type": "BUG_FIX",
+        "comment": "4, fixed undefined variable when saving test samples"
+    },
+    {
+        "hash": "b9a836515fad5df57a86412b2cd41c49869ec0d6",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, updated Vimeo test vector md5"
+    },
+    {
+        "hash": "2eb6a3c30392aff274028d82aa6f94973313e831",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, removed redundant postcss operation"
+    },
+    {
+        "hash": "4dadadd0015b6efb31869cca52d6bae36762c36e",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, compiled static luajit lib with -fPIC"
+    },
+    {
+        "hash": "510a21946f9b30d766bea9175436b26c3deda6bd",
+        "type": "NEW_FEAT",
+        "comment": "5, added mh-aix"
+    },
+    {
+        "hash": "f61dd7239bfe0aa750f4f0d4db74d5e060ea1183",
+        "type": "BUG_FIX",
+        "comment": "5, fixed typo"
+    },
+    {
+        "hash": "564b01cf73c4209e769f65752e2b20279647d7b3",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "5, used babel-core/register rather than babel-register"
+    },
+    {
+        "hash": "e7eb3327990a189884df53796c67a99fc119bd38",
+        "type": "BUG_FIX",
+        "comment": "5, fixed export bug"
+    },
+    {
+        "hash": "9257682b01d71bf9cb554c1e7ba6b48e9b6c5dc1",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, removed stray period"
+    },
+    {
+        "hash": "0c548516bc951cbbd3f153a8e5c7b6a2108962c0",
+        "type": "BUG_FIX",
+        "comment": "5, fixed Python 2.4 bug in Django authentication mod_python handler"
+    },
+    {
+        "hash": "f2861448ab16ae06ffdc8560e9f50d6c192c0623",
+        "type": "BUG_FIX",
+        "comment": "5, fixed bug in win32 command-line arg processing"
+    },
+    {
+        "hash": "dfb81c969f795275e1c238f4ee618d4249e2333f",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, bumped version to 0.0.6"
+    },
+    {
+        "hash": "6860d09c722b3afc3b5b5de124e3fc80f4e5e42c",
+        "type": "BUG_FIX",
+        "comment": "5, only delete applicable transition animations"
+    },
+    {
+        "hash": "f63cf3f283dfba6a97f5d729d7ed5fd1db476935",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, updated apm URL"
+    },
+    {
+        "hash": "54dd1bc9badf461b77eea64aaff1038b4694c970",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, renamed eager get started notebook"
+    },
+    {
+        "hash": "25580f3251a8dcaa04a3edd9af328372c7caca4a",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, ignore hashes for 8tracks"
+    },
+    {
+        "hash": "5640d641d6066a85439d7027b960ebc2cebd37de",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, skip Worker test unless browser supports them"
+    },
+
+    {
+        "hash": "39b7dcf91fb49f34020e7103ed31d5d29f96ac07",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, code refactoring for py3 compatibility"
+    },
+    {
+        "hash": "5d1265df2406f4284339688191218333894aadcf",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, removing similar question, might be considered as content improvement"
+    },
+    {
+        "hash": "c40b46ff63d1af2d32e6457dcb4a70d157648db2",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, renaming a file"
+    },
+    {
+        "hash": "64c88c1ba31b83d678056e6bac561e42ed753a10",
+        "type": "BUG_FIX",
+        "comment": "5, fix disabled demo"
+    },
+    {
+        "hash": "e527b0424a55b188ed205f4c9c2f1fb1afda996e",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, remove stray CLI piece, minor code cleaning"
+    },
+    {
+        "hash": "4967dd09b9ee511a6f83b9045e18c1ba85f2b27a",
+        "type": "BUG_FIX",
+        "comment": "5, update the test that was actually failing"
+    },
+    {
+        "hash": "2975939cfb3fa4948d6a6b4a67e1ae874081c6e5",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, remove unnecessary check"
+    },
+    {
+        "hash": "9fbb4dec8edf6a72cc49b9c8f086eed48bdf44ab",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, drop redundant description, minor code clean up"
+    },
+    {
+        "hash": "7d3aac2d7111138b288a83005171b7900b8bcddd",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, disable assignment, minor code clean up"
+    },
+    {
+        "hash": "84d654ef1f08541a7982b700ea42170b2edb3421",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "4, use default cursor, minor code clean up"
+    },
+    {
+        "hash": "ff442a2eb0a69df80bc5c721541b62858a18096f",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, remove script log on exit, minor code clean up"
+    },
+    {
+        "hash": "e3f4593e76210a5afe6f52318d3f240318ededbd",
+        "type": "BUG_FIX",
+        "comment": "5, fix regex error, bug fix"
+    },
+    {
+        "hash": "93f464a1455831695858d1f2298727a33bc9ab27",
+        "type": "NEW_FEAT",
+        "comment": "5, export PipeFactory, new feature"
+    },
+    {
+        "hash": "96bd155cbdf03c67d88f1facb13fabfa86e094d4",
+        "type": "NEW_FEAT",
+        "comment": "5, support marginHeight and marginWidth, new feature"
+    },
+    {
+        "hash": "ed55491ef8e63cf7a09a19c72966abb34d9cfdc9",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, update requirement.txt file path, config change"
+    },
+    {
+        "hash": "6255f54f413ae9784d9bfb94151b59aeca72c0ec",
+        "type": "BUG_FIX",
+        "comment": "5, fixed refresh affixed-tag bug, bug fix"
+    },
+    {
+        "hash": "c08182509dbf4913288b389577a2e07c5f010077",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, update README.md, documentation update"
+    },
+    {
+        "hash": "8ec78688b80e8d1c92cc71a61a442e5c5c17c974",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, add empty actionParameters check, minor code clean up"
+    },
+    {
+        "hash": "384c5bed2d921027085cd1f2d4eff9a2652b6513",
+        "type": "CONFIG_CHANGE",
+        "comment": "3, update golden.out, minor config update"
+    },
+    {
+        "hash": "b52a089f46c10c8184ccf9e276c6cbf3ec1977b2",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, update us.m3u, minor config update"
+    },
+    {
+        "hash": "e16099adf396900c2a0493d185c154c0d84e56f4",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, update README.md, documentation update"
+    },
+    {
+        "hash": "10f1aeb144b253d5a5436b3235defb1d68b19fdc",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, fixed broken link, bug fix"
+    },
+    {
+        "hash": "fcc84c7abc143d667168cf1e30a83cc599795a16",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, use glob, minor code clean up"
+    },
+    {
+        "hash": "a2986acc1aca28e1a0260d6add6657898d19538c",
+        "type": "BUG_FIX",
+        "comment": "5, correct order of argument for tf.image.resize_image_with_crop_or_pad, bug fix"
+    },
+    {
+        "hash": "147e4aece0cfa6ca5d584b57785dc99f31d1e4eb",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, new video checksum, minor config update"
+    },
+    {
+        "hash": "07420419bb1a7da3f1c1ad3116e40dfdea57aed6",
+        "type": "CONFIG_CHANGE",
+        "comment": "5, fix typo in design document, minor update"
+    },
+    {
+        "hash": "34f873721804d57a5faf3eab8ef50340c69ed180",
+        "type": "NEW_FEAT",
+        "comment": "5, add Khmer (Cambodian) language support, new feature"
+    },
+    {
+        "hash": "57b5f42847c70347afe43d04f007f937c46b2699",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, remove unintended double negation, minor update"
+    },
+    {
+        "hash": "0c9794eefa5671bdae4c702da046badbe8237f93",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, update atom-shell-vs-node-webkit.md, documentation update"
+    },
+    {
+        "hash": "73160869417275200be19bd37372b6218dbc5f63",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, extend husky checks, minor code clean up"
+    },
+    {
+        "hash": "620a2ffcfb0a47dc3cd69f098845c4efba245ce3",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, added cmdh to community section in README, documentation update"
+    },
+    {
+        "hash": "74efa54f7f69be8394f52f9fbe3f7d9254b928fe",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, ia64 stable, minor config update"
+    },
+    {
+        "hash": "6a414cb9a3d39bd0d8338b9625cd40c039b7c5fb",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, add Axios Actions package, documentation update"
+    },
+    {
+        "hash": "9ae80acde59d9d149ee5e4e2097f209eac6f834f",
+        "type": "NEW_FEAT",
+        "comment": "5, expose performance measures, new feature"
+    },
+    {
+        "hash": "4d186aa1b0d6279bf8c146d294d9f28c1468745c",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, dont use options.filename for original code, minor code clean up"
+    },
+    {
+        "hash": "b5a86f6a597f72ae8e6228b140eae3a4400d9a32",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, block kde-base/systemsettings[handbook], minor config update"
+    },
+    {
+        "hash": "530dc5395da7d81f1edb4a416a674ba842990638",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, delete equivalence between step and learning rate, minor code clean up"
+    },
+    {
+        "hash": "2272cf2f35fafd5cd486bfb4ee89df5bbc625b97",
+        "type": "BUG_FIX",
+        "comment": "4, fix two bug, bug fix"
+    },
+    {
+        "hash": "8b651b9e31ba794d1a008e71e8a5569d7ff307ca",
+        "type": "NEW_FEAT",
+        "comment": "5, pub use tauri_runtime as runtime, new feature"
+    },
+    {
+        "hash": "0c9794eefa5671bdae4c702da046badbe8237f93",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, update atom-shell-vs-node-webkit.md, documentation update"
+    },
+    {
+        "hash": "73160869417275200be19bd37372b6218dbc5f63",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, extend husky checks, minor code clean up"
+    },
+    {
+        "hash": "620a2ffcfb0a47dc3cd69f098845c4efba245ce3",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, added cmdh to community section in README, documentation update"
+    },
+    {
+        "hash": "74efa54f7f69be8394f52f9fbe3f7d9254b928fe",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, ia64 stable, minor config update"
+    },
+    {
+        "hash": "6a414cb9a3d39bd0d8338b9625cd40c039b7c5fb",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, add Axios Actions package, documentation update"
+    },
+    {
+        "hash": "9ae80acde59d9d149ee5e4e2097f209eac6f834f",
+        "type": "NEW_FEAT",
+        "comment": "5, expose performance measures, new feature"
+    },
+    {
+        "hash": "4d186aa1b0d6279bf8c146d294d9f28c1468745c",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, dont use options.filename for original code, minor code clean up"
+    },
+    {
+        "hash": "b5a86f6a597f72ae8e6228b140eae3a4400d9a32",
+        "type": "CONFIG_CHANGE",
+        "comment": "4, block kde-base/systemsettings[handbook], minor config update"
+    },
+    {
+        "hash": "530dc5395da7d81f1edb4a416a674ba842990638",
+        "type": "CODE_IMPROVEMENT",
+        "comment": "3, delete equivalence between step and learning rate, minor code clean up"
+    },
+    {
+        "hash": "2272cf2f35fafd5cd486bfb4ee89df5bbc625b97",
+        "type": "BUG_FIX",
+        "comment": "4, fix two bug, bug fix"
+    },
+    {
+        "hash": "8b651b9e31ba794d1a008e71e8a5569d7ff307ca",
+        "type": "NEW_FEAT",
+        "comment": "5, pub use tauri_runtime as runtime, new feature"
+    }
+]
